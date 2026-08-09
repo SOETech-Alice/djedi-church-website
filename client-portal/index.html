@@ -17,7 +17,7 @@
 <!-- SOETECH × DJEDI Header Bar -->
 <div class="header-bar">
   <div class="max-w-6xl mx-auto flex items-center justify-between px-6">
-    <img src="../assets/djedi-church-logo.svg" alt="Djedi Church" class="h-8"> <span>SOETECH <span>×</span> DJEDI</span>
+    <span>SOETECH <span>×</span> DJEDI</span>
     <span>Client Portal</span>
   </div>
 </div>
@@ -101,7 +101,7 @@
       </a>
 
       <!-- Council Chat -->
-      <div class="glass p-6 feature-card fade-in text-center" style="opacity:0.5;">
+      <div class="glass p-6 feature-card fade-in text-center">
         <div class="w-14 h-14 rounded-full bg-gradient-to-br from-[#4A148C] to-[#6A1B9A] flex items-center justify-center mx-auto mb-4">
           <i class="fas fa-comments text-[#FFD700] text-lg"></i>
         </div>
@@ -111,7 +111,7 @@
       </div>
 
       <!-- Profile -->
-      <div class="glass p-6 feature-card fade-in text-center" style="opacity:0.5;">
+      <div class="glass p-6 feature-card fade-in text-center">
         <div class="w-14 h-14 rounded-full bg-gradient-to-br from-[#4A148C] to-[#6A1B9A] flex items-center justify-center mx-auto mb-4">
           <i class="fas fa-user-circle text-[#FFD700] text-lg"></i>
         </div>
@@ -156,8 +156,45 @@ particlesJS('particles-js', {
 <script src="../js/nav.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  DjediAuth.requireAuth();
+  if (!DjediAuth.isPasswordSet()) {
+    // First visit: show content + password setup form
+    const welcomeHTML = `
+      <div class="glass p-6 mb-8 text-center" id="welcome-setup">
+        <div class="w-14 h-14 rounded-full bg-gradient-to-br from-[#FFD700] to-[#FFA000] flex items-center justify-center mx-auto mb-4">
+          <i class="fas fa-key text-[#1a0a2e] text-lg"></i>
+        </div>
+        <h3 class="serif text-lg mb-2" style="color:#FFD700;">Welcome! Set your access password below.</h3>
+        <p class="text-xs text-[#8878A8] mb-4">Choose a password to secure your portal. You'll use this to log in next time.</p>
+        <form onsubmit="setupPassword(event)" class="flex flex-col sm:flex-row gap-3 justify-center items-center">
+          <input id="setup-password" type="password" placeholder="Choose a password..." class="bg-transparent border border-[#4A148C] rounded px-4 py-2 text-sm text-white w-full sm:w-auto" style="min-width:200px;">
+          <button type="submit" class="btn-gold text-sm" style="padding:8px 24px;">Set Password &amp; Enter</button>
+        </form>
+      </div>
+    `;
+    const dashboard = document.querySelector('.grid');
+    dashboard.insertAdjacentHTML('beforebegin', welcomeHTML);
+  } else if (!DjediAuth.isAuthenticated()) {
+    window.location.href = '../login.html';
+  }
 });
+</script>
+
+<script>
+async function setupPassword(e) {
+  e.preventDefault();
+  const input = document.getElementById('setup-password');
+  const password = input.value.trim();
+  if (!password) { input.style.borderColor = '#f00'; return; }
+  await DjediAuth.setPassword(password);
+  DjediAuth.createSession();
+  document.getElementById('welcome-setup').innerHTML = `
+    <div class="text-center py-4">
+      <i class="fas fa-check-circle text-[#FFD700] text-3xl mb-3"></i>
+      <h3 class="serif text-lg mb-2" style="color:#FFD700;">Password Set!</h3>
+      <p class="text-xs text-[#8878A8]">Redirecting to login...</p>
+    </div>`;
+  setTimeout(function() { window.location.href = '../login.html'; }, 1500);
+}
 </script>
 </body>
 </html>
