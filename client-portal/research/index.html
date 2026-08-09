@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Djedi Church — Research Library</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="../../css/style.css" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+</head>
+<body>
+
+<div id="particles-js"></div>
+
+<!-- SOETECH & DJEDI Header Bar -->
+<div class="header-bar">
+  <div class="max-w-6xl mx-auto flex items-center justify-between px-6">
+    <span>SOETECH <span>&</span> DJEDI</span>
+    <span>Research Library</span>
+  </div>
+</div>
+
+<!-- Navigation -->
+<nav class="fixed top-8 left-0 right-0 z-50 glass-strong px-6 py-4" id="navbar">
+  <div class="max-w-6xl mx-auto flex items-center justify-between">
+    <a href="../../index.html" class="flex items-center gap-2 text-lg">
+      <span class="text-2xl"></span>
+      <span class="serif text-base tracking-wider gradient-text">Djedi CHURCH</span>
+    </a>
+    <div class="desktop-nav hidden md:flex items-center gap-8 text-sm">
+      <a href="../index.html" class="nav-link"><i class="fas fa-arrow-left mr-1"></i> Portal</a>
+      <button onclick="handleLogout()" class="btn-outline text-sm" style="padding:8px 24px;">Logout</button>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu hidden" id="mobileMenu">
+  <button onclick="toggleMenu()" class="close-btn"><i class="fas fa-times"></i></button>
+  <a href="../index.html"><i class="fas fa-arrow-left mr-2"></i> Back to Portal</a>
+  <button onclick="handleLogout()" class="btn-outline mt-4">Logout</button>
+</div>
+
+<!-- Documents Section -->
+<section class="min-h-screen px-6 pt-28 pb-20">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-12 fade-in">
+      <p class="text-xs uppercase tracking-[0.3em] text-[#FFD700] mb-3">Research Library</p>
+      <h1 class="serif text-3xl md:text-4xl mb-2">Research <span class="gradient-text">Documents</span></h1>
+      <p class="text-sm text-[#8878A8]">3 documents available</p>
+    </div>
+
+    <div class="grid gap-6">
+      <!-- Competitive Research -->
+      <a href="competitive.html" class="glass p-6 feature-card fade-in flex items-center gap-5" style="text-decoration:none;">
+        <div class="w-12 h-12 rounded-full bg-gradient-to-br from-[#4A148C] to-[#6A1B9A] flex items-center justify-center flex-shrink-0">
+          <i class="fas fa-chart-bar text-[#FFD700]"></i>
+        </div>
+        <div class="flex-1">
+          <h3 class="serif text-base mb-1">Competitive Research</h3>
+          <p class="text-xs text-[#8878A8]">Market analysis and competitive landscape</p>
+        </div>
+        <span class="text-xs text-[#FFD700]"><i class="fas fa-chevron-right"></i></span>
+      </a>
+
+      <!-- Trademark Analysis -->
+      <a href="trademark.html" class="glass p-6 feature-card fade-in flex items-center gap-5" style="text-decoration:none;">
+        <div class="w-12 h-12 rounded-full bg-gradient-to-br from-[#4A148C] to-[#6A1B9A] flex items-center justify-center flex-shrink-0">
+          <i class="fas fa-trademark text-[#FFD700]"></i>
+        </div>
+        <div class="flex-1">
+          <h3 class="serif text-base mb-1">Trademark Analysis</h3>
+          <p class="text-xs text-[#8878A8]">Brand protection and trademark research</p>
+        </div>
+        <span class="text-xs text-[#FFD700]"><i class="fas fa-chevron-right"></i></span>
+      </a>
+
+      <!-- Business Consultation -->
+      <a href="business-consultation.html" class="glass p-6 feature-card fade-in flex items-center gap-5" style="text-decoration:none;">
+        <div class="w-12 h-12 rounded-full bg-gradient-to-br from-[#4A148C] to-[#6A1B9A] flex items-center justify-center flex-shrink-0">
+          <i class="fas fa-briefcase text-[#FFD700]"></i>
+        </div>
+        <div class="flex-1">
+          <h3 class="serif text-base mb-1">Business Consultation</h3>
+          <p class="text-xs text-[#8878A8]">Business strategy and consultation data</p>
+        </div>
+        <span class="text-xs text-[#FFD700]"><i class="fas fa-chevron-right"></i></span>
+      </a>
+    </div>
+
+    <div class="mt-12 text-center fade-in">
+      <p class="text-xs text-[#8878A8]">
+        <i class="fas fa-lock mr-1"></i>All documents are password-protected and confidential.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <img src="../../assets/djedi-church-logo.svg" alt="Djedi Church" class="h-6 opacity-50 mb-2">
+  <p class="serif" style="color: #8878A8;"> Djedi Church © 2026</p>
+  <p class="footer-tagline">Consciousness Is the Original Temple · Earth Is the Sanctuary</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+particlesJS('particles-js', {
+  particles: {
+    number: { value: 30, density: { enable: true, value_area: 800 } },
+    color: { value: ["#4A148C", "#FFD700", "#6A1B9A"] },
+    shape: { type: "circle" },
+    opacity: { value: 0.1, random: true, anim: { enable: true, speed: 0.5, opacity_min: 0.05 } },
+    size: { value: 3, random: true },
+    line_linked: { enable: true, distance: 150, color: "#4A148C", opacity: 0.04, width: 1 },
+    move: { enable: true, speed: 0.3, direction: "none", random: true, out_mode: "out" }
+  },
+  interactivity: { detect_on: "canvas", events: { onhover: { enable: false }, onclick: { enable: false } } },
+  retina_detect: true
+});
+</script>
+<script src="../../js/auth.js"></script>
+<script src="../../js/nav.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  if (!DjediAuth.isAuthenticated()) {
+    window.location.href = '../../login.html';
+  }
+});
+</script>
+</body>
+</html>
