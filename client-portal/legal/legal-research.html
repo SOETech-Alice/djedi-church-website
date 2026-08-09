@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Djedi Church — Legal Research Report</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+<style>
+  .legal-content h2 { font-family: 'Cinzel', serif; font-size: 1.5rem; color: var(--gold); margin-top: 2.5rem; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid rgba(255,215,0,0.2); }
+  .legal-content h3 { font-family: 'Cinzel', serif; font-size: 1.1rem; color: var(--text-primary); margin-top: 1.5rem; margin-bottom: 0.75rem; }
+  .legal-content h4 { font-family: 'Cinzel', serif; font-size: 1rem; color: var(--gold-dim); margin-top: 1.25rem; margin-bottom: 0.5rem; }
+  .legal-content p { color: var(--text-secondary); line-height: 1.8; margin-bottom: 0.75rem; font-size: 0.95rem; }
+  .legal-content ul, .legal-content ol { color: var(--text-secondary); margin-left: 1.5rem; margin-bottom: 1rem; }
+  .legal-content li { margin-bottom: 0.5rem; line-height: 1.7; font-size: 0.95rem; }
+  .legal-content strong { color: var(--text-primary); }
+  .legal-content em { color: var(--gold-dim); }
+  .legal-content hr { border: none; height: 1px; background: linear-gradient(90deg, transparent, rgba(255,215,0,0.2), transparent); margin: 2rem 0; }
+  .legal-content .section-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--gold); margin-bottom: 0.25rem; display: block; }
+  .legal-content blockquote { border-left: 3px solid rgba(255,215,0,0.4); padding: 1rem 1.25rem; margin: 1rem 0; background: rgba(74,20,140,0.1); border-radius: 0 8px 8px 0; }
+  .legal-content blockquote p { margin-bottom: 0; }
+  .legal-content table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.9rem; }
+  .legal-content table th { font-family: 'Cinzel', serif; color: var(--gold); text-align: left; padding: 0.75rem; border-bottom: 2px solid rgba(255,215,0,0.3); background: rgba(74,20,140,0.15); }
+  .legal-content table td { color: var(--text-secondary); padding: 0.6rem 0.75rem; border-bottom: 1px solid rgba(255,215,0,0.1); }
+  .legal-content table tr:hover td { background: rgba(74,20,140,0.08); }
+  .legal-content .toc-list { list-style: none; padding: 0; margin: 0; }
+  .legal-content .toc-list li { margin-bottom: 0.6rem; }
+  .legal-content .toc-list a { color: var(--text-secondary); text-decoration: none; transition: color 0.2s; }
+  .legal-content .toc-list a:hover { color: var(--gold); }
+  .legal-content .disclaimer { border: 1px solid rgba(255,215,0,0.2); border-radius: 8px; padding: 1.25rem; background: rgba(74,20,140,0.08); margin-top: 2rem; }
+  .legal-content .disclaimer p { font-size: 0.9rem; }
+  .toc-number { color: var(--gold); font-weight: 600; display: inline-block; width: 1.5rem; }
+</style>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+</head>
+<body>
+
+<div id="particles-js"></div>
+
+<!-- SOETECH & DJEDI Header Bar -->
+<div class="header-bar">
+  <div class="max-w-6xl mx-auto flex items-center justify-between px-6">
+    <span>SOETECH <span>&</span> DJEDI</span>
+    <span>Legal Library</span>
+  </div>
+</div>
+
+<!-- Navigation -->
+<nav class="fixed top-8 left-0 right-0 z-50 glass-strong px-6 py-4" id="navbar">
+  <div class="max-w-6xl mx-auto flex items-center justify-between">
+    <a href="../index.html" class="flex items-center gap-2 text-lg">
+      
+      <span class="serif text-base tracking-wider gradient-text">Djedi CHURCH</span>
+    </a>
+    <div class="desktop-nav hidden md:flex items-center gap-8 text-sm">
+      <a href="index.html" class="nav-link"><i class="fas fa-arrow-left mr-1"></i> Portal</a>
+      <a href="legal/articles-of-faith.html" class="nav-link">Articles of Faith</a>
+      <a href="legal/legal-notes.html" class="nav-link">Legal Notes</a>
+      <button onclick="handleLogout()" class="btn-outline text-sm" style="padding:8px 24px;">Logout</button>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu hidden" id="mobileMenu">
+  <button onclick="toggleMenu()" class="close-btn"><i class="fas fa-times"></i></button>
+  <a href="index.html">← Portal Dashboard</a>
+  <a href="legal/articles-of-faith.html">Articles of Faith</a>
+  <a href="legal/legal-notes.html">Legal Notes</a>
+  <button onclick="handleLogout()" class="btn-outline mt-4">Logout</button>
+</div>
+
+<!-- Document Content -->
+<section class="min-h-screen px-6 pt-28 pb-20">
+  <div class="max-w-4xl mx-auto">
+    <!-- Document Header -->
+    <div class="text-center mb-12 fade-in">
+      <p class="text-xs uppercase tracking-[0.3em] text-[#FFD700] mb-3">Legal Library</p>
+      <h1 class="serif text-3xl md:text-4xl mb-3">Legal Research: <span class="gradient-text">508 vs 501</span></h1>
+      <p class="text-sm text-[#8878A8]">Tax-Exempt Status &amp; Corporate Structure Options for Djedi Church</p>
+      <hr class="accent-line w-32 mx-auto mt-6">
+    </div>
+
+    <!-- Document Body -->
+    <div class="glass p-8 md:p-12 fade-in legal-content">
+
+      <!-- Report Metadata -->
+      <p class="text-center text-[#8878A8] italic mb-1"><strong>Prepared for:</strong> Christopher Carron, Djedi Church (D-J-E-D-I)</p>
+      <p class="text-center text-[#8878A8] italic mb-1"><strong>Date:</strong> August 9, 2026</p>
+      <p class="text-center text-[#8878A8] italic mb-1"><strong>Subject:</strong> 508(c)(1)(A) vs. 501(c)(3) vs. Corporation — Legal Structure Options</p>
+      <p class="text-center text-[#8878A8] italic mb-4"><strong>Classification:</strong> Internal Research Document — Attorney Work Product</p>
+
+      <hr>
+
+      <!-- TABLE OF CONTENTS -->
+      <h2>Table of Contents</h2>
+      <ol class="toc-list">
+        <li><span class="toc-number">1.</span> <a href="#section-1">Executive Summary</a></li>
+        <li><span class="toc-number">2.</span> <a href="#section-2">IRC Section 508(c)(1)(A) — Automatic Church Tax Exemption</a></li>
+        <li><span class="toc-number">3.</span> <a href="#section-3">IRC Section 501(c)(3) — Standard Tax-Exempt Status</a></li>
+        <li><span class="toc-number">4.</span> <a href="#section-4">Why Churches DON'T Need to Apply for 501(c)(3) Status</a></li>
+        <li><span class="toc-number">5.</span> <a href="#section-5">Addressing the "501(c)(38)" and "501(c)(83)" Claims</a></li>
+        <li><span class="toc-number">6.</span> <a href="#section-6">Sovereign Religious Organization Analysis</a></li>
+        <li><span class="toc-number">7.</span> <a href="#section-7">Church vs. Nonprofit Corporation — Structural Differences</a></li>
+        <li><span class="toc-number">8.</span> <a href="#section-8">Corporate Sole Structure Analysis</a></li>
+        <li><span class="toc-number">9.</span> <a href="#section-9">Membership-Based Spiritual Corporation Analysis</a></li>
+        <li><span class="toc-number">10.</span> <a href="#section-10">IRC Section 501(c)(8) — Fraternal Organizations</a></li>
+        <li><span class="toc-number">11.</span> <a href="#section-11">Comparative Analysis: All Options for Djedi Church</a></li>
+        <li><span class="toc-number">12.</span> <a href="#section-12">Recommendation for Christopher Carron</a></li>
+        <li><span class="toc-number">13.</span> <a href="#section-13">Next Steps</a></li>
+        <li><span class="toc-number">14.</span> <a href="#section-14">Sources Cited</a></li>
+      </ol>
+
+      <hr>
+
+      <!-- SECTION 1: EXECUTIVE SUMMARY -->
+      <h2 id="section-1"><span class="section-label">Section 1</span> Executive Summary</h2>
+
+      <h3>Bottom Line</h3>
+      <p><strong>There is no "501(c)(38)" or "501(c)(83)" in the Internal Revenue Code.</strong> These numbers do not exist as tax-exempt categories. The client appears to be conflating several real legal concepts:</p>
+      <ul>
+        <li><strong>IRC § 508(c)(1)(A)</strong> — which provides that churches are AUTOMATICALLY exempt from the requirement to apply for 501(c)(3) status</li>
+        <li><strong>IRC § 501(c)(3)</strong> — the actual tax-exempt category for churches and religious organizations</li>
+        <li>Various "sovereign citizen" or "church autonomy" theories that circulate online but have no basis in federal tax law</li>
+      </ul>
+
+      <h3>What the Law Actually Says</h3>
+      <ol>
+        <li><strong>Churches ARE automatically tax-exempt under 501(c)(3)</strong> — they simply don't have to apply for recognition (IRC § 508(c)(1)(A))</li>
+        <li><strong>Churches ARE still subject to federal tax law</strong> — they must meet the requirements of 501(c)(3) to maintain exemption</li>
+        <li><strong>Churches have SPECIAL PROTECTIONS</strong> — including limits on IRS audits (IRC § 7611) and First Amendment protections (Hosanna-Tabor v. EEOC, 2012)</li>
+        <li><strong>"Sovereign" religious organizations are NOT recognized</strong> by the IRS, federal courts, or any state as being exempt from federal tax obligations</li>
+        <li><strong>Churches can be organized</strong> as unincorporated associations, nonprofit corporations, corporations sole, or charitable trusts under state law — but ALL are subject to federal tax law</li>
+      </ol>
+
+      <h3>Recommended Path for Djedi Church</h3>
+      <p><strong>Operate as a church under IRC § 501(c)(3) with automatic exemption under § 508(c)(1)(A).</strong> This provides:</p>
+      <ul>
+        <li>Automatic tax exemption without filing Form 1023</li>
+        <li>Protection from IRS audit under § 7611</li>
+        <li>Tax-deductible contributions for donors</li>
+        <li>First Amendment protections</li>
+        <li>Flexibility in state-level organization (nonprofit corporation, corporate sole, or unincorporated association)</li>
+      </ul>
+
+      <hr>
+
+      <!-- SECTION 2: IRC SECTION 508(c)(1)(A) -->
+      <h2 id="section-2"><span class="section-label">Section 2</span> IRC Section 508(c)(1)(A) — Automatic Church Tax Exemption</h2>
+
+      <h3>What It Actually Says</h3>
+      <p>IRC § 508 is titled "Special rules with respect to section 501(c)(3) organizations." The full text of § 508(c)(1)(A) provides:</p>
+      <blockquote>
+        <p><strong>(c) Exceptions</strong><br>
+        <strong>(1) Mandatory exceptions</strong> — Subsections (a) and (b) shall not apply to—<br>
+        <strong>(A) churches, their integrated auxiliaries, and conventions or associations of churches</strong></p>
+      </blockquote>
+
+      <h3>What This Means in Plain English</h3>
+      <p>IRC § 508 has two subsections that normally apply to organizations seeking 501(c)(3) status:</p>
+      <ul>
+        <li><strong>§ 508(a):</strong> Organizations must notify the IRS that they are applying for recognition of 501(c)(3) status</li>
+        <li><strong>§ 508(b):</strong> Organizations that don't notify the IRS are presumed to be private foundations</li>
+      </ul>
+      <p><strong>§ 508(c)(1)(A) exempts churches from BOTH of these requirements.</strong></p>
+      <p>This means:</p>
+      <ul>
+        <li>Churches do NOT have to file Form 1023 to apply for tax-exempt status</li>
+        <li>Churches are NOT presumed to be private foundations</li>
+        <li>Churches are automatically treated as 501(c)(3) organizations from the moment they are organized as churches</li>
+      </ul>
+
+      <h3>Critical Distinction: § 508(c)(1)(A) is NOT a Separate Tax-Exempt Status</h3>
+      <p><strong>This is the most important point for Christopher to understand:</strong></p>
+      <p>§ 508(c)(1)(A) does NOT create a separate category of tax exemption. It is an <strong>exception</strong> to the application requirements of § 508(a) and (b). Churches are still 501(c)(3) organizations — they just don't have to apply for recognition.</p>
+      <p>As the IRS states in Publication 1828:</p>
+      <blockquote>
+        <p>"Churches that meet the requirements of IRC Section 501(c)(3) are automatically considered tax exempt and are not required to apply for and obtain recognition of tax-exempt status from the IRS."</p>
+      </blockquote>
+
+      <h3>What § 508(c)(1)(A) Does NOT Do</h3>
+      <ul>
+        <li>It does NOT make churches "sovereign" entities</li>
+        <li>It does NOT exempt churches from federal tax law</li>
+        <li>It does NOT exempt churches from filing required returns (e.g., Form 990-T for unrelated business income)</li>
+        <li>It does NOT create a special tax status outside of 501(c)(3)</li>
+        <li>It does NOT give churches immunity from all federal obligations</li>
+      </ul>
+
+      <hr>
+
+      <!-- SECTION 3: IRC SECTION 501(c)(3) -->
+      <h2 id="section-3"><span class="section-label">Section 3</span> IRC Section 501(c)(3) — Standard Tax-Exempt Status</h2>
+
+      <h3>The Statutory Text</h3>
+      <p>IRC § 501(c)(3) provides exemption from federal income tax for:</p>
+      <blockquote>
+        <p>"Corporations, and any community chest, fund, or foundation, organized and operated exclusively for religious, charitable, scientific, testing for public safety, literary, or educational purposes, or to foster national or international amateur sports competition (but only if no part of its activities involve the provision of athletic facilities or equipment), or for the prevention of cruelty to children or animals, no part of the net earnings of which inures to the benefit of any private shareholder or individual, no substantial part of the activities of which is carrying on propaganda, or otherwise attempting, to influence legislation (except as otherwise provided in subsection (h)), and which does not participate in, or intervene in (including the publishing or distributing of statements), any political campaign on behalf of (or in opposition to) any candidate for public office."</p>
+      </blockquote>
+
+      <h3>Requirements for 501(c)(3) Status</h3>
+      <p>To qualify as a 501(c)(3) organization, an entity must:</p>
+      <ol>
+        <li><strong>Be organized exclusively for exempt purposes</strong> — The organizing document must limit purposes to one or more exempt purposes</li>
+        <li><strong>Be operated exclusively for exempt purposes</strong> — All activities must further exempt purposes</li>
+        <li><strong>No private inurement</strong> — Net earnings may not benefit any private shareholder or individual</li>
+        <li><strong>No substantial lobbying</strong> — No substantial part of activities may attempt to influence legislation</li>
+        <li><strong>No political campaign intervention</strong> — May not participate in political campaigns</li>
+        <li><strong>No illegal activities</strong> — Purposes and activities may not be illegal or violate public policy</li>
+      </ol>
+
+      <h3>Churches Under 501(c)(3)</h3>
+      <p>Churches are specifically listed as qualifying organizations under 501(c)(3). The IRS Publication 1828 states:</p>
+      <blockquote>
+        <p>"Churches and religious organizations, like many other charitable organizations, qualify for exemption from federal income tax under IRC Section 501(c)(3) and are generally eligible to receive tax-deductible contributions."</p>
+      </blockquote>
+
+      <h3>Benefits of 501(c)(3) Status</h3>
+      <ul>
+        <li>Federal income tax exemption</li>
+        <li>State income tax exemption (in most states)</li>
+        <li>Property tax exemption (in most states)</li>
+        <li>Tax-deductible contributions for donors</li>
+        <li>Access to grant funding</li>
+        <li>Postal privileges (bulk mailing rates)</li>
+        <li>Exemption from federal unemployment tax</li>
+      </ul>
+
+      <hr>
+
+      <!-- SECTION 4: WHY CHURCHES DON'T NEED TO APPLY -->
+      <h2 id="section-4"><span class="section-label">Section 4</span> Why Churches DON'T Need to Apply for 501(c)(3) Status</h2>
+
+      <h3>The Automatic Exemption Rule</h3>
+      <p>Under IRC § 508(c)(1)(A), churches are automatically exempt from the requirement to apply for 501(c)(3) recognition. This is confirmed by IRS Publication 1828:</p>
+      <blockquote>
+        <p>"Churches that meet the requirements of IRC Section 501(c)(3) are automatically considered tax exempt and are not required to apply for and obtain recognition of tax-exempt status from the IRS."</p>
+      </blockquote>
+
+      <h3>Why Many Churches Apply Anyway</h3>
+      <p>Despite the automatic exemption, many churches voluntarily apply for 501(c)(3) recognition because:</p>
+      <ol>
+        <li><strong>Donor confidence</strong> — Contributors want assurance that their donations are tax-deductible</li>
+        <li><strong>Bank requirements</strong> — Banks often require an IRS determination letter to open accounts</li>
+        <li><strong>Grant eligibility</strong> — Many foundations require proof of 501(c)(3) status</li>
+        <li><strong>Legal clarity</strong> — A determination letter provides clear evidence of tax-exempt status</li>
+        <li><strong>State requirements</strong> — Some states require IRS recognition for state tax exemptions</li>
+      </ol>
+
+      <h3>What the IRS Says About Applying</h3>
+      <blockquote>
+        <p>"Although there is no requirement to do so, many churches seek recognition of tax-exempt status from the IRS because this recognition assures church leaders, members and contributors that the church is recognized as exempt and qualifies for related tax benefits. For example, contributors to a church that has been recognized as tax exempt would know that their contributions generally are tax-deductible."</p>
+      </blockquote>
+
+      <h3>Important: Automatic Exemption ≠ No Federal Obligations</h3>
+      <p>Even though churches don't have to apply for 501(c)(3) status, they must still:</p>
+      <ul>
+        <li>Meet the requirements of 501(c)(3) to maintain exemption</li>
+        <li>File required tax returns (e.g., Form 990-T for unrelated business income)</li>
+        <li>Comply with employment tax obligations (FICA, FUTA)</li>
+        <li>Maintain records</li>
+        <li>Not engage in prohibited activities (political campaigns, excessive lobbying)</li>
+      </ul>
+
+      <hr>
+
+      <!-- SECTION 5: 501(c)(38) AND 501(c)(83) CLAIMS -->
+      <h2 id="section-5"><span class="section-label">Section 5</span> Addressing the "501(c)(38)" and "501(c)(83)" Claims</h2>
+
+      <h3>Does "501(c)(38)" Exist?</h3>
+      <p><strong>NO. There is no IRC § 501(c)(38).</strong></p>
+      <p>The Internal Revenue Code § 501(c) contains numbered paragraphs from (1) through (29) (as of 2026). The complete list includes:</p>
+      <ul>
+        <li>501(c)(1) — Corporations organized under Act of Congress</li>
+        <li>501(c)(2) — Title-holding corporations</li>
+        <li>501(c)(3) — Charitable, religious, educational organizations</li>
+        <li>501(c)(4) — Social welfare organizations</li>
+        <li>501(c)(5) — Labor, agricultural, horticultural organizations</li>
+        <li>501(c)(6) — Business leagues, chambers of commerce</li>
+        <li>501(c)(7) — Social and recreational clubs</li>
+        <li>501(c)(8) — Fraternal beneficiary societies</li>
+        <li>501(c)(9) — Voluntary employees' beneficiary associations</li>
+        <li>501(c)(10) through 501(c)(29) — Various specialized categories</li>
+      </ul>
+      <p><strong>There is no 501(c)(38) or 501(c)(83).</strong> The numbers simply don't exist in the Internal Revenue Code.</p>
+
+      <h3>Origin of the Misconception</h3>
+      <p>The belief in a "501(c)(38)" or "501(c)(83)" likely stems from:</p>
+      <ol>
+        <li><strong>Confusion with § 508(c)(1)(A)</strong> — The "508" number being mistaken for a "501(c)" subsection</li>
+        <li><strong>Internet misinformation</strong> — Various websites promoting "sovereign church" or "church freedom" concepts that misrepresent the law</li>
+        <li><strong>Conflation of multiple provisions</strong> — Mixing up § 501(c)(3), § 508(c)(1)(A), and other provisions</li>
+        <li><strong>Deliberate misrepresentation</strong> — Some promoters of these theories are selling "church incorporation kits" or similar products</li>
+      </ol>
+
+      <h3>Legal Reality</h3>
+      <p>No federal court has ever recognized a "501(c)(38)" or "501(c)(83)" exemption. The IRS does not recognize such provisions. The Internal Revenue Code does not contain such provisions. Any claim to the contrary is misinformation.</p>
+
+      <hr>
+
+      <!-- SECTION 6: SOVEREIGN RELIGIOUS ORGANIZATION ANALYSIS -->
+      <h2 id="section-6"><span class="section-label">Section 6</span> Sovereign Religious Organization Analysis</h2>
+
+      <h3>The "Sovereign Church" Theory</h3>
+      <p>Some individuals believe that by organizing as a "church" or "religious organization," they can become "sovereign entities" that are:</p>
+      <ul>
+        <li>Separate from the federal government</li>
+        <li>Not subject to federal tax law</li>
+        <li>Not required to file federal tax returns</li>
+        <li>Immune from federal regulation</li>
+      </ul>
+
+      <h3>Legal Reality: This Theory Has No Basis in Law</h3>
+      <p><strong>Federal courts have consistently rejected "sovereign church" claims:</strong></p>
+      <ol>
+        <li><strong>Church of Scientology cases</strong> — Courts have held that the IRS can determine whether an organization qualifies as a church and whether it is entitled to tax-exempt status. See <em>Church of Scientology of California v. Commissioner</em>, 823 F.2d 1310 (9th Cir. 1987).</li>
+        <li><strong>First Amendment does not create tax immunity</strong> — While the First Amendment protects religious freedom, it does not exempt religious organizations from federal tax law. The Supreme Court has held that the tax power is a legitimate exercise of federal authority even when it affects religious organizations. See <em>Walz v. Tax Commission</em>, 397 U.S. 664 (1970).</li>
+        <li><strong>IRS can audit churches</strong> — While churches have special protections under IRC § 7611, the IRS CAN audit churches. The special rules only limit WHEN and HOW the IRS can initiate an inquiry, not WHETHER it can audit a church.</li>
+        <li><strong>Churches must still comply with tax law</strong> — As the IRS states in Publication 1828:
+          <blockquote>
+            <p>"Churches and religious organizations are generally exempt from income tax and receive other favorable treatment under the tax law; however, certain income of a church or religious organization may be subject to tax, such as income from an unrelated business."</p>
+          </blockquote>
+        </li>
+      </ol>
+
+      <h3>What the First Amendment Actually Protects</h3>
+      <p>The First Amendment's Free Exercise Clause and Establishment Clause protect:</p>
+      <ul>
+        <li>The right to practice religion without government interference</li>
+        <li>The right to organize religious institutions according to religious doctrine</li>
+        <li>Protection from government establishment of religion</li>
+        <li>Protection from government prohibition of religious practice</li>
+      </ul>
+      <p>The First Amendment does NOT protect:</p>
+      <ul>
+        <li>Immunity from federal tax law</li>
+        <li>Immunity from employment law (with narrow exceptions for ministerial employees)</li>
+        <li>Immunity from property law</li>
+        <li>Immunity from contract law</li>
+        <li>Immunity from criminal law</li>
+      </ul>
+
+      <h3>Key Supreme Court Cases</h3>
+
+      <h4>Hosanna-Tabor Evangelical Lutheran Church and School v. EEOC, 565 U.S. 171 (2012)</h4>
+      <ul>
+        <li>Recognized the "ministerial exception" — churches have broad latitude in selecting ministers</li>
+        <li>Did NOT create blanket immunity from all federal law</li>
+        <li>Applied specifically to employment decisions regarding ministers</li>
+      </ul>
+
+      <h4>Our Lady of Guadalupe School v. Morrissey-Berru, 591 U.S. 657 (2020)</h4>
+      <ul>
+        <li>Extended ministerial exception to teachers at religious schools</li>
+        <li>Did NOT create blanket immunity from all federal law</li>
+        <li>Applied specifically to employees with religious functions</li>
+      </ul>
+
+      <h4>Gonzales v. O Centro Espírita Beneficente União do Vegetal, 546 U.S. 418 (2006)</h4>
+      <ul>
+        <li>Protected religious use of hoasca (a sacramental tea containing DMT)</li>
+        <li>Applied the Religious Freedom Restoration Act (RFRA)</li>
+        <li>Did NOT create blanket immunity from federal law</li>
+      </ul>
+
+      <h4>Locke v. Davey, 540 U.S. 712 (2004)</h4>
+      <ul>
+        <li>Held that states can exclude funding for devotional theology degrees</li>
+        <li>Recognized that government can regulate religious activities in certain contexts</li>
+        <li>Did NOT create blanket immunity from government regulation</li>
+      </ul>
+
+      <h3>State Religious Organization Statutes</h3>
+      <p>Many states have specific statutes for organizing religious organizations:</p>
+      <ul>
+        <li><strong>Nonprofit Corporation</strong> — Most common; provides corporate protection</li>
+        <li><strong>Corporation Sole</strong> — Available in some states; allows a single person to hold property in an official capacity</li>
+        <li><strong>Unincorporated Association</strong> — Simple but provides no liability protection</li>
+        <li><strong>Charitable Trust</strong> — For holding property for charitable purposes</li>
+      </ul>
+      <p><strong>None of these state-level structures create federal tax immunity.</strong></p>
+
+      <hr>
+
+      <!-- SECTION 7: CHURCH VS. NONPROFIT CORPORATION -->
+      <h2 id="section-7"><span class="section-label">Section 7</span> Church vs. Nonprofit Corporation — Structural Differences</h2>
+
+      <h3>Church (Unincorporated Association)</h3>
+      <p><strong>Advantages:</strong></p>
+      <ul>
+        <li>Automatic 501(c)(3) status under § 508(c)(1)(A)</li>
+        <li>No requirement to file Form 1023</li>
+        <li>Special audit protections under § 7611</li>
+        <li>Maximum First Amendment protection</li>
+        <li>Flexibility in governance</li>
+        <li>No state incorporation requirements</li>
+      </ul>
+      <p><strong>Disadvantages:</strong></p>
+      <ul>
+        <li>No limited liability protection for members/leaders</li>
+        <li>No perpetual existence (dissolves if members leave)</li>
+        <li>Difficulty opening bank accounts (many banks require documentation)</li>
+        <li>No corporate veil protection</li>
+        <li>May have difficulty entering contracts</li>
+        <li>No state tax exemptions without separate application</li>
+      </ul>
+
+      <h3>Nonprofit Corporation</h3>
+      <p><strong>Advantages:</strong></p>
+      <ul>
+        <li>Limited liability protection for directors, officers, and members</li>
+        <li>Perpetual existence</li>
+        <li>Corporate veil protection</li>
+        <li>Easier to open bank accounts</li>
+        <li>Clear governance structure</li>
+        <li>State recognition for tax exemptions</li>
+        <li>Professional credibility</li>
+      </ul>
+      <p><strong>Disadvantages:</strong></p>
+      <ul>
+        <li>Must file articles of incorporation with the state</li>
+        <li>Must maintain corporate formalities (meetings, minutes, bylaws)</li>
+        <li>May need to file Form 1023 for IRS recognition (though churches are exempt)</li>
+        <li>State annual report requirements</li>
+        <li>State filing fees</li>
+        <li>More formal governance requirements</li>
+      </ul>
+
+      <h3>Key Difference: Church vs. Religious Organization</h3>
+      <p>The IRS distinguishes between:</p>
+      <ul>
+        <li><strong>Churches</strong> — Automatic 501(c)(3) status, special audit protections</li>
+        <li><strong>Religious organizations</strong> — Must generally apply for 501(c)(3) status (unless gross receipts &lt; $5,000)</li>
+      </ul>
+      <p>As IRS Publication 1828 states:</p>
+      <blockquote>
+        <p>"Because special tax rules apply to churches, it's important to distinguish churches from other religious organizations. Therefore, when this publication uses the term 'religious organizations,' it isn't referring to churches or integrated auxiliaries. Religious organizations that are not churches typically include nondenominational ministries, interdenominational and ecumenical organizations, and other entities whose principal purpose is the study or advancement of religion."</p>
+      </blockquote>
+
+      <h3>IRS Definition of "Church"</h3>
+      <p>The IRS does not provide a statutory definition of "church." However, the IRS and courts have identified factors that indicate church status:</p>
+      <ol>
+        <li>Distinct religious history</li>
+        <li>Distinct religious doctrine</li>
+        <li>Established places of worship</li>
+        <li>Regular congregations</li>
+        <li>Regular religious services</li>
+        <li>Sunday schools or equivalent for the young</li>
+        <li>Schools for preparing ministers</li>
+        <li>Ordained ministers</li>
+        <li>Membership not associated with any other church or denomination</li>
+      </ol>
+
+      <hr>
+
+      <!-- SECTION 8: CORPORATE SOLE STRUCTURE ANALYSIS -->
+      <h2 id="section-8"><span class="section-label">Section 8</span> Corporate Sole Structure Analysis</h2>
+
+      <h3>What Is a Corporate Sole?</h3>
+      <p>A corporation sole is a legal entity consisting of a single person (usually a religious leader) who holds property in an official capacity. It allows:</p>
+      <ul>
+        <li>The individual to hold property as an official capacity, not personally</li>
+        <li>Continuity of the office despite changes in the individual</li>
+        <li>Protection of church property from personal creditors of the individual</li>
+      </ul>
+
+      <h3>States That Allow Corporate Sole</h3>
+      <p>Not all states recognize corporation sole. States that do include:</p>
+      <ul>
+        <li>California (Corp. Code § 9000 et seq.)</li>
+        <li>Arizona (A.R.S. § 10-3001 et seq.)</li>
+        <li>Colorado (C.R.S. § 7-121-101 et seq.)</li>
+        <li>Montana (MCA § 35-5-101 et seq.)</li>
+        <li>Texas (Bus. Org. Code § 301.001 et seq.)</li>
+        <li>And others</li>
+      </ul>
+
+      <h3>Advantages of Corporate Sole</h3>
+      <ul>
+        <li>Single-person control (no board of directors required)</li>
+        <li>Continuity of office</li>
+        <li>Protection of church property</li>
+        <li>Can hold title to real property</li>
+        <li>Can enter contracts</li>
+        <li>Can sue and be sued</li>
+        <li>May qualify for state tax exemptions</li>
+      </ul>
+
+      <h3>Disadvantages of Corporate Sole</h3>
+      <ul>
+        <li>Limited to a single person (the religious leader)</li>
+        <li>No limited liability for the individual (the individual IS the corporation)</li>
+        <li>May not provide the same level of protection as a nonprofit corporation</li>
+        <li>Not recognized in all states</li>
+        <li>May not be suitable for organizations with multiple leaders</li>
+      </ul>
+
+      <h3>Corporate Sole vs. Nonprofit Corporation</h3>
+      <table>
+        <thead>
+          <tr><th>Feature</th><th>Corporate Sole</th><th>Nonprofit Corporation</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Leadership</strong></td><td>Single person</td><td>Board of directors</td></tr>
+          <tr><td><strong>Limited Liability</strong></td><td>No (individual IS the corporation)</td><td>Yes (for directors/officers)</td></tr>
+          <tr><td><strong>Perpetual Existence</strong></td><td>Yes (continues with new leader)</td><td>Yes</td></tr>
+          <tr><td><strong>Property Holding</strong></td><td>Yes (in official capacity)</td><td>Yes</td></tr>
+          <tr><td><strong>State Recognition</strong></td><td>Some states</td><td>All states</td></tr>
+          <tr><td><strong>Complexity</strong></td><td>Low</td><td>Moderate</td></tr>
+          <tr><td><strong>Cost</strong></td><td>Low</td><td>Moderate</td></tr>
+        </tbody>
+      </table>
+
+      <hr>
+
+      <!-- SECTION 9: MEMBERSHIP-BASED SPIRITUAL CORPORATION -->
+      <h2 id="section-9"><span class="section-label">Section 9</span> Membership-Based Spiritual Corporation Analysis</h2>
+
+      <h3>What Is a Membership-Based Corporation?</h3>
+      <p>A membership-based corporation (also called a membership organization) is a nonprofit corporation where:</p>
+      <ul>
+        <li>Members have voting rights</li>
+        <li>Members may elect directors/officers</li>
+        <li>Members may have certain rights to distributions (if permitted)</li>
+        <li>Governance is defined by bylaws</li>
+      </ul>
+
+      <h3>How This Applies to Djedi Church</h3>
+      <p>A membership-based spiritual corporation could provide:</p>
+      <ul>
+        <li><strong>Community governance</strong> — Members participate in decision-making</li>
+        <li><strong>Clear legal structure</strong> — Articles of incorporation, bylaws, membership agreements</li>
+        <li><strong>Liability protection</strong> — Corporate veil protects members and leaders</li>
+        <li><strong>Tax benefits</strong> — Can qualify as 501(c)(3) religious organization</li>
+        <li><strong>Continuity</strong> — Corporate existence independent of any individual</li>
+      </ul>
+
+      <h3>Key Considerations</h3>
+      <ol>
+        <li><strong>Member vs. Donor Distinction</strong> — If members pay dues or fees, this may affect the tax treatment of those payments</li>
+        <li><strong>Inurement Concerns</strong> — If members receive benefits, this could raise inurement issues under 501(c)(3)</li>
+        <li><strong>Governance Structure</strong> — Must balance member participation with religious autonomy</li>
+        <li><strong>State Registration</strong> — May need to register as a nonprofit corporation with the state</li>
+        <li><strong>IRS Classification</strong> — If not organized as a church, may need to apply for 501(c)(3) status</li>
+      </ol>
+
+      <h3>501(c)(8) Fraternal Organization Alternative</h3>
+      <p>If Djedi Church operates primarily as a membership organization with fraternal/societal purposes (rather than primarily religious), it might consider 501(c)(8) status:</p>
+      <blockquote>
+        <p>IRC § 501(c)(8) — "Fraternal beneficiary societies and associations operating under the lodge system or for the exclusive benefit of the members of a particular branch of the Masons or Odd Fellows or both, or a society (a) which is organized in the United States, (b) any part of whose net earnings inures to the benefit of any member or member's beneficiary, and (c) whose activities are not conducted for profit."</p>
+      </blockquote>
+      <p><strong>Key Requirements:</strong></p>
+      <ul>
+        <li>Organized under the "lodge system" with local units</li>
+        <li>Operates under a ritual form</li>
+        <li>Has membership dues</li>
+        <li>Provides benefits to members and beneficiaries</li>
+      </ul>
+      <p><strong>Advantages:</strong></p>
+      <ul>
+        <li>Can provide benefits to members (unlike 501(c)(3))</li>
+        <li>Tax-deductible dues</li>
+        <li>Less restrictive than 501(c)(3)</li>
+      </ul>
+      <p><strong>Disadvantages:</strong></p>
+      <ul>
+        <li>Must meet specific organizational requirements</li>
+        <li>Cannot serve the general public</li>
+        <li>Dues may not be fully tax-deductible if benefits are provided</li>
+        <li>Less flexibility than 501(c)(3)</li>
+      </ul>
+
+      <hr>
+
+      <!-- SECTION 10: IRC SECTION 501(c)(8) -->
+      <h2 id="section-10"><span class="section-label">Section 10</span> IRC Section 501(c)(8) — Fraternal Organizations</h2>
+
+      <h3>Statutory Text</h3>
+      <blockquote>
+        <p>IRC § 501(c)(8): "Fraternal beneficiary societies and associations operating under the lodge system or for the exclusive benefit of the members of a particular branch of the Masons or Odd Fellows or both, or a society (a) which is organized in the United States, (b) any part of whose net earnings inures to the benefit of any member or member's beneficiary, and (c) whose activities are not conducted for profit."</p>
+      </blockquote>
+
+      <h3>Requirements</h3>
+      <ol>
+        <li><strong>Organized in the United States</strong></li>
+        <li><strong>Operated under the lodge system</strong> — Has local chapters/units</li>
+        <li><strong>Operates under a ritual form</strong> — Ceremonial elements</li>
+        <li><strong>Provides benefits to members</strong> — Life insurance, health benefits, etc.</li>
+        <li><strong>Not operated for profit</strong></li>
+      </ol>
+
+      <h3>Is 501(c)(8) Appropriate for Djedi Church?</h3>
+      <p><strong>Probably not</strong>, unless:</p>
+      <ul>
+        <li>Djedi Church is organized primarily as a fraternal/societal organization</li>
+        <li>It operates under a lodge system with local chapters</li>
+        <li>It provides specific benefits to members (insurance, etc.)</li>
+        <li>Its primary purpose is member benefit, not public religious services</li>
+      </ul>
+      <p>If Djedi Church is primarily a religious organization providing public worship and spiritual services, 501(c)(3) is more appropriate.</p>
+
+      <hr>
+
+      <!-- SECTION 11: COMPARATIVE ANALYSIS -->
+      <h2 id="section-11"><span class="section-label">Section 11</span> Comparative Analysis: All Options for Djedi Church</h2>
+
+      <h3>Option 1: Church (Unincorporated Association) under § 508(c)(1)(A)</h3>
+      <table>
+        <thead>
+          <tr><th>Aspect</th><th>Details</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Federal Tax Status</strong></td><td>Automatic 501(c)(3)</td></tr>
+          <tr><td><strong>Form 1023 Required?</strong></td><td>No</td></tr>
+          <tr><td><strong>IRS Audit Protection</strong></td><td>Special protections under § 7611</td></tr>
+          <tr><td><strong>Liability Protection</strong></td><td>None (personal liability)</td></tr>
+          <tr><td><strong>State Tax Exemption</strong></td><td>Must apply separately</td></tr>
+          <tr><td><strong>Bank Accounts</strong></td><td>May be difficult without documentation</td></tr>
+          <tr><td><strong>Credibility</strong></td><td>Low (no formal structure)</td></tr>
+          <tr><td><strong>Cost</strong></td><td>Low</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Option 2: Nonprofit Corporation under § 508(c)(1)(A)</h3>
+      <table>
+        <thead>
+          <tr><th>Aspect</th><th>Details</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Federal Tax Status</strong></td><td>Automatic 501(c)(3)</td></tr>
+          <tr><td><strong>Form 1023 Required?</strong></td><td>No (but recommended for donor confidence)</td></tr>
+          <tr><td><strong>IRS Audit Protection</strong></td><td>Special protections under § 7611</td></tr>
+          <tr><td><strong>Liability Protection</strong></td><td>Yes (for directors/officers)</td></tr>
+          <tr><td><strong>State Tax Exemption</strong></td><td>Apply as part of incorporation</td></tr>
+          <tr><td><strong>Bank Accounts</strong></td><td>Easy (corporate documents available)</td></tr>
+          <tr><td><strong>Credibility</strong></td><td>High (formal legal structure)</td></tr>
+          <tr><td><strong>Cost</strong></td><td>Moderate (state filing fees, annual reports)</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Option 3: Corporation Sole</h3>
+      <table>
+        <thead>
+          <tr><th>Aspect</th><th>Details</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Federal Tax Status</strong></td><td>Automatic 501(c)(3) if qualified as church</td></tr>
+          <tr><td><strong>Form 1023 Required?</strong></td><td>No</td></tr>
+          <tr><td><strong>IRS Audit Protection</strong></td><td>Special protections under § 7611</td></tr>
+          <tr><td><strong>Liability Protection</strong></td><td>Limited (individual IS the corporation)</td></tr>
+          <tr><td><strong>State Tax Exemption</strong></td><td>Apply as part of incorporation</td></tr>
+          <tr><td><strong>Bank Accounts</strong></td><td>Moderate (depends on state/bank)</td></tr>
+          <tr><td><strong>Credibility</strong></td><td>Moderate</td></tr>
+          <tr><td><strong>Cost</strong></td><td>Low to moderate</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Option 4: Membership-Based Nonprofit Corporation</h3>
+      <table>
+        <thead>
+          <tr><th>Aspect</th><th>Details</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Federal Tax Status</strong></td><td>501(c)(3) (may need to apply if not a church)</td></tr>
+          <tr><td><strong>Form 1023 Required?</strong></td><td>Possibly (if not recognized as church)</td></tr>
+          <tr><td><strong>IRS Audit Protection</strong></td><td>Standard (unless recognized as church)</td></tr>
+          <tr><td><strong>Liability Protection</strong></td><td>Yes (for directors/officers/members)</td></tr>
+          <tr><td><strong>State Tax Exemption</strong></td><td>Apply as part of incorporation</td></tr>
+          <tr><td><strong>Bank Accounts</strong></td><td>Easy (corporate documents available)</td></tr>
+          <tr><td><strong>Credibility</strong></td><td>High</td></tr>
+          <tr><td><strong>Cost</strong></td><td>Moderate</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Option 5: 501(c)(8) Fraternal Organization</h3>
+      <table>
+        <thead>
+          <tr><th>Aspect</th><th>Details</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Federal Tax Status</strong></td><td>501(c)(8)</td></tr>
+          <tr><td><strong>Form 1023 Required?</strong></td><td>Yes</td></tr>
+          <tr><td><strong>IRS Audit Protection</strong></td><td>Standard</td></tr>
+          <tr><td><strong>Liability Protection</strong></td><td>Depends on state structure</td></tr>
+          <tr><td><strong>State Tax Exemption</strong></td><td>Apply as part of incorporation</td></tr>
+          <tr><td><strong>Bank Accounts</strong></td><td>Easy</td></tr>
+          <tr><td><strong>Credibility</strong></td><td>Moderate</td></tr>
+          <tr><td><strong>Cost</strong></td><td>Moderate</td></tr>
+          <tr><td><strong>Best For</strong></td><td>Membership organizations with member benefits</td></tr>
+        </tbody>
+      </table>
+
+      <hr>
+
+      <!-- SECTION 12: RECOMMENDATION -->
+      <h2 id="section-12"><span class="section-label">Section 12</span> Recommendation for Christopher Carron</h2>
+
+      <h3>Primary Recommendation: Nonprofit Corporation with Church Status</h3>
+      <p><strong>Recommended Structure:</strong> Djedi Church should organize as a <strong>nonprofit religious corporation</strong> under state law, operating as a <strong>church</strong> for federal tax purposes under IRC § 501(c)(3) with automatic exemption under § 508(c)(1)(A).</p>
+
+      <h3>Why This Structure</h3>
+      <ol>
+        <li><strong>Automatic 501(c)(3) status</strong> — No need to file Form 1023</li>
+        <li><strong>Special audit protections</strong> — IRC § 7611 limits IRS authority</li>
+        <li><strong>Limited liability</strong> — Protects leaders and members from personal liability</li>
+        <li><strong>Professional credibility</strong> — Formal corporate structure</li>
+        <li><strong>Banking access</strong> — Corporate documents satisfy bank requirements</li>
+        <li><strong>State tax exemptions</strong> — Can apply during incorporation</li>
+        <li><strong>Donor confidence</strong> — Formal structure assures donors</li>
+        <li><strong>Perpetual existence</strong> — Organization continues regardless of individual leaders</li>
+      </ol>
+
+      <h3>Implementation Steps</h3>
+      <ol>
+        <li><strong>Choose state of incorporation</strong> — Consider states with favorable religious corporation statutes</li>
+        <li><strong>Draft articles of incorporation</strong> — Include religious purposes language</li>
+        <li><strong>Draft bylaws</strong> — Define governance structure</li>
+        <li><strong>File with Secretary of State</strong> — Pay filing fees</li>
+        <li><strong>Obtain EIN</strong> — Apply for Employer Identification Number</li>
+        <li><strong>Open bank account</strong> — Use corporate documents</li>
+        <li><strong>Consider voluntary Form 1023</strong> — Not required but recommended for donor confidence</li>
+        <li><strong>Establish internal governance</strong> — Board meetings, minutes, financial records</li>
+        <li><strong>Comply with state requirements</strong> — Annual reports, registered agent</li>
+        <li><strong>Maintain tax compliance</strong> — File required returns, maintain records</li>
+      </ol>
+
+      <h3>Addressing the "Sovereign" Question</h3>
+      <p>Christopher should understand that:</p>
+      <ul>
+        <li><strong>No entity is "sovereign" from federal tax law</strong> — The federal government has constitutional authority to tax</li>
+        <li><strong>Churches have SPECIAL PROTECTIONS, not immunity</strong> — § 508(c)(1)(A) and § 7611 provide protections, not blanket immunity</li>
+        <li><strong>The First Amendment protects religious freedom, not tax avoidance</strong> — Courts have consistently held that religious organizations must comply with tax law</li>
+        <li><strong>"Sovereign church" theories are misinformation</strong> — No federal court has recognized such theories</li>
+      </ul>
+
+      <h3>What Djedi Church CAN Do</h3>
+      <ul>
+        <li>Operate as a church with automatic 501(c)(3) status</li>
+        <li>Enjoy special audit protections under § 7611</li>
+        <li>Receive tax-deductible contributions</li>
+        <li>Organize according to religious doctrine and governance</li>
+        <li>Make religious decisions without government interference (within limits)</li>
+        <li>Claim ministerial exception for employment decisions (within limits)</li>
+      </ul>
+
+      <h3>What Djedi Church CANNOT Do</h3>
+      <ul>
+        <li>Claim to be "sovereign" from federal tax law</li>
+        <li>Refuse to file required tax returns</li>
+        <li>Engage in political campaign activity</li>
+        <li>Excessively lobby</li>
+        <li>Allow private inurement of net earnings</li>
+        <li>Operate for private benefit rather than public religious purpose</li>
+        <li>Claim immunity from all federal law</li>
+      </ul>
+
+      <hr>
+
+      <!-- SECTION 13: NEXT STEPS -->
+      <h2 id="section-13"><span class="section-label">Section 13</span> Next Steps</h2>
+
+      <h3>Immediate Actions</h3>
+      <ol>
+        <li><strong>Consult with a tax attorney</strong> — Review this analysis with a qualified professional</li>
+        <li><strong>Determine state of incorporation</strong> — Research religious corporation statutes</li>
+        <li><strong>Draft organizational documents</strong> — Articles of incorporation, bylaws</li>
+        <li><strong>Obtain EIN</strong> — Apply for Employer Identification Number</li>
+      </ol>
+
+      <h3>Short-Term Actions (30–90 days)</h3>
+      <ol>
+        <li><strong>File articles of incorporation</strong> with the chosen state</li>
+        <li><strong>Hold organizational meeting</strong> — Elect directors/officers, adopt bylaws</li>
+        <li><strong>Open bank account</strong> — Using corporate documents</li>
+        <li><strong>Establish financial controls</strong> — Accounting system, separation of duties</li>
+        <li><strong>Create internal policies</strong> — Governance, conflict of interest, document retention</li>
+      </ol>
+
+      <h3>Medium-Term Actions (6–12 months)</h3>
+      <ol>
+        <li><strong>Consider voluntary Form 1023</strong> — For donor confidence</li>
+        <li><strong>Apply for state tax exemptions</strong> — Property tax, sales tax</li>
+        <li><strong>Establish record-keeping systems</strong> — Financial records, meeting minutes</li>
+        <li><strong>Develop donor communication</strong> — Explain tax-deductible contributions</li>
+        <li><strong>Train leadership</strong> — Compliance requirements, governance procedures</li>
+      </ol>
+
+      <h3>Ongoing Compliance</h3>
+      <ol>
+        <li><strong>File annual reports</strong> — State requirements</li>
+        <li><strong>Maintain corporate formalities</strong> — Meetings, minutes, resolutions</li>
+        <li><strong>File tax returns</strong> — As required (e.g., Form 990-T for UBIT)</li>
+        <li><strong>Comply with employment taxes</strong> — FICA, FUTA, withholding</li>
+        <li><strong>Update records</strong> — Keep current with changes in leadership, address, etc.</li>
+      </ol>
+
+      <hr>
+
+      <!-- SECTION 14: SOURCES CITED -->
+      <h2 id="section-14"><span class="section-label">Section 14</span> Sources Cited</h2>
+
+      <h3>Federal Statutes</h3>
+      <ol>
+        <li><strong>IRC § 501(c)(3)</strong> — Exemption from tax on corporations, certain trusts, etc. (26 U.S.C. § 501(c)(3))</li>
+        <li><strong>IRC § 501(c)(8)</strong> — Fraternal beneficiary societies and associations (26 U.S.C. § 501(c)(8))</li>
+        <li><strong>IRC § 508(c)(1)(A)</strong> — Special rules with respect to section 501(c)(3) organizations — mandatory exceptions for churches (26 U.S.C. § 508(c)(1)(A))</li>
+        <li><strong>IRC § 7611</strong> — Special rules limiting IRS authority to audit a church (26 U.S.C. § 7611)</li>
+      </ol>
+
+      <h3>IRS Publications</h3>
+      <ol>
+        <li><strong>IRS Publication 1828</strong> (Rev. 8-2015) — Tax Guide for Churches &amp; Religious Organizations</li>
+        <li><strong>IRS Publication 4573</strong> — Group Exemptions</li>
+        <li><strong>IRS Revenue Procedure 80-27</strong> — Group Exemption Process</li>
+      </ol>
+
+      <h3>Court Cases</h3>
+      <ol>
+        <li><strong>Hosanna-Tabor Evangelical Lutheran Church and School v. EEOC</strong>, 565 U.S. 171 (2012) — Ministerial exception; First Amendment protections for church employment decisions</li>
+        <li><strong>Our Lady of Guadalupe School v. Morrissey-Berru</strong>, 591 U.S. 657 (2020) — Extension of ministerial exception</li>
+        <li><strong>Walz v. Tax Commission</strong>, 397 U.S. 664 (1970) — Tax power and religious organizations</li>
+        <li><strong>Church of Scientology of California v. Commissioner</strong>, 823 F.2d 1310 (9th Cir. 1987) — IRS authority to determine church status</li>
+        <li><strong>Gonzales v. O Centro Espírita Beneficente União do Vegetal</strong>, 546 U.S. 418 (2006) — Religious Freedom Restoration Act</li>
+        <li><strong>Locke v. Davey</strong>, 540 U.S. 712 (2004) — State regulation of religious activities</li>
+        <li><strong>Bob Jones University v. United States</strong>, 461 U.S. 574 (1983) — Public policy limitation on 501(c)(3) status</li>
+      </ol>
+
+      <h3>Other Authorities</h3>
+      <ol>
+        <li><strong>Treasury Regulations</strong> — 26 C.F.R. §§ 1.501(c)(3)-1 through 1.501(c)(3)-14</li>
+        <li><strong>Congressional Research Service Reports</strong> — Various reports on church tax exemption</li>
+        <li><strong>Legal Information Institute (LII)</strong> — Cornell Law School — 26 U.S.C. §§ 501, 508</li>
+      </ol>
+
+      <hr>
+
+      <!-- DISCLAIMERS -->
+      <div class="disclaimer">
+        <h3 style="color: var(--gold); margin-top: 0;">Important Disclaimers</h3>
+        <ol>
+          <li><strong>This is a research document, not legal advice.</strong> This analysis is provided for informational purposes only and does not constitute legal advice. Christopher Carron should consult with a qualified tax attorney before making any decisions.</li>
+          <li><strong>Tax law is complex and fact-specific.</strong> The analysis above is based on general principles of federal tax law. The specific facts and circumstances of Djedi Church may affect the analysis.</li>
+          <li><strong>State law varies.</strong> The analysis above focuses on federal tax law. State law varies significantly, and Christopher should consult with an attorney licensed in the relevant state.</li>
+          <li><strong>Tax law changes.</strong> Federal and state tax laws change frequently. The analysis above is based on the law as of August 2026. Christopher should verify current law with a qualified professional.</li>
+          <li><strong>No guarantee of results.</strong> The analysis above is based on published authorities, but no guarantee is made that any particular outcome will be achieved.</li>
+        </ol>
+      </div>
+
+      <hr>
+
+      <p class="text-center text-[#8878A8] italic text-sm mt-8">Report prepared by Hermes Agent for SOETech legal research purposes.</p>
+      <p class="text-center text-[#8878A8] italic text-xs mt-2">Date: August 9, 2026</p>
+      <p class="text-center text-sm mt-4"><strong class="gradient-text">Djedi Church — D-J-E-D-I</strong></p>
+      <p class="text-center text-[#8878A8] text-xs">Founded by Christopher Carron · 508(c)(1)(A) Religious Organization</p>
+
+    </div>
+
+    <!-- Back to Portal -->
+    <div class="text-center mt-8 fade-in">
+      <a href="index.html" class="btn-outline text-sm"><i class="fas fa-arrow-left mr-2"></i>Back to Portal</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <img src="../assets/djedi-church-logo.svg" alt="Djedi Church" class="h-6 opacity-50 mb-2">
+  <p class="serif" style="color: #8878A8;">Djedi Church © 2026</p>
+  <p class="footer-tagline">Consciousness Is the Original Temple · Earth Is the Sanctuary</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+particlesJS('particles-js', {
+  particles: {
+    number: { value: 30, density: { enable: true, value_area: 800 } },
+    color: { value: ["#4A148C", "#FFD700", "#6A1B9A"] },
+    shape: { type: "circle" },
+    opacity: { value: 0.1, random: true, anim: { enable: true, speed: 0.5, opacity_min: 0.05 } },
+    size: { value: 3, random: true },
+    line_linked: { enable: true, distance: 150, color: "#4A148C", opacity: 0.04, width: 1 },
+    move: { enable: true, speed: 0.3, direction: "none", random: true, out_mode: "out" }
+  },
+  interactivity: { detect_on: "canvas", events: { onhover: { enable: false }, onclick: { enable: false } } },
+  retina_detect: true
+});
+</script>
+<script src="../js/auth.js"></script>
+<script src="../js/nav.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  DjediAuth.requireAuth();
+});
+</script>
+</body>
+</html>
