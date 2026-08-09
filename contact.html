@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Djedi Church — Contact Us</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="particles-js"></div>
+
+<!-- SOETECH × DJEDI Header Bar -->
+<div class="header-bar">
+  <div class="max-w-6xl mx-auto flex items-center justify-between px-6">
+    <span>SOETECH <span>×</span> DJEDI</span>
+    <span>Contact Us</span>
+  </div>
+</div>
+
+<!-- Navigation -->
+<nav class="fixed top-8 left-0 right-0 z-50 glass-strong px-6 py-4" id="navbar">
+  <div class="max-w-6xl mx-auto flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-2 text-lg">
+      <span class="text-2xl">☉</span>
+      <span class="serif text-base tracking-wider gradient-text">Djedi CHURCH</span>
+    </a>
+    <div class="desktop-nav hidden md:flex items-center gap-8 text-sm">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="our-beliefs.html" class="nav-link">Our Beliefs</a>
+      <a href="our-teachers.html" class="nav-link">Teachers</a>
+      <a href="our-community.html" class="nav-link">Community</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+      <a href="login.html" class="btn-gold text-sm" style="padding:8px 24px;">Member Portal</a>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu hidden" id="mobileMenu">
+  <button onclick="toggleMenu()" class="close-btn"><i class="fas fa-times"></i></button>
+  <a href="index.html">Home</a>
+  <a href="our-beliefs.html">Our Beliefs</a>
+  <a href="our-teachers.html">Teachers</a>
+  <a href="our-community.html">Community</a>
+  <a href="contact.html">Contact</a>
+  <a href="login.html" class="btn-gold mt-4">Member Portal</a>
+</div>
+
+<!-- Page Title -->
+<div class="page-title">
+  <p class="text-xs uppercase tracking-[0.3em] text-[#FFD700] mb-3 fade-in">Get in Touch</p>
+  <h1 class="fade-in">Contact <span class="gradient-text">Us</span></h1>
+  <p class="subtitle fade-in">We'd love to hear from you. Whether you have questions, want to join our community, or simply want to connect — reach out.</p>
+</div>
+
+<!-- Contact Form + Info -->
+<section class="section-padding">
+  <div class="max-w-5xl mx-auto">
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <!-- Contact Form -->
+      <div class="glass-strong p-8 fade-in">
+        <h2 class="serif text-xl mb-6">Send a <span class="gradient-text">Message</span></h2>
+        <form class="contact-form" onsubmit="event.preventDefault(); handleContactSubmit();">
+          <div class="mb-4">
+            <label for="contact-name" class="text-xs text-[#8878A8] mb-1 block">Your Name</label>
+            <input type="text" id="contact-name" placeholder="Enter your name" required>
+          </div>
+          <div class="mb-4">
+            <label for="contact-email" class="text-xs text-[#8878A8] mb-1 block">Your Email</label>
+            <input type="email" id="contact-email" placeholder="Enter your email" required>
+          </div>
+          <div class="mb-6">
+            <label for="contact-message" class="text-xs text-[#8878A8] mb-1 block">Your Message</label>
+            <textarea id="contact-message" placeholder="Tell us what's on your mind..." required></textarea>
+          </div>
+          <button type="submit" class="btn-gold w-full" id="contact-submit-btn">Send Message</button>
+          <p id="contact-success" class="text-sm text-[#32CD32] mt-3 text-center" style="display: none;">
+            <i class="fas fa-check-circle mr-1"></i>Message sent! We'll be in touch soon.
+          </p>
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="space-y-6">
+        <div class="glass p-6 fade-in text-center">
+          <i class="fas fa-map-marker-alt text-2xl text-[#FFD700] mb-3"></i>
+          <h3 class="serif text-base mb-2">Location</h3>
+          <p class="text-sm text-[#B8A9D4]">Virtual Community<br>Global Congregation</p>
+        </div>
+
+        <div class="glass p-6 fade-in text-center">
+          <i class="fas fa-envelope text-2xl text-[#FFD700] mb-3"></i>
+          <h3 class="serif text-base mb-2">Email</h3>
+          <p class="text-sm text-[#B8A9D4]">info@Djedichurchofchrist.org</p>
+        </div>
+
+        <div class="glass p-6 fade-in text-center">
+          <i class="fas fa-certificate text-2xl text-[#FFD700] mb-3"></i>
+          <h3 class="serif text-base mb-2">Status</h3>
+          <p class="text-sm text-[#B8A9D4]">508(c)(1a)<br>Religious Organization</p>
+        </div>
+
+        <div class="glass p-6 fade-in text-center">
+          <i class="fas fa-share-alt text-2xl text-[#FFD700] mb-3"></i>
+          <h3 class="serif text-base mb-2">Follow Us</h3>
+          <div class="flex justify-center gap-4 mt-3">
+            <a href="#" class="text-[#B8A9D4] hover:text-[#FFD700] transition-colors"><i class="fab fa-facebook-f text-lg"></i></a>
+            <a href="#" class="text-[#B8A9D4] hover:text-[#FFD700] transition-colors"><i class="fab fa-instagram text-lg"></i></a>
+            <a href="#" class="text-[#B8A9D4] hover:text-[#FFD700] transition-colors"><i class="fab fa-youtube text-lg"></i></a>
+            <a href="#" class="text-[#B8A9D4] hover:text-[#FFD700] transition-colors"><i class="fab fa-twitter text-lg"></i></a>
+          </div>
+          <p class="text-xs text-[#8878A8] mt-3">Social links coming soon</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <p class="serif" style="color: #8878A8;">☉ Djedi Church © 2026</p>
+  <p class="footer-tagline">Consciousness Is the Original Temple · Earth Is the Sanctuary</p>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="our-beliefs.html">Beliefs</a>
+    <a href="our-teachers.html">Teachers</a>
+    <a href="our-community.html">Community</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html">Portal</a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+particlesJS('particles-js', {
+  particles: {
+    number: { value: 50, density: { enable: true, value_area: 800 } },
+    color: { value: ["#4A148C", "#FFD700", "#6A1B9A"] },
+    shape: { type: "circle" },
+    opacity: { value: 0.15, random: true, anim: { enable: true, speed: 0.5, opacity_min: 0.05 } },
+    size: { value: 3, random: true },
+    line_linked: { enable: true, distance: 150, color: "#4A148C", opacity: 0.06, width: 1 },
+    move: { enable: true, speed: 0.5, direction: "none", random: true, out_mode: "out" }
+  },
+  interactivity: { detect_on: "canvas", events: { onhover: { enable: false }, onclick: { enable: false } } },
+  retina_detect: true
+});
+
+function handleContactSubmit() {
+  var btn = document.getElementById('contact-submit-btn');
+  var success = document.getElementById('contact-success');
+  btn.textContent = 'Sending...';
+  btn.disabled = true;
+  
+  setTimeout(function() {
+    btn.textContent = 'Message Sent!';
+    success.style.display = 'block';
+    document.getElementById('contact-name').value = '';
+    document.getElementById('contact-email').value = '';
+    document.getElementById('contact-message').value = '';
+    
+    setTimeout(function() {
+      btn.textContent = 'Send Message';
+      btn.disabled = false;
+    }, 3000);
+  }, 1000);
+}
+</script>
+<script src="js/nav.js"></script>
+</body>
+</html>

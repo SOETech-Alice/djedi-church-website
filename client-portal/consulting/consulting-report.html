@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Djedi Church — Initial Consultation Report</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+<style>
+  .consult-content h2 { font-family: 'Cinzel', serif; font-size: 1.4rem; color: var(--gold); margin-top: 2.5rem; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid rgba(255,215,0,0.2); }
+  .consult-content h3 { font-family: 'Cinzel', serif; font-size: 1.05rem; color: var(--text-primary); margin-top: 1.5rem; margin-bottom: 0.75rem; }
+  .consult-content p { color: var(--text-secondary); line-height: 1.8; margin-bottom: 0.75rem; font-size: 0.95rem; }
+  .consult-content ul { color: var(--text-secondary); margin-left: 1.5rem; margin-bottom: 1rem; }
+  .consult-content li { margin-bottom: 0.5rem; line-height: 1.7; font-size: 0.95rem; }
+  .consult-content strong { color: var(--text-primary); }
+  .consult-content em { color: var(--gold-dim); }
+  .consult-content hr { border: none; height: 1px; background: linear-gradient(90deg, transparent, rgba(255,215,0,0.2), transparent); margin: 2rem 0; }
+  .action-step { display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.5rem; }
+  .step-num { width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, var(--gold), var(--gold-dim)); color: #0D0B1A; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem; flex-shrink: 0; }
+  .check-item { display: flex; align-items: flex-start; gap: 0.5rem; margin-bottom: 0.5rem; }
+  .check-item i { color: var(--gold); margin-top: 3px; flex-shrink: 0; }
+  .tech-card { background: rgba(74,20,140,0.08); border: 1px solid rgba(255,215,0,0.1); border-radius: 12px; padding: 1.25rem; }
+  .cost-badge { background: rgba(74,20,140,0.12); border: 1px solid rgba(255,215,0,0.15); border-radius: 8px; padding: 0.75rem; text-align: center; }
+  .phase-box { border-left: 3px solid var(--gold); padding-left: 1.25rem; margin-bottom: 1.5rem; }
+</style>
+</head>
+<body>
+
+<div id="particles-js"></div>
+
+<div class="header-bar">
+  <div class="max-w-6xl mx-auto flex items-center justify-between px-6">
+    <span>SOETECH <span>×</span> DJEDI</span>
+    <span>Consulting Reports</span>
+  </div>
+</div>
+
+<nav class="fixed top-8 left-0 right-0 z-50 glass-strong px-6 py-4" id="navbar">
+  <div class="max-w-6xl mx-auto flex items-center justify-between">
+    <a href="../index.html" class="flex items-center gap-2 text-lg">
+      <span class="text-2xl">☉</span>
+      <span class="serif text-base tracking-wider gradient-text">Djedi CHURCH</span>
+    </a>
+    <div class="desktop-nav hidden md:flex items-center gap-8 text-sm">
+      <a href="../index.html" class="nav-link"><i class="fas fa-arrow-left mr-1"></i> Portal</a>
+      <a href="digital-land-claim.html" class="nav-link">Land Claim</a>
+      <button onclick="handleLogout()" class="btn-outline text-sm" style="padding:8px 24px;">Logout</button>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+  </div>
+</nav>
+
+<div class="mobile-menu hidden" id="mobileMenu">
+  <button onclick="toggleMenu()" class="close-btn"><i class="fas fa-times"></i></button>
+  <a href="../index.html">← Portal Dashboard</a>
+  <a href="digital-land-claim.html">Digital Land Claim</a>
+  <button onclick="handleLogout()" class="btn-outline mt-4">Logout</button>
+</div>
+
+<section class="min-h-screen px-6 pt-28 pb-20">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-12 fade-in">
+      <p class="text-xs uppercase tracking-[0.3em] text-[#FFD700] mb-3">Consulting Reports</p>
+      <h1 class="serif text-3xl md:text-4xl mb-3">Initial Consultation <span class="gradient-text">Report</span></h1>
+      <p class="text-sm text-[#8878A8]">Prepared by SOETech for Christopher Carron · August 2026</p>
+      <hr class="accent-line w-32 mx-auto mt-6">
+    </div>
+
+    <div class="glass p-8 md:p-12 fade-in consult-content">
+
+      <!-- Section 1: Research Findings -->
+      <h2>Section 1: Research Findings</h2>
+
+      <h3>Trademark Search Results</h3>
+      <div class="glass p-6 mb-6 text-center" style="border-color: rgba(74,222,128,0.3);">
+        <p class="text-xs uppercase tracking-[0.2em] mb-2" style="color: #4ADE80;">Key Finding</p>
+        <p class="serif text-xl mb-2" style="color: #4ADE80;">"Djedi Church" is UNIQUE</p>
+        <p class="text-sm text-[#B8A9D4]">No exact matches found across IRS databases, domain registrations, social media platforms, or web searches.</p>
+      </div>
+      <p>Our research searched across 12+ databases including ProPublica Nonprofit Explorer, IRS Tax Exempt Organization Search, Google, Bing, DuckDuckGo, and all major social platforms. <strong>All returned zero exact matches.</strong></p>
+
+      <h3>Related Organizations Found</h3>
+      <p>Three organizations with similar terminology were identified. <strong>None are direct competitors</strong> — they use different spellings, naming conventions, and geographic locations.</p>
+      <ul>
+        <li><strong>Djedi Order</strong> (EIN: 851007841) — Montana, 501(c)(3), Arts & Cultural. Uses "Order" not "Church".</li>
+        <li><strong>Afrikan Djeli Cultural Institute</strong> (EIN: 472676809) — Georgia, 501(c)(3). Spelled "Djeli" not "Djedi".</li>
+        <li><strong>House Of Djeli Inc</strong> (EIN: 862022713) — Maryland, 501(c)(3). Uses "Djeli" — different spelling.</li>
+      </ul>
+
+      <h3>Domain Availability</h3>
+      <p>All primary domain options for "Djedi Church" are currently available for registration:</p>
+      <ul>
+        <li><strong>djedichurch.org</strong> — Recommended, professional, nonprofit-focused ✅ Available</li>
+        <li><strong>djedichurch.com</strong> — Recommended, commercial protection ✅ Available</li>
+        <li><strong>thedjedichurch.org</strong> — Alternative, adds "the" prefix ✅ Available</li>
+        <li><strong>thedjedichurch.com</strong> — Alternative, adds "the" prefix ✅ Available</li>
+      </ul>
+
+      <h3>Social Media Handle Availability</h3>
+      <p>The handle <strong>@djedichurch</strong> is available across all major platforms: Facebook, Instagram, Twitter/X, YouTube.</p>
+
+      <hr>
+
+      <!-- Section 2: Branding Security -->
+      <h2>Section 2: Branding Security — First Steps</h2>
+      <p>The research confirms that "Djedi Church" is an unclaimed brand in every measurable dimension. However, <strong>this window is temporary.</strong></p>
+
+      <div class="action-step">
+        <div class="step-num">1</div>
+        <div>
+          <h3 style="margin-top:0;">Register Domains Immediately</h3>
+          <p>We recommend registering both djedichurch.org and djedichurch.com.</p>
+          <p><strong>Cost:</strong> $15-30 total · <strong>Timeline: Do this today.</strong></p>
+        </div>
+      </div>
+
+      <div class="action-step">
+        <div class="step-num">2</div>
+        <div>
+          <h3 style="margin-top:0;">File Trademark Application</h3>
+          <p>File a federal trademark with the USPTO for "Djedi Church" covering religious services, educational services, and online content.</p>
+          <p><strong>Cost:</strong> $250-3,000 · <strong>Timeline:</strong> File within 2 weeks. Approval takes 8-12 months.</p>
+        </div>
+      </div>
+
+      <div class="action-step">
+        <div class="step-num">3</div>
+        <div>
+          <h3 style="margin-top:0;">Claim @djedichurch on All Platforms</h3>
+          <p>Register the @djedichurch handle on Facebook, Instagram, Twitter/X, and YouTube immediately.</p>
+          <p><strong>Cost:</strong> $0 · <strong>Timeline: 30 minutes total.</strong></p>
+        </div>
+      </div>
+
+      <div class="action-step">
+        <div class="step-num">4</div>
+        <div>
+          <h3 style="margin-top:0;">Register as a Church — IRS 508(c)(1)(A)</h3>
+          <p>Register Djedi Church under IRS Section 501(c)(3) via the 508(c)(1)(A) designation for churches.</p>
+          <p><strong>Cost:</strong> $1,500-6,000 · <strong>Timeline:</strong> 4-8 weeks for initial filing. 3-6 months for full establishment.</p>
+        </div>
+      </div>
+
+      <div class="glass p-6 mt-6 text-center">
+        <p class="text-xs uppercase tracking-[0.2em] text-[#8878A8] mb-2">Total Estimated Cost for Branding Security</p>
+        <p class="serif text-2xl gradient-text mb-2">$1,765 — $9,030</p>
+        <p class="text-sm text-[#B8A9D4]">Domains ($15-30) + Trademark ($250-3,000) + Social Media ($0) + Legal Structure ($1,500-6,000)</p>
+      </div>
+
+      <hr>
+
+      <!-- Section 3: Roadmap -->
+      <h2>Section 3: What We Will Do</h2>
+
+      <div class="phase-box">
+        <p class="text-xs text-[#8878A8] uppercase tracking-widest mb-1">PHASE 1 — WEEKS 1–2</p>
+        <h3 style="margin-top:0;">Build Digital Presence</h3>
+        <ul>
+          <li>Design and develop the Djedi Church website on WordPress</li>
+          <li>Set up social media profiles with branded content templates</li>
+          <li>Create initial content — about page, mission statement, welcome messaging</li>
+          <li>Configure SEO foundation, analytics, and Google Business profile</li>
+          <li>Set up email capture and initial newsletter template</li>
+        </ul>
+      </div>
+
+      <div class="phase-box">
+        <p class="text-xs text-[#8878A8] uppercase tracking-widest mb-1">PHASE 2 — WEEKS 3–4</p>
+        <h3 style="margin-top:0;">Member Platform Setup</h3>
+        <ul>
+          <li>Integrate community platform (Circle.so or Mighty Networks)</li>
+          <li>Set up donation system via Tithe.ly</li>
+          <li>Build teaching content library with categorization</li>
+          <li>Configure member registration and login system</li>
+          <li>Set up Planning Center for church management</li>
+        </ul>
+      </div>
+
+      <div class="phase-box">
+        <p class="text-xs text-[#8878A8] uppercase tracking-widest mb-1">PHASE 3 — MONTHS 2–3</p>
+        <h3 style="margin-top:0;">Launch & Grow</h3>
+        <ul>
+          <li>Configure YouTube live streaming for services</li>
+          <li>Set up Zoom for interactive workshops and small groups</li>
+          <li>Launch event management and registration system</li>
+          <li>Implement email automation and outreach campaigns</li>
+          <li>Analytics dashboard and growth tracking setup</li>
+        </ul>
+      </div>
+
+      <hr>
+
+      <!-- Section 4: Tech Stack -->
+      <h2>Section 4: Recommended Technology Stack</h2>
+      <div class="grid md:grid-cols-2 gap-4 mb-6">
+        <div class="tech-card">
+          <p class="text-sm font-semibold text-[#F5F0FF] mb-1"><i class="fas fa-laptop-code text-[#FFD700] mr-2"></i>WordPress Website</p>
+          <p class="text-xs text-[#8878A8] mb-2">with membership integration</p>
+          <div class="cost-badge"><p class="text-xs gradient-text font-bold">$15-40/mo</p></div>
+        </div>
+        <div class="tech-card">
+          <p class="text-sm font-semibold text-[#F5F0FF] mb-1"><i class="fas fa-users text-[#FFD700] mr-2"></i>Circle.so / Mighty Networks</p>
+          <p class="text-xs text-[#8878A8] mb-2">community platform</p>
+          <div class="cost-badge"><p class="text-xs gradient-text font-bold">$39-99/mo</p></div>
+        </div>
+        <div class="tech-card">
+          <p class="text-sm font-semibold text-[#F5F0FF] mb-1"><i class="fas fa-video text-[#FFD700] mr-2"></i>YouTube + Zoom</p>
+          <p class="text-xs text-[#8878A8] mb-2">live streaming</p>
+          <div class="cost-badge"><p class="text-xs gradient-text font-bold">$0-20/mo</p></div>
+        </div>
+        <div class="tech-card">
+          <p class="text-sm font-semibold text-[#F5F0FF] mb-1"><i class="fas fa-donate text-[#FFD700] mr-2"></i>Tithe.ly</p>
+          <p class="text-xs text-[#8878A8] mb-2">donation platform</p>
+          <div class="cost-badge"><p class="text-xs gradient-text font-bold">$0 base</p></div>
+        </div>
+        <div class="tech-card">
+          <p class="text-sm font-semibold text-[#F5F0FF] mb-1"><i class="fas fa-church text-[#FFD700] mr-2"></i>Planning Center</p>
+          <p class="text-xs text-[#8878A8] mb-2">church management</p>
+          <div class="cost-badge"><p class="text-xs gradient-text font-bold">$0-48/mo</p></div>
+        </div>
+        <div class="tech-card">
+          <p class="text-sm font-semibold text-[#F5F0FF] mb-1"><i class="fas fa-envelope-open-text text-[#FFD700] mr-2"></i>ConvertKit / Mailchimp</p>
+          <p class="text-xs text-[#8878A8] mb-2">email marketing</p>
+          <div class="cost-badge"><p class="text-xs gradient-text font-bold">$0-29/mo</p></div>
+        </div>
+      </div>
+
+      <div class="glass p-6 text-center">
+        <p class="text-xs uppercase tracking-[0.2em] text-[#8878A8] mb-2">Estimated Monthly Technology Cost</p>
+        <p class="serif text-2xl gradient-text mb-2">$100 — $300 / month</p>
+        <p class="text-xs text-[#8878A8]"><i class="fas fa-info-circle text-[#FFD700] mr-1"></i>All costs scale with usage. You only pay more as the community grows.</p>
+      </div>
+
+      <hr>
+
+      <!-- Section 5: Next Steps -->
+      <h2>Section 5: Next Steps</h2>
+
+      <div class="phase-box">
+        <p class="text-xs text-[#8878A8] uppercase tracking-widest mb-1">THIS WEEK</p>
+        <h3 style="margin-top:0;">Brand Registration & Legal Initiation</h3>
+        <p><strong>Christopher's Actions:</strong></p>
+        <ul>
+          <li>Register djedichurch.org + djedichurch.com</li>
+          <li>Claim @djedichurch on Facebook, Instagram, X, YouTube</li>
+          <li>Contact nonprofit attorney for 508(c)(1)(A) guidance</li>
+        </ul>
+        <p><strong>SOETech's Actions:</strong></p>
+        <ul>
+          <li>Begin brand identity design exploration</li>
+          <li>Prepare website architecture and sitemap</li>
+          <li>Set up project management and communication tools</li>
+        </ul>
+      </div>
+
+      <div class="phase-box">
+        <p class="text-xs text-[#8878A8] uppercase tracking-widest mb-1">NEXT WEEK</p>
+        <h3 style="margin-top:0;">Website Development Begins</h3>
+        <p><strong>Christopher's Actions:</strong></p>
+        <ul>
+          <li>Draft initial "About" and "Our Mission" content</li>
+          <li>Share brand vision, color preferences, imagery ideas</li>
+          <li>File trademark application (or engage attorney)</li>
+        </ul>
+        <p><strong>SOETech's Actions:</strong></p>
+        <ul>
+          <li>Present wireframes and design concepts for review</li>
+          <li>Begin WordPress development and theme build</li>
+          <li>Configure hosting, DNS, and SSL for djedichurch.org</li>
+        </ul>
+      </div>
+
+      <hr>
+
+      <p class="text-center text-[#8878A8] text-xs">Prepared by SOETech for Christopher Carron · August 2026 · Confidential</p>
+    </div>
+
+    <div class="text-center mt-8 fade-in">
+      <a href="../index.html" class="btn-outline text-sm"><i class="fas fa-arrow-left mr-2"></i>Back to Portal</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <p class="serif" style="color: #8878A8;">☉ Djedi Church © 2026</p>
+  <p class="footer-tagline">Consciousness Is the Original Temple · Earth Is the Sanctuary</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+particlesJS('particles-js', {
+  particles: {
+    number: { value: 30, density: { enable: true, value_area: 800 } },
+    color: { value: ["#4A148C", "#FFD700", "#6A1B9A"] },
+    shape: { type: "circle" },
+    opacity: { value: 0.1, random: true, anim: { enable: true, speed: 0.5, opacity_min: 0.05 } },
+    size: { value: 3, random: true },
+    line_linked: { enable: true, distance: 150, color: "#4A148C", opacity: 0.04, width: 1 },
+    move: { enable: true, speed: 0.3, direction: "none", random: true, out_mode: "out" }
+  },
+  interactivity: { detect_on: "canvas", events: { onhover: { enable: false }, onclick: { enable: false } } },
+  retina_detect: true
+});
+</script>
+<script src="../js/auth.js"></script>
+<script src="../js/nav.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  DjediAuth.requireAuth();
+});
+</script>
+</body>
+</html>

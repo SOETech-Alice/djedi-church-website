@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Djedi Church — Business Consultation Summary</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+<style>
+  .biz-content h2 { font-family: 'Cinzel', serif; font-size: 1.4rem; color: var(--gold); margin-top: 2.5rem; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid rgba(255,215,0,0.2); }
+  .biz-content h3 { font-family: 'Cinzel', serif; font-size: 1.05rem; color: var(--text-primary); margin-top: 1.5rem; margin-bottom: 0.75rem; }
+  .biz-content p { color: var(--text-secondary); line-height: 1.8; margin-bottom: 0.75rem; font-size: 0.95rem; }
+  .biz-content ul, .biz-content ol { color: var(--text-secondary); margin-left: 1.5rem; margin-bottom: 1rem; }
+  .biz-content li { margin-bottom: 0.5rem; line-height: 1.7; font-size: 0.95rem; }
+  .biz-content strong { color: var(--text-primary); }
+  .biz-content hr { border: none; height: 1px; background: linear-gradient(90deg, transparent, rgba(255,215,0,0.2), transparent); margin: 2rem 0; }
+  .biz-content table { width: 100%; border-collapse: collapse; margin: 1rem 0 1.5rem; }
+  .biz-content th { background: rgba(74,20,140,0.3); color: var(--gold); padding: 10px 14px; text-align: left; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 2px solid rgba(255,215,0,0.3); }
+  .biz-content td { padding: 10px 14px; border-bottom: 1px solid rgba(255,215,0,0.1); color: var(--text-secondary); font-size: 0.9rem; }
+  .biz-content tr:hover td { background: rgba(74,20,140,0.08); }
+  .key-rec { background: rgba(255,215,0,0.04); border-left: 3px solid var(--gold); padding: 0.75rem 1rem; margin-bottom: 0.75rem; border-radius: 0 8px 8px 0; }
+  .section-box { background: rgba(74,20,140,0.08); border: 1px solid rgba(255,215,0,0.1); border-radius: 12px; padding: 1.5rem; margin: 1.5rem 0; }
+  .budget-stat { text-align: center; padding: 1rem; background: rgba(74,20,140,0.12); border-radius: 12px; border: 1px solid rgba(255,215,0,0.15); }
+  .budget-amount { font-family: 'Cinzel', serif; font-size: 1.5rem; font-weight: 700; color: var(--gold); }
+  .budget-label { font-size: 0.75rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.5px; margin-top: 0.25rem; }
+</style>
+</head>
+<body>
+
+<div id="particles-js"></div>
+
+<div class="header-bar">
+  <div class="max-w-6xl mx-auto flex items-center justify-between px-6">
+    <span>SOETECH <span>×</span> DJEDI</span>
+    <span>Research Library</span>
+  </div>
+</div>
+
+<nav class="fixed top-8 left-0 right-0 z-50 glass-strong px-6 py-4" id="navbar">
+  <div class="max-w-6xl mx-auto flex items-center justify-between">
+    <a href="../index.html" class="flex items-center gap-2 text-lg">
+      <span class="text-2xl">☉</span>
+      <span class="serif text-base tracking-wider gradient-text">Djedi CHURCH</span>
+    </a>
+    <div class="desktop-nav hidden md:flex items-center gap-8 text-sm">
+      <a href="../index.html" class="nav-link"><i class="fas fa-arrow-left mr-1"></i> Portal</a>
+      <a href="competitive.html" class="nav-link">Competitive</a>
+      <a href="trademark.html" class="nav-link">Trademark</a>
+      <button onclick="handleLogout()" class="btn-outline text-sm" style="padding:8px 24px;">Logout</button>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+  </div>
+</nav>
+
+<div class="mobile-menu hidden" id="mobileMenu">
+  <button onclick="toggleMenu()" class="close-btn"><i class="fas fa-times"></i></button>
+  <a href="../index.html">← Portal Dashboard</a>
+  <a href="competitive.html">Competitive Research</a>
+  <a href="trademark.html">Trademark Research</a>
+  <button onclick="handleLogout()" class="btn-outline mt-4">Logout</button>
+</div>
+
+<section class="min-h-screen px-6 pt-28 pb-20">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-12 fade-in">
+      <p class="text-xs uppercase tracking-[0.3em] text-[#FFD700] mb-3">Research Library</p>
+      <h1 class="serif text-3xl md:text-4xl mb-3">Business <span class="gradient-text">Consultation Summary</span></h1>
+      <p class="text-sm text-[#8878A8]">August 5, 2026 · SOETech LLC · Client: Christopher Carron</p>
+      <hr class="accent-line w-32 mx-auto mt-6">
+    </div>
+
+    <div class="glass p-8 md:p-12 fade-in biz-content">
+
+      <h2>Executive Summary</h2>
+      <p>Comprehensive business consultation for establishing Djedi Church as a legitimate spiritual organization bridging ancient Egyptian traditions with modern consciousness science. This document provides actionable guidance across seven key areas.</p>
+
+      <div class="section-box">
+        <h3 style="margin-top:0; color: var(--gold);">Key Recommendations</h3>
+        <div class="key-rec"><strong>1. LEGAL:</strong> Register as a church under IRS Section 501(c)(3) with automatic tax-exempt status via 508(c)(1)(A) designation</div>
+        <div class="key-rec"><strong>2. DIGITAL FIRST:</strong> Start with virtual presence before establishing physical space to minimize costs and build community</div>
+        <div class="key-rec"><strong>3. COMMUNITY FOCUS:</strong> Build authentic engagement through consistent content and genuine relationships</div>
+        <div class="key-rec"><strong>4. FINANCIAL SUSTAINABILITY:</strong> Implement tiered membership and diverse revenue streams</div>
+        <div class="key-rec"><strong>5. TECHNOLOGY:</strong> Use scalable, church-specific tools (Planning Center, Circle.so, ConvertKit)</div>
+        <div class="key-rec"><strong>6. GROWTH:</strong> Follow phased approach over 36 months with measurable milestones</div>
+      </div>
+
+      <hr>
+
+      <h2>Section 1: Legal Structure & Registration</h2>
+      <p><strong>Recommended Entity Type:</strong> Church under IRS Section 501(c)(3) via 508(c)(1)(A)</p>
+      <p><strong>Why this works for Djedi Church:</strong></p>
+      <ul>
+        <li>Automatic tax-exempt status without filing Form 1023</li>
+        <li>No annual Form 990 filing requirement</li>
+        <li>Special IRS audit protection</li>
+        <li>Tax-deductible donations</li>
+        <li>Property tax exemptions in most states</li>
+      </ul>
+      <p><strong>Registration Timeline:</strong> Weeks 1-4: Draft bylaws, select board, file incorporation. Weeks 5-8: State tax-exempt status, bank account, financial controls. Months 3-6: Federal filing (if needed), property tax exemption, insurance.</p>
+      <p><strong>Cost Estimate: $1,500-6,000</strong></p>
+
+      <hr>
+
+      <h2>Section 2: Physical Community Setup</h2>
+      <p><strong>Phased Approach (Recommended):</strong></p>
+      <ul>
+        <li><strong>Phase 1 (Months 1-12):</strong> Virtual presence only</li>
+        <li><strong>Phase 2 (Months 12-24):</strong> Shared spaces for gatherings</li>
+        <li><strong>Phase 3 (Months 24-36):</strong> Dedicated physical location</li>
+      </ul>
+      <p><strong>Event Programming:</strong></p>
+      <ul>
+        <li>Weekly services: Sunday 10-12 AM (60-90 minutes)</li>
+        <li>Workshops: 2-4 per month ($25-75/person)</li>
+        <li>Retreats: Quarterly ($200-500/person)</li>
+        <li>Special events: Monthly (solstices, equinoxes, Egyptian holidays)</li>
+      </ul>
+      <p><strong>Cost Estimate:</strong> $6,000-24,000 annually for shared space; $24,000-96,000 for dedicated space</p>
+
+      <hr>
+
+      <h2>Section 3: Digital Presence & Online Community</h2>
+      <p><strong>Website:</strong> WordPress (flexible, SEO-friendly) — $500-3,000 setup + $200-600 annually</p>
+      <p><strong>Online Community:</strong> Circle.so or Mighty Networks — $100-400/month</p>
+      <p><strong>Live Streaming:</strong> YouTube (free) + Zoom ($150-200/year) — $300-1,000 setup</p>
+      <p><strong>Social Media Strategy:</strong></p>
+      <ul>
+        <li>Instagram: Visual content, stories, reels (daily posts)</li>
+        <li>YouTube: Long-form teachings and meditations (weekly)</li>
+        <li>Facebook: Community building and events (daily engagement)</li>
+        <li>TikTok: Short-form consciousness science content (3-5/week)</li>
+        <li>LinkedIn: Thought leadership articles (2-3/week)</li>
+      </ul>
+
+      <hr>
+
+      <h2>Section 4: Programs & Services</h2>
+      <p><strong>Weekly Services:</strong> Sunday 10:00 AM - 12:00 PM — Opening meditation, sacred music, teaching, community sharing, closing ritual</p>
+
+      <h3>Educational Programs</h3>
+      <table>
+        <thead><tr><th>Program</th><th>Duration</th><th>Price</th></tr></thead>
+        <tbody>
+          <tr><td>Introduction to Egyptian Spirituality</td><td>6 weeks</td><td>$150-300</td></tr>
+          <tr><td>The Book of Coming Forth by Day</td><td>12 weeks</td><td>$300-500</td></tr>
+          <tr><td>Sacred Geometry and Egyptian Mathematics</td><td>8 weeks</td><td>$200-400</td></tr>
+          <tr><td>Quantum Biology and Consciousness</td><td>8 weeks</td><td>$200-400</td></tr>
+          <tr><td>Neuroscience of Meditation</td><td>6 weeks</td><td>$150-300</td></tr>
+          <tr><td>Epigenetics and Spiritual Practice</td><td>8 weeks</td><td>$200-400</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Life Cycle Ceremonies</h3>
+      <ul>
+        <li>Wedding/Union: $500-1,500</li>
+        <li>Naming Ceremony: $200-500</li>
+        <li>Coming of Age: $300-700</li>
+        <li>Memorial/Funeral: $500-1,500</li>
+      </ul>
+
+      <hr>
+
+      <h2>Section 5: Financial Sustainability</h2>
+
+      <h3>Membership Structure</h3>
+      <table>
+        <thead><tr><th>Level</th><th>Price</th><th>Features</th></tr></thead>
+        <tbody>
+          <tr><td>Friend</td><td>Free</td><td>Public content, newsletter</td></tr>
+          <tr><td>Member</td><td>$25-50/month</td><td>Full access, voting rights</td></tr>
+          <tr><td>Supporter</td><td>$100-200/month</td><td>Exclusive events, mentoring</td></tr>
+          <tr><td>Patron</td><td>$500+/month</td><td>Personal direction, annual retreat</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Three-Year Budget Projection</h3>
+      <div class="grid grid-cols-3 gap-4 mb-6">
+        <div class="budget-stat">
+          <div class="budget-amount">$40-90K</div>
+          <div class="budget-label">Year 1 Revenue</div>
+        </div>
+        <div class="budget-stat">
+          <div class="budget-amount">$100-230K</div>
+          <div class="budget-label">Year 2 Revenue</div>
+        </div>
+        <div class="budget-stat">
+          <div class="budget-amount">$200-450K</div>
+          <div class="budget-label">Year 3 Revenue</div>
+        </div>
+      </div>
+
+      <hr>
+
+      <h2>Section 6: Technology Stack</h2>
+      <table>
+        <thead><tr><th>Tool</th><th>Purpose</th><th>Cost</th></tr></thead>
+        <tbody>
+          <tr><td>Planning Center</td><td>Church management</td><td>$0-100/month</td></tr>
+          <tr><td>Circle.so</td><td>Community platform</td><td>$39-99/month</td></tr>
+          <tr><td>ConvertKit</td><td>Email marketing</td><td>$29-79/month</td></tr>
+          <tr><td>Tithe.ly</td><td>Donations</td><td>2.9% + $0.30/txn</td></tr>
+          <tr><td>YouTube</td><td>Live streaming</td><td>Free</td></tr>
+          <tr><td>Zoom</td><td>Interactive workshops</td><td>$13-20/month</td></tr>
+          <tr><td>Aplos</td><td>Accounting</td><td>$40-80/month</td></tr>
+        </tbody>
+      </table>
+
+      <hr>
+
+      <h2>Section 7: Marketing & Growth Strategy</h2>
+      <p><strong>Brand Identity:</strong> Name: Djedi Church (D-J-E-D-I) · Tagline: "Awakening Consciousness Through Ancient Wisdom" · Color palette: Deep blue, gold, white, earth tones</p>
+
+      <h3>Growth Milestones</h3>
+      <table>
+        <thead><tr><th>Timeline</th><th>Members</th><th>Social</th><th>Email</th></tr></thead>
+        <tbody>
+          <tr><td>Year 1</td><td>50+ online participants</td><td>1,000+ followers</td><td>500+ subscribers</td></tr>
+          <tr><td>Year 2</td><td>200+ members, 50+ attendees</td><td>5,000+ followers</td><td>500+ subscribers</td></tr>
+          <tr><td>Year 3</td><td>500+ members, 100+ attendees</td><td>10,000+ followers</td><td>2,000+ subscribers</td></tr>
+        </tbody>
+      </table>
+
+      <hr>
+
+      <h2>Implementation Roadmap</h2>
+      <div class="section-box">
+        <p><strong>Phase 1: Foundation (Months 1-3)</strong> — Budget: $5,000-15,000 — Legal entity established, website live, social media active</p>
+        <p><strong>Phase 2: Community Building (Months 4-9)</strong> — Budget: $10,000-30,000 — 50+ regular participants, 500+ email subscribers</p>
+        <p><strong>Phase 3: Growth (Months 10-18)</strong> — Budget: $20,000-60,000 — 200+ members, first staff hire, physical space secured</p>
+        <p><strong>Phase 4: Sustainability (Months 19-36)</strong> — Budget: $50,000-150,000 — Financial sustainability, 500+ members, dedicated facility</p>
+      </div>
+
+      <div class="text-center mt-8">
+        <p class="serif text-lg gradient-text">TOTAL 3-YEAR INVESTMENT: $50,000-150,000</p>
+        <p class="text-sm text-[#8878A8] mt-2">(With revenue projections offsetting expenses)</p>
+      </div>
+
+      <hr>
+
+      <p class="text-center text-[#8878A8] text-xs">Prepared by SOETech LLC · Research Date: August 5, 2026 · Client: Christopher Carron</p>
+    </div>
+
+    <div class="text-center mt-8 fade-in">
+      <a href="../index.html" class="btn-outline text-sm"><i class="fas fa-arrow-left mr-2"></i>Back to Portal</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <p class="serif" style="color: #8878A8;">☉ Djedi Church © 2026</p>
+  <p class="footer-tagline">Consciousness Is the Original Temple · Earth Is the Sanctuary</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+particlesJS('particles-js', {
+  particles: {
+    number: { value: 30, density: { enable: true, value_area: 800 } },
+    color: { value: ["#4A148C", "#FFD700", "#6A1B9A"] },
+    shape: { type: "circle" },
+    opacity: { value: 0.1, random: true, anim: { enable: true, speed: 0.5, opacity_min: 0.05 } },
+    size: { value: 3, random: true },
+    line_linked: { enable: true, distance: 150, color: "#4A148C", opacity: 0.04, width: 1 },
+    move: { enable: true, speed: 0.3, direction: "none", random: true, out_mode: "out" }
+  },
+  interactivity: { detect_on: "canvas", events: { onhover: { enable: false }, onclick: { enable: false } } },
+  retina_detect: true
+});
+</script>
+<script src="../js/auth.js"></script>
+<script src="../js/nav.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  DjediAuth.requireAuth();
+});
+</script>
+</body>
+</html>

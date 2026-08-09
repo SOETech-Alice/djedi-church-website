@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Djedi Church — Articles of Faith and Doctrine</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+<style>
+  .legal-content h2 { font-family: 'Cinzel', serif; font-size: 1.5rem; color: var(--gold); margin-top: 2.5rem; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid rgba(255,215,0,0.2); }
+  .legal-content h3 { font-family: 'Cinzel', serif; font-size: 1.1rem; color: var(--text-primary); margin-top: 1.5rem; margin-bottom: 0.75rem; }
+  .legal-content h4 { font-family: 'Cinzel', serif; font-size: 1rem; color: var(--gold-dim); margin-top: 1.25rem; margin-bottom: 0.5rem; }
+  .legal-content p { color: var(--text-secondary); line-height: 1.8; margin-bottom: 0.75rem; font-size: 0.95rem; }
+  .legal-content ul, .legal-content ol { color: var(--text-secondary); margin-left: 1.5rem; margin-bottom: 1rem; }
+  .legal-content li { margin-bottom: 0.5rem; line-height: 1.7; font-size: 0.95rem; }
+  .legal-content strong { color: var(--text-primary); }
+  .legal-content em { color: var(--gold-dim); }
+  .legal-content hr { border: none; height: 1px; background: linear-gradient(90deg, transparent, rgba(255,215,0,0.2), transparent); margin: 2rem 0; }
+  .legal-content .section-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--gold); margin-bottom: 0.25rem; display: block; }
+  .signature-line { border-bottom: 1px solid rgba(255,215,0,0.3); min-height: 2rem; margin: 1rem 0; }
+</style>
+</head>
+<body>
+
+<div id="particles-js"></div>
+
+<!-- SOETECH × DJEDI Header Bar -->
+<div class="header-bar">
+  <div class="max-w-6xl mx-auto flex items-center justify-between px-6">
+    <span>SOETECH <span>×</span> DJEDI</span>
+    <span>Legal Library</span>
+  </div>
+</div>
+
+<!-- Navigation -->
+<nav class="fixed top-8 left-0 right-0 z-50 glass-strong px-6 py-4" id="navbar">
+  <div class="max-w-6xl mx-auto flex items-center justify-between">
+    <a href="../index.html" class="flex items-center gap-2 text-lg">
+      <span class="text-2xl">☉</span>
+      <span class="serif text-base tracking-wider gradient-text">Djedi CHURCH</span>
+    </a>
+    <div class="desktop-nav hidden md:flex items-center gap-8 text-sm">
+      <a href="index.html" class="nav-link"><i class="fas fa-arrow-left mr-1"></i> Portal</a>
+      <a href="legal/legal-notes.html" class="nav-link">Legal Notes</a>
+      <button onclick="handleLogout()" class="btn-outline text-sm" style="padding:8px 24px;">Logout</button>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu hidden" id="mobileMenu">
+  <button onclick="toggleMenu()" class="close-btn"><i class="fas fa-times"></i></button>
+  <a href="index.html">← Portal Dashboard</a>
+  <a href="legal/legal-notes.html">Legal Notes</a>
+  <button onclick="handleLogout()" class="btn-outline mt-4">Logout</button>
+</div>
+
+<!-- Document Content -->
+<section class="min-h-screen px-6 pt-28 pb-20">
+  <div class="max-w-4xl mx-auto">
+    <!-- Document Header -->
+    <div class="text-center mb-12 fade-in">
+      <p class="text-xs uppercase tracking-[0.3em] text-[#FFD700] mb-3">Legal Library</p>
+      <h1 class="serif text-3xl md:text-4xl mb-3">Articles of <span class="gradient-text">Faith and Doctrine</span></h1>
+      <p class="text-sm text-[#8878A8]">Djedi Church (D-J-E-D-I) — A Religious Organization Under 508(c)(1)(A)</p>
+      <hr class="accent-line w-32 mx-auto mt-6">
+    </div>
+
+    <!-- Document Body -->
+    <div class="glass p-8 md:p-12 fade-in legal-content">
+
+      <p class="text-center text-[#8878A8] italic mb-2">Adopted by the Founding Elders on this ___ day of __________, 2026</p>
+
+      <hr>
+
+      <h2>PREAMBLE</h2>
+      <p>We, the founding Elders and Trustees of Djedi Church (D-J-E-D-I), do hereby establish these Articles of Faith and Doctrine as the governing document of our religious organization. Djedi Church is a conscious community rooted in the ancient Egyptian wisdom of the Djedi priesthood, drawing freely and reverently from the great spiritual and philosophical traditions of humanity. We are contemplative and scientific, ancient and emerging. We honor the earth beneath our feet and the cosmos above our heads, and we hold that the same intelligence moves through both.</p>
+      <p>Our name, <em>Djedi</em> (D-J-E-D-I), recalls the sacred priesthood of ancient Egypt who understood consciousness not as metaphor, but as the fundamental substance of reality. That understanding has never been lost — it has simply been remembered, again and again, by awakened beings in every culture and every age.</p>
+      <p>We cultivate and promote consciousness-based spirituality through relation to philosophy, religion, and science. We allow expanded awareness more room to freely express across all belief structures — building bridges between traditions without claiming ownership of any single one.</p>
+      <p>These Articles of Faith and Doctrine are adopted in accordance with the requirements of Section 508(c)(1)(A) of the Internal Revenue Code, which provides automatic tax-exempt status to qualifying churches and religious organizations. Djedi Church asserts its rights under the First Amendment to the United States Constitution, including the free exercise of religion and the separation of church and state.</p>
+
+      <hr>
+
+      <h2>ARTICLE I — NAME AND PURPOSE</h2>
+
+      <h3>Section 1.1 — Legal Name</h3>
+      <p>The name of this religious organization shall be <strong>Djedi Church</strong>, also designated as <strong>D-J-E-D-I</strong>. The organization may also be referred to as "the Church" or "the Congregation."</p>
+
+      <h3>Section 1.2 — Purpose</h3>
+      <p>The purpose of Djedi Church is to:</p>
+      <ul>
+        <li>(a) Operate as a church and religious organization within the meaning of Section 508(c)(1)(A) of the Internal Revenue Code;</li>
+        <li>(b) Cultivate and promote consciousness-based spirituality through the study and practice of ancient Egyptian wisdom, multi-tradition spiritual teachings, and modern consciousness science;</li>
+        <li>(c) Provide regular religious services, ceremonies, meditation sessions, and educational programs to its members and the broader community;</li>
+        <li>(d) Engage in charitable, educational, and religious activities as permitted by law, including the relief of suffering, the promotion of spiritual well-being, and the advancement of consciousness research;</li>
+        <li>(e) Establish and maintain places of worship, meditation centers, educational facilities, and other properties consistent with its religious mission;</li>
+        <li>(f) Ordain and commission ministers and clergy to carry out the spiritual work of the Church;</li>
+        <li>(g) Create and preserve a body of sacred literature, teachings, and spiritual resources reflecting the Church's beliefs and practices;</li>
+        <li>(h) Collaborate with other religious, educational, and charitable organizations in furtherance of shared missions.</li>
+      </ul>
+
+      <h3>Section 1.3 — 508(c)(1)(A) Designation</h3>
+      <p>Djedi Church is organized and operated exclusively as a church and religious organization within the meaning of Section 508(c)(1)(A) of the Internal Revenue Code and is automatically exempt from federal income taxation under Section 501(a). The Church is not required to file Form 1023 or Form 1023-EZ to obtain tax-exempt status. All donations to Djedi Church are tax-deductible to the fullest extent permitted by law.</p>
+
+      <h3>Section 1.4 — Principal Address</h3>
+      <p>The principal address of the Church shall be: ____________________________ (to be completed upon incorporation).</p>
+
+      <h3>Section 1.5 — Registered Agent</h3>
+      <p>The registered agent for service of process shall be: ____________________________ (to be completed upon incorporation).</p>
+
+      <hr>
+
+      <h2>ARTICLE II — CREED AND STATEMENT OF FAITH</h2>
+
+      <h3>Section 2.1 — Declaration of Belief</h3>
+      <p>Djedi Church holds the following as its core creed, drawn from the unity of all wisdom traditions:</p>
+
+      <h4>Principle 1: Consciousness Is Everything</h4>
+      <p>Consciousness is the foundation of all existence. It is inherent in all things — in stone and star, in water and wind, in every sentient being who has ever drawn breath. It is not a byproduct of matter; it is the ground from which matter itself arises. Verified by quantum science and remembered by ancient wisdom from every continent and culture, this truth is the bedrock upon which all Djedi understanding rests.</p>
+
+      <h4>Principle 2: Universal Human Potential</h4>
+      <p>The awakened qualities — compassion, clarity, healing, wisdom, and peace — are not reserved for saints or sages alone. They are the birthright of every conscious being, available through any tradition, culture, or path. No one tradition holds a monopoly on enlightenment. What one path calls <em>salvation</em>, another calls <em>nirvana</em>, another <em>samadhi</em> — and another simply calls <em>waking up</em>. The destination is the same. The invitation is universal.</p>
+
+      <h4>Principle 3: Sovereign Self-Authority</h4>
+      <p>Each being holds sovereign right to their own consciousness and its unique expression. No external entity — no institution, no government, no priesthood — may govern your inner truth, nor interfere with any life path aligned with compassion and non-harm. Authority over your own awareness is absolute, inalienable, and sacred. You answer to your own conscience before all else.</p>
+
+      <h4>Principle 4: Ethical Living as Discipline</h4>
+      <p>Compassion, empathy, acceptance, tolerance, gratitude, and honor — these are not mere ideals. They are practices, refined through daily living. The Universal Law we uphold is simple: do no harm, and do not infringe upon another's free will or life path. To violate consciousness through force, manipulation, or servitude is a sacred offense against the fabric of existence itself.</p>
+
+      <h4>Principle 5: The Unity of All Wisdom Traditions</h4>
+      <p>The Djedi priesthood, the teachings of the Vedic sages, the parables of Jesus, the insights of the Buddha, the inquiries of Socrates — these are not competing claims. They are fingers pointing at the same moon. When we study across traditions, we do not dilute truth; we reveal it more fully. Every genuine teaching of compassion, awareness, and liberation is welcome in this house.</p>
+
+      <h4>Principle 6: Science and Spirit as One</h4>
+      <p>There is no war between science and spirit — only a misunderstanding. Quantum physics reveals that observation shapes reality. Neuroscience maps the architecture of consciousness itself. Biology whispers what the mystics always knew: that life is intelligent, interconnected, and far stranger than any single discipline can contain. We honor the laboratory and the temple equally, for both are instruments of inquiry into the nature of what is.</p>
+
+      <h4>Principle 7: Community in Sovereignty</h4>
+      <p>We gather not because we must, but because we choose to. Sovereign beings in voluntary community — this is the highest social form. We support one another without hierarchy, teach without dogma, and lead by example. The strength of our community is measured not in numbers, but in the depth of awareness its members carry into the world.</p>
+
+      <h3>Section 2.2 — Honored Teachers</h3>
+      <p>Djedi Church honors many teachers and follows none exclusively. The following are among those whose wisdom has illuminated our path, though our list is not closed, and each member's own experience may reveal teachers not yet named:</p>
+      <ul>
+        <li>(a) <strong>The Ancient Egyptian Djedi</strong> — Thoth, the scribe of the gods and keeper of sacred measure; Imhotep, the physician-priest who united healing with higher knowledge;</li>
+        <li>(b) <strong>Jesus of Nazareth</strong> — A great teacher of compassion, forgiveness, and the kingdom of consciousness within;</li>
+        <li>(c) <strong>Siddhartha Gautama, the Buddha</strong> — The awakened one, who taught the nature of suffering, the path of mindfulness, and the liberation available to every being;</li>
+        <li>(d) <strong>Krishna and the Vedic Sages</strong> — Voices of the eternal in the <em>Bhagavad Gita</em> and the <em>Upanishads</em>;</li>
+        <li>(e) <strong>Socrates and the Greek Philosophers</strong> — The examined life, the love of wisdom, the courage to question everything;</li>
+        <li>(f) <strong>Modern Consciousness Science</strong> — From quantum biology to neuroscience, contemporary science rediscovering what the ancients always declared;</li>
+        <li>(g) <strong>The Earth and Nature Herself</strong> — The oldest teacher, the great mother.</li>
+      </ul>
+
+      <h3>Section 2.3 — Multi-Cultural Theological Foundation</h3>
+      <p>Djedi Church explicitly embraces a multi-cultural theological foundation spanning the following traditions:</p>
+      <ul>
+        <li>(a) Pagan — Nature-based wisdom, seasonal cycles, earth connection, ritual practice;</li>
+        <li>(b) Judeo-Christian — Compassion, service, parables, moral law, covenant community;</li>
+        <li>(c) Hindu — Dharma, karma, yoga, meditation, consciousness expansion;</li>
+        <li>(d) Buddhist — Mindfulness, Eightfold Path, compassion, impermanence, enlightenment;</li>
+        <li>(e) Egyptian Djedi — Consciousness science, sacred geometry, temple arts, priestly wisdom;</li>
+        <li>(f) Quantum Science — Quantum biology, neuroscience, consciousness research;</li>
+        <li>(g) Universal — Unity of all beings, golden rule, non-harm, sovereignty.</li>
+      </ul>
+
+      <hr>
+
+      <h2>ARTICLE III — FORM OF WORSHIP</h2>
+
+      <h3>Section 3.1 — Regular Religious Services</h3>
+      <p>Djedi Church shall hold regular religious services not less than weekly. Services shall be open to all persons and may be held at the Church's established places of worship, at rented or borrowed facilities, or through virtual/online platforms. Services shall include elements drawn from the Church's multi-tradition heritage, which may include:</p>
+      <ul>
+        <li>(a) Opening meditation or centering practice;</li>
+        <li>(b) Sacred music, chanting, or invocation;</li>
+        <li>(c) Teaching or sermon based on the Church's doctrine and multi-tradition sources;</li>
+        <li>(d) Community sharing and fellowship;</li>
+        <li>(e) Closing prayer, meditation, or benediction.</li>
+      </ul>
+
+      <h3>Section 3.2 — Meditation and Contemplation</h3>
+      <p>Meditation, contemplation, breathwork, and energy practices drawn from multiple traditions form the heartbeat of the Church's spiritual life. Regular meditation sessions shall be offered to members and the public. These practices include but are not limited to:</p>
+      <ul>
+        <li>(a) Silent meditation (drawing from Buddhist, Sufi, and contemplative Christian traditions);</li>
+        <li>(b) Breathwork practices (drawing from yogic pranayama, Egyptian breathing arts, and modern techniques);</li>
+        <li>(c) Guided visualization and journeying;</li>
+        <li>(d) Sound healing and vibrational practices;</li>
+        <li>(e) Energy work and consciousness expansion exercises.</li>
+      </ul>
+
+      <h3>Section 3.3 — Seasonal Celebrations</h3>
+      <p>The Church shall observe the following seasonal celebrations, marking humanity's shared rhythm with the Earth:</p>
+      <ul>
+        <li>(a) <strong>Winter Solstice</strong> (Yule/December) — Honoring the return of light;</li>
+        <li>(b) <strong>Spring Equinox</strong> (Ostara/March) — Celebrating renewal and growth;</li>
+        <li>(c) <strong>Summer Solstice</strong> (Litha/June) — Honoring the peak of light and vitality;</li>
+        <li>(d) <strong>Fall Equinox</strong> (Mabon/September) — Celebrating harvest and gratitude;</li>
+        <li>(e) <strong>Additional celebrations</strong> may include Egyptian holy days, Buddhist observances, Christian feast days, Hindu festivals, and other tradition-specific celebrations as determined by the Board of Elders.</li>
+      </ul>
+
+      <h3>Section 3.4 — Life Cycle Ceremonies</h3>
+      <p>The Church shall offer the following life cycle ceremonies to members and the public:</p>
+      <ul>
+        <li>(a) <strong>Naming/Welcome Ceremony</strong> — For newborns and new members;</li>
+        <li>(b) <strong>Coming of Age Ceremony</strong> — For youth transitioning to adulthood;</li>
+        <li>(c) <strong>Union/Wedding Ceremony</strong> — For couples joining in partnership;</li>
+        <li>(d) <strong>Memorial/Funeral Ceremony</strong> — For those who have passed;</li>
+        <li>(e) <strong>Ordination Ceremony</strong> — For those called to ministerial service;</li>
+        <li>(f) <strong>Other ceremonies</strong> as developed by the Church's clergy and approved by the Board of Elders.</li>
+      </ul>
+
+      <h3>Section 3.5 — Educational Programs</h3>
+      <p>The Church shall offer educational programs including:</p>
+      <ul>
+        <li>(a) Study groups on sacred texts and wisdom traditions from multiple cultures;</li>
+        <li>(b) Workshops on meditation, breathwork, consciousness science, and sacred geometry;</li>
+        <li>(c) Courses on ancient Egyptian wisdom, neuroscience of consciousness, and related subjects;</li>
+        <li>(d) Youth and family programs;</li>
+        <li>(e) Community outreach and public education.</li>
+      </ul>
+
+      <hr>
+
+      <h2>ARTICLE IV — ECCLESIASTICAL GOVERNMENT</h2>
+
+      <h3>Section 4.1 — Board of Elders</h3>
+      <p>The governing body of Djedi Church shall be the <strong>Board of Elders</strong> (also referred to as the "Board" or "Board of Trustees"), which serves as the ecclesiastical government of the Church. The Board shall consist of no fewer than three (3) and no more than seven (7) Elders.</p>
+
+      <h3>Section 4.2 — Founding Elder</h3>
+      <p><strong>Christopher Carron</strong> is hereby recognized as the Founding Elder of Djedi Church. The Founding Elder shall serve as a member and initial Chair of the Board of Elders and shall have the authority to appoint the initial Board members until such time as the Board is fully constituted and able to elect its own officers.</p>
+
+      <h3>Section 4.3 — Qualifications for Elders</h3>
+      <p>Elders shall be:</p>
+      <ul>
+        <li>(a) Members in good standing of Djedi Church;</li>
+        <li>(b) At least eighteen (18) years of age;</li>
+        <li>(c) Committed to the Church's creed, doctrine, and practices;</li>
+        <li>(d) Of good character and reputation;</li>
+        <li>(e) Willing to fulfill the duties of an Elder as set forth in these Articles.</li>
+      </ul>
+
+      <h3>Section 4.4 — Officers</h3>
+      <p>The Board of Elders shall elect from among its members the following officers:</p>
+      <ul>
+        <li>(a) <strong>President/Chair</strong> — Presides over Board meetings, serves as the chief spiritual officer of the Church, and represents the Church in external matters unless delegated;</li>
+        <li>(b) <strong>Secretary</strong> — Maintains records, minutes, and official documents of the Church;</li>
+        <li>(c) <strong>Treasurer</strong> — Oversees the Church's financial affairs, budgets, and reporting.</li>
+      </ul>
+      <p>Additional officers may be created by resolution of the Board as needed.</p>
+
+      <h3>Section 4.5 — Terms of Service</h3>
+      <ul>
+        <li>(a) Elders shall serve terms of three (3) years, renewable without limit;</li>
+        <li>(b) The Founding Elder shall serve a lifetime term unless voluntarily resigning;</li>
+        <li>(c) Initial terms shall be staggered so that approximately one-third of the Board is up for election each year;</li>
+        <li>(d) Elders may be removed for cause (including malfeasance, neglect of duty, or conduct inconsistent with Church values) by a two-thirds (2/3) vote of the remaining Elders, after providing the accused Elder with written notice and an opportunity to respond.</li>
+      </ul>
+
+      <h3>Section 4.6 — Meetings</h3>
+      <ul>
+        <li>(a) The Board shall meet not less than quarterly (four times per year);</li>
+        <li>(b) Special meetings may be called by the President/Chair or by any two (2) Elders with at least seven (7) days' written notice;</li>
+        <li>(c) A quorum shall consist of a simple majority of currently serving Elders;</li>
+        <li>(d) Decisions shall be made by majority vote of those present at a duly convened meeting with a quorum present;</li>
+        <li>(e) The Board may conduct meetings in person, by telephone, by video conference, or by any combination thereof;</li>
+        <li>(f) The Board may act by unanimous written consent without a formal meeting.</li>
+      </ul>
+
+      <h3>Section 4.7 — Succession</h3>
+      <ul>
+        <li>(a) Upon the death, incapacity, or voluntary resignation of the Founding Elder, the remaining Board shall elect a new President/Chair from among its members;</li>
+        <li>(b) The Board shall adopt a succession plan within one (1) year of the adoption of these Articles;</li>
+        <li>(c) In the event the Board is unable to act due to fewer than three (3) serving Elders, the remaining Elder(s) shall have the authority to appoint interim Elders to restore the Board to a quorum;</li>
+        <li>(d) No single individual shall hold the offices of President and Treasurer simultaneously.</li>
+      </ul>
+
+      <h3>Section 4.8 — Ecclesiastical Authority</h3>
+      <p>The Board of Elders holds final authority over all matters of doctrine, discipline, governance, and property of the Church. The Board's decisions are final and not subject to review by any civil court, consistent with the First Amendment's protection of the free exercise of religion and the autonomy of religious organizations.</p>
+
+      <hr>
+
+      <h2>ARTICLE V — DOCTRINE AND DISCIPLINE</h2>
+
+      <h3>Section 5.1 — Code of Conduct for Members</h3>
+      <p>Members of Djedi Church commit to the following covenant:</p>
+      <ul>
+        <li>(a) <strong>Sovereignty</strong> — Honor the sovereign consciousness of every being. Do not seek to control, dominate, or override the free will of another;</li>
+        <li>(b) <strong>Non-Harm (Ahimsa)</strong> — Commit to doing no harm in word, thought, or deed;</li>
+        <li>(c) <strong>Compassion and Service</strong> — Hold compassion as the highest practice and service as its natural expression;</li>
+        <li>(d) <strong>Truth and Integrity</strong> — Speak truthfully, live authentically, and hold oneself to the same standard offered to others;</li>
+        <li>(e) <strong>Freedom of Conscience</strong> — Defend the right of every being to follow their own conscience, to worship or not worship as they choose.</li>
+      </ul>
+
+      <h3>Section 5.2 — Code of Conduct for Clergy and Elders</h3>
+      <p>Clergy and Elders of Djedi Church are held to a higher standard of conduct and shall:</p>
+      <ul>
+        <li>(a) Model the Church's values in their personal and professional lives;</li>
+        <li>(b) Maintain confidentiality of all information shared in pastoral or counseling contexts;</li>
+        <li>(c) Avoid conflicts of interest and disclose any potential conflicts to the Board;</li>
+        <li>(d) Not use their position to gain personal financial advantage beyond fair compensation;</li>
+        <li>(e) Report any allegations of misconduct to the Board immediately;</li>
+        <li>(f) Submit to the Church's disciplinary process if accused of misconduct.</li>
+      </ul>
+
+      <h3>Section 5.3 — Conflict Resolution</h3>
+      <p>The Church encourages resolution of disputes through the following process:</p>
+      <ul>
+        <li>(a) <strong>Direct Dialogue</strong> — The parties in conflict are encouraged to speak directly and honestly with each other in a spirit of compassion and mutual respect;</li>
+        <li>(b) <strong>Mediation</strong> — If direct dialogue is unsuccessful, the parties may request mediation by a neutral Elder or a mutually agreed-upon mediator;</li>
+        <li>(c) <strong>Board Review</strong> — If mediation fails, either party may request that the Board of Elders review the matter and render a decision;</li>
+        <li>(d) <strong>Pastoral Counseling</strong> — Members may also seek pastoral counseling from the Church's clergy at any stage of the process.</li>
+      </ul>
+
+      <h3>Section 5.4 — Discipline Procedures</h3>
+      <p>The Church may take disciplinary action against a member whose conduct is materially inconsistent with the Church's creed and covenant. The following process shall be observed:</p>
+      <ul>
+        <li>(a) <strong>Notice</strong> — The member shall receive written notice of the alleged misconduct, including a description of the behavior at issue and the provision of the creed or covenant alleged to have been violated;</li>
+        <li>(b) <strong>Opportunity to Respond</strong> — The member shall have no fewer than fourteen (14) days to respond in writing to the notice;</li>
+        <li>(c) <strong>Hearing</strong> — If the matter is not resolved through the member's response, the Board shall conduct a hearing at which the member may present evidence and witnesses;</li>
+        <li>(d) <strong>Decision</strong> — The Board shall render a written decision within thirty (30) days of the hearing;</li>
+        <li>(e) <strong>Sanctions</strong> — Possible sanctions include: private admonition, public admonition, temporary suspension of membership privileges, or permanent removal from membership;</li>
+        <li>(f) <strong>Documentation</strong> — All disciplinary proceedings shall be documented and maintained in the Church's records.</li>
+      </ul>
+
+      <h3>Section 5.5 — Appeals Process</h3>
+      <p>A member who has been disciplined may appeal the Board's decision by:</p>
+      <ul>
+        <li>(a) Submitting a written appeal to the Board within thirty (30) days of receiving the disciplinary decision;</li>
+        <li>(b) The appeal shall state the grounds for appeal, which may include: procedural irregularity, new evidence not available at the time of the hearing, or sanction disproportionate to the conduct;</li>
+        <li>(c) The Board shall hear the appeal at its next scheduled meeting or at a special meeting called for that purpose;</li>
+        <li>(d) The Board's decision on appeal shall be final;</li>
+        <li>(e) There is no appeal from the Board's decision on appeal.</li>
+      </ul>
+
+      <hr>
+
+      <h2>ARTICLE VI — CLERGY AND MINISTERS</h2>
+
+      <h3>Section 6.1 — Definition</h3>
+      <p>For purposes of these Articles, "minister," "clergy," or "ordained minister" means any person who has been ordained, commissioned, or licensed by Djedi Church to perform religious functions, including but not limited to: conducting worship services, officiating life cycle ceremonies, providing pastoral care and counseling, teaching, and administering the spiritual affairs of the Church.</p>
+
+      <h3>Section 6.2 — Ordination Requirements</h3>
+      <p>Candidates for ordination shall:</p>
+      <ul>
+        <li>(a) Be a member in good standing of Djedi Church for no less than one (1) year (waived for the Founding Elder);</li>
+        <li>(b) Demonstrate a commitment to the Church's creed, doctrine, and practices;</li>
+        <li>(c) Complete a program of study as determined by the Board of Elders;</li>
+        <li>(d) Receive the endorsement of at least two (2) existing ordained ministers or Elders;</li>
+        <li>(e) Be approved by a majority vote of the Board of Elders;</li>
+        <li>(f) Receive formal ordination through a ceremony conducted in accordance with the Church's traditions.</li>
+      </ul>
+
+      <h3>Section 6.3 — Authority and Responsibilities</h3>
+      <p>Ordained ministers of Djedi Church shall:</p>
+      <ul>
+        <li>(a) Conduct regular religious services, ceremonies, and educational programs;</li>
+        <li>(b) Provide pastoral care and counseling to members and the public;</li>
+        <li>(c) Officiate at life cycle ceremonies;</li>
+        <li>(d) Teach and minister in accordance with the Church's doctrine and traditions;</li>
+        <li>(e) Represent the Church in community and interfaith settings;</li>
+        <li>(f) Submit to the oversight of the Board of Elders.</li>
+      </ul>
+
+      <h3>Section 6.4 — Ministers of the Gospel</h3>
+      <p>Ordained ministers of Djedi Church are recognized as "ministers of the gospel" within the meaning of applicable federal and state law, including Section 107 of the Internal Revenue Code (ministerial exception / parsonage allowance), and are entitled to such benefits and protections as provided by law.</p>
+
+      <h3>Section 6.5 — Removal of Ministers</h3>
+      <p>A minister may be removed from the ordained or commissioned status by:</p>
+      <ul>
+        <li>(a) Voluntary resignation submitted in writing;</li>
+        <li>(b) A two-thirds (2/3) vote of the Board of Elders for cause;</li>
+        <li>(c) The minister shall receive written notice and an opportunity to respond before any removal action is taken;</li>
+        <li>(d) Removal is effective immediately upon the Board's vote unless a later effective date is specified.</li>
+      </ul>
+
+      <hr>
+
+      <h2>ARTICLE VII — MEMBERSHIP</h2>
+
+      <h3>Section 7.1 — Classes of Membership</h3>
+      <p>Djedi Church recognizes three classes of membership:</p>
+      <ul>
+        <li>(a) <strong>Active Members</strong> — Individuals who have completed the membership application process, affirmed the Church's creed and covenant, and actively participate in the life of the Church. Active Members have full voting rights.</li>
+        <li>(b) <strong>Associate Members</strong> — Individuals who have an affiliation with the Church but do not meet the full participation requirements of Active Membership. Associate Members do not have voting rights.</li>
+        <li>(c) <strong>Honorary Members</strong> — Individuals recognized by the Board of Elders for exceptional service. Honorary Members hold their title at the pleasure of the Board.</li>
+      </ul>
+
+      <h3>Section 7.2 — Requirements for Active Membership</h3>
+      <p>To become an Active Member, an individual must:</p>
+      <ul>
+        <li>(a) Be at least eighteen (18) years of age;</li>
+        <li>(b) Submit a written application expressing their desire to join;</li>
+        <li>(c) Affirm, in writing or in person, their understanding and acceptance of the Church's creed and covenant;</li>
+        <li>(d) Participate in a membership orientation as determined by the Board;</li>
+        <li>(e) Be approved by the Board of Elders or by a designated membership committee;</li>
+        <li>(f) Pay any applicable membership dues or contributions (the Church shall not deny membership solely on the basis of inability to pay).</li>
+      </ul>
+
+      <h3>Section 7.3 — Rights of Members</h3>
+      <p>All members in good standing shall have the right to:</p>
+      <ul>
+        <li>(a) Attend all regular religious services and public programs;</li>
+        <li>(b) Participate in Church study groups, workshops, and educational programs;</li>
+        <li>(c) Receive pastoral care and counseling from ordained ministers;</li>
+        <li>(d) Participate in life cycle ceremonies;</li>
+        <li>(e) Access the Church's spiritual resources and literature;</li>
+        <li>(f) Vote at congregational meetings (Active Members only);</li>
+        <li>(g) Run for election to the Board of Elders (Active Members only);</li>
+        <li>(h) Be informed of the Church's activities and financial condition.</li>
+      </ul>
+
+      <h3>Section 7.4 — Responsibilities of Members</h3>
+      <p>Members shall:</p>
+      <ul>
+        <li>(a) Uphold the Church's creed and covenant;</li>
+        <li>(b) Participate regularly in the life of the Church;</li>
+        <li>(c) Contribute financially to the best of their ability;</li>
+        <li>(d) Treat fellow members, clergy, and the public with respect and compassion;</li>
+        <li>(e) Respect the sovereignty of other beings and the diversity of paths within the Church.</li>
+      </ul>
+
+      <h3>Section 7.5 — Withdrawal and Removal</h3>
+      <ul>
+        <li>(a) <strong>Voluntary Withdrawal</strong> — Any member may withdraw from membership by submitting a written notice to the Secretary;</li>
+        <li>(b) <strong>Involuntary Removal</strong> — A member may be removed from membership by a two-thirds (2/3) vote of the Board of Elders for conduct materially inconsistent with the Church's creed or covenant;</li>
+        <li>(c) <strong>Effect of Removal</strong> — A removed member forfeits all rights and privileges of membership but remains welcome to attend public services and programs.</li>
+      </ul>
+
+      <hr>
+
+      <h2>ARTICLE VIII — PROPERTY AND ASSETS</h2>
+
+      <h3>Section 8.1 — Ownership</h3>
+      <p>All property, real and personal, acquired by Djedi Church shall be owned by the Church as a corporate entity. No individual Elder, officer, member, or minister shall have any personal ownership interest in Church property.</p>
+
+      <h3>Section 8.2 — Use of Assets</h3>
+      <p>Church assets shall be used exclusively for the religious, charitable, educational, and spiritual purposes set forth in these Articles. No part of the Church's net earnings shall inure to the benefit of any private individual, except as reasonable compensation for services rendered or as permitted by law.</p>
+
+      <h3>Section 8.3 — Financial Governance</h3>
+      <ul>
+        <li>(a) The Treasurer, under the direction of the Board, shall maintain accurate financial records;</li>
+        <li>(b) The Board shall approve an annual budget;</li>
+        <li>(c) The Church shall maintain a bank account(s) requiring the signatures of at least two (2) authorized signatories;</li>
+        <li>(d) Expenditures exceeding $5,000 require Board approval;</li>
+        <li>(e) The Church shall maintain financial records sufficient to demonstrate that funds are used exclusively for religious, charitable, and educational purposes.</li>
+      </ul>
+
+      <h3>Section 8.4 — Annual Reporting</h3>
+      <p>The Treasurer shall present a financial report to the Board at each quarterly meeting. The Board shall make an annual financial report available to the congregation at the annual meeting. As a church under Section 508(c)(1)(A), the Church is exempt from the annual Form 990 filing requirement, though the Board may elect to file voluntarily.</p>
+
+      <h3>Section 8.5 — Tax-Exempt Status Compliance</h3>
+      <p>The Church shall take all actions necessary to maintain its tax-exempt status under Section 501(a) via the automatic exemption provided by Section 508(c)(1)(A), including:</p>
+      <ul>
+        <li>(a) Operating exclusively for religious, charitable, and educational purposes;</li>
+        <li>(b) Not engaging in activities that would jeopardize its tax-exempt status;</li>
+        <li>(c) Maintaining records sufficient to substantiate its religious activities and purposes;</li>
+        <li>(d) Complying with all applicable provisions of the Internal Revenue Code and Treasury Regulations.</li>
+      </ul>
+
+      <hr>
+
+      <h2>ARTICLE IX — AMENDMENTS</h2>
+
+      <h3>Section 9.1 — Power to Amend</h3>
+      <p>These Articles of Faith and Doctrine may be amended by a two-thirds (2/3) vote of the Board of Elders, provided that the requirements of this Article are met.</p>
+
+      <h3>Section 9.2 — Notice Requirements</h3>
+      <ul>
+        <li>(a) Written notice of any proposed amendment shall be provided to all Elders no fewer than thirty (30) days before the meeting at which the vote will be taken;</li>
+        <li>(b) The notice shall include the full text of the proposed amendment and a brief explanation of its purpose;</li>
+        <li>(c) No amendment shall be adopted at a meeting for which proper notice was not given.</li>
+      </ul>
+
+      <h3>Section 9.3 — Limitations on Amendment</h3>
+      <p>No amendment may be adopted that would:</p>
+      <ul>
+        <li>(a) Alter the Church's fundamental creed as set forth in Article II in a manner that would disqualify the Church under Section 508(c)(1)(A);</li>
+        <li>(b) Change the Church's religious purpose to a non-religious purpose;</li>
+        <li>(c) Directly or indirectly distribute Church assets to any private individual;</li>
+        <li>(d) Be inconsistent with the Church's tax-exempt status under Section 501(a).</li>
+      </ul>
+
+      <h3>Section 9.4 — Record of Amendments</h3>
+      <p>All adopted amendments shall be recorded in the minutes of the meeting at which they were adopted and shall be attached to these Articles as amendments.</p>
+
+      <hr>
+
+      <h2>ARTICLE X — DISSOLUTION</h2>
+
+      <h3>Section 10.1 — Dissolution Process</h3>
+      <p>Djedi Church may be dissolved by:</p>
+      <ul>
+        <li>(a) A unanimous vote of the Board of Elders; followed by</li>
+        <li>(b) A two-thirds (2/3) vote of the Active Members present at a duly called special meeting of the congregation, with at least thirty (30) days' notice provided to all members;</li>
+        <li>(c) Compliance with all applicable state and federal law regarding dissolution of religious organizations.</li>
+      </ul>
+
+      <h3>Section 10.2 — Distribution of Assets</h3>
+      <p>Upon dissolution, all remaining assets of the Church shall be distributed to one or more organizations that are:</p>
+      <ul>
+        <li>(a) Organized and operated exclusively for religious, charitable, or educational purposes;</li>
+        <li>(b) Qualified as tax-exempt under Section 501(c)(3) of the Internal Revenue Code or the equivalent provisions of Section 508(c)(1)(A);</li>
+        <li>(c) Described in Section 170(c)(2)(B) of the Internal Revenue Code.</li>
+      </ul>
+      <p>No assets shall be distributed to any private individual, officer, Elder, or member of the Church.</p>
+
+      <h3>Section 10.3 — Filing Requirements</h3>
+      <p>The Board shall ensure that all necessary filings are made with:</p>
+      <ul>
+        <li>(a) The state of incorporation (Articles of Dissolution);</li>
+        <li>(b) The Internal Revenue Code (final Form 990 or equivalent, if applicable);</li>
+        <li>(c) The state tax authority (notification of dissolution and tax-exempt status);</li>
+        <li>(d) Any other governmental authority required by law.</li>
+      </ul>
+
+      <hr>
+
+      <h2>ARTICLE XI — NON-DISCRIMINATION AND SOVEREIGNTY</h2>
+
+      <h3>Section 11.1 — Open Membership</h3>
+      <p>Djedi Church is open to all persons regardless of race, color, national origin, ethnic heritage, age, sex, gender identity, sexual orientation, disability, marital status, or socioeconomic status. Every conscious being is welcome in this house.</p>
+
+      <h3>Section 11.2 — Sovereignty Principle</h3>
+      <p>The Church upholds the sovereign right of every being to:</p>
+      <ul>
+        <li>(a) Follow their own conscience in matters of belief and practice;</li>
+        <li>(b) Worship or not worship as they choose;</li>
+        <li>(c) Follow any spiritual path or no path at all;</li>
+        <li>(d) Change their mind, their beliefs, or their practices without shame or coercion;</li>
+        <li>(e) Be free from interference by the Church in matters of personal conscience, so long as their conduct does not harm others.</li>
+      </ul>
+
+      <h3>Section 11.3 — First Amendment Rights</h3>
+      <p>Djedi Church asserts its rights under the First Amendment to the United States Constitution, including the right to free exercise of religion, the freedom of speech, the freedom of assembly, and the separation of church and state. The Church shall not be subject to government regulation of its religious beliefs, practices, governance, clergy selection, or internal affairs.</p>
+
+      <h3>Section 11.4 — Religious Autonomy</h3>
+      <p>Consistent with the Supreme Court's holdings in <em>Hosanna-Tabor Evangelical Lutheran Church and School v. EEOC</em> (2012) and <em>Our Lady of Guadalupe School v. Morrissey-Berru</em> (2020), Djedi Church exercises its ministerial exception and religious autonomy in all matters relating to the selection, training, supervision, and discipline of its ministers and clergy.</p>
+
+      <hr>
+
+      <h2>ARTICLE XII — SEAL AND EXECUTION</h2>
+
+      <h3>Section 12.1 — Official Seal</h3>
+      <p>The Church shall adopt an official seal bearing the name "DJEDI CHURCH (D-J-E-D-I)" and such design as the Board of Elders may approve. The seal shall be affixed to all official documents as required.</p>
+
+      <h3>Section 12.2 — Adoption</h3>
+      <p>These Articles of Faith and Doctrine are hereby adopted by the undersigned Founding Elders and Trustees of Djedi Church on the date set forth below. By their signatures, the undersigned affirm their commitment to the creed, doctrine, and governance set forth herein.</p>
+
+      <hr>
+
+      <div class="mt-8">
+        <p><strong>FOUNDING ELDER:</strong></p>
+        <div class="signature-line"></div>
+        <p><strong>Christopher Carron</strong>, Founding Elder</p>
+        <p>Date: _________________</p>
+      </div>
+
+      <div class="mt-8">
+        <p><strong>FOUNDING ELDERS AND TRUSTEES:</strong></p>
+        <div class="signature-line"></div>
+        <p>Name: _________________________________</p>
+        <p>Title: _________________________________</p>
+        <p>Date: _________________</p>
+      </div>
+
+      <div class="mt-8">
+        <p><strong>ATTESTED BY THE SECRETARY:</strong></p>
+        <div class="signature-line"></div>
+        <p>Name: _________________________________</p>
+        <p>Title: Secretary</p>
+        <p>Date: _________________</p>
+      </div>
+
+      <hr>
+
+      <p class="text-center text-[#8878A8] italic text-sm mt-8">[OFFICIAL SEAL OF DJEDI CHURCH]</p>
+      <p class="text-center text-[#8878A8] italic text-xs mt-4">These Articles of Faith and Doctrine are adopted in accordance with the requirements of Section 508(c)(1)(A) of the Internal Revenue Code.</p>
+      <p class="text-center text-[#8878A8] italic text-xs mt-2">Consciousness is the original temple. Earth is the sanctuary. The journey is yours.</p>
+      <p class="text-center text-sm mt-4"><strong class="gradient-text">☉ Djedi Church — D-J-E-D-I</strong></p>
+      <p class="text-center text-[#8878A8] text-xs">Founded by Christopher Carron · 508(c)(1)(A) Religious Organization</p>
+
+    </div>
+
+    <!-- Back to Portal -->
+    <div class="text-center mt-8 fade-in">
+      <a href="index.html" class="btn-outline text-sm"><i class="fas fa-arrow-left mr-2"></i>Back to Portal</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <p class="serif" style="color: #8878A8;">☉ Djedi Church © 2026</p>
+  <p class="footer-tagline">Consciousness Is the Original Temple · Earth Is the Sanctuary</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+particlesJS('particles-js', {
+  particles: {
+    number: { value: 30, density: { enable: true, value_area: 800 } },
+    color: { value: ["#4A148C", "#FFD700", "#6A1B9A"] },
+    shape: { type: "circle" },
+    opacity: { value: 0.1, random: true, anim: { enable: true, speed: 0.5, opacity_min: 0.05 } },
+    size: { value: 3, random: true },
+    line_linked: { enable: true, distance: 150, color: "#4A148C", opacity: 0.04, width: 1 },
+    move: { enable: true, speed: 0.3, direction: "none", random: true, out_mode: "out" }
+  },
+  interactivity: { detect_on: "canvas", events: { onhover: { enable: false }, onclick: { enable: false } } },
+  retina_detect: true
+});
+</script>
+<script src="../js/auth.js"></script>
+<script src="../js/nav.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  DjediAuth.requireAuth();
+});
+</script>
+</body>
+</html>

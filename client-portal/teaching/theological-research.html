@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Djedi Church — Theological Research Notes</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+<style>
+  .teach-content h2 { font-family: 'Cinzel', serif; font-size: 1.4rem; color: var(--gold); margin-top: 2.5rem; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid rgba(255,215,0,0.2); }
+  .teach-content h3 { font-family: 'Cinzel', serif; font-size: 1.05rem; color: var(--text-primary); margin-top: 1.5rem; margin-bottom: 0.75rem; }
+  .teach-content h4 { font-family: 'Cinzel', serif; font-size: 0.95rem; color: var(--gold-dim); margin-top: 1.25rem; margin-bottom: 0.5rem; }
+  .teach-content p { color: var(--text-secondary); line-height: 1.8; margin-bottom: 0.75rem; font-size: 0.95rem; }
+  .teach-content ul, .teach-content ol { color: var(--text-secondary); margin-left: 1.5rem; margin-bottom: 1rem; }
+  .teach-content li { margin-bottom: 0.5rem; line-height: 1.7; font-size: 0.95rem; }
+  .teach-content strong { color: var(--text-primary); }
+  .teach-content em { color: var(--gold-dim); }
+  .teach-content hr { border: none; height: 1px; background: linear-gradient(90deg, transparent, rgba(255,215,0,0.2), transparent); margin: 2rem 0; }
+  .teach-content table { width: 100%; border-collapse: collapse; margin: 1rem 0 1.5rem; }
+  .teach-content th { background: rgba(74,20,140,0.3); color: var(--gold); padding: 10px 14px; text-align: left; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 2px solid rgba(255,215,0,0.3); }
+  .teach-content td { padding: 10px 14px; border-bottom: 1px solid rgba(255,215,0,0.1); color: var(--text-secondary); font-size: 0.9rem; }
+  .teach-content tr:hover td { background: rgba(74,20,140,0.08); }
+  .tradition-card { background: rgba(74,20,140,0.08); border: 1px solid rgba(255,215,0,0.1); border-radius: 12px; padding: 1.25rem; margin-bottom: 1rem; }
+  .tradition-name { font-family: 'Cinzel', serif; color: var(--gold); font-size: 1rem; margin-bottom: 0.5rem; }
+</style>
+</head>
+<body>
+
+<div id="particles-js"></div>
+
+<div class="header-bar">
+  <div class="max-w-6xl mx-auto flex items-center justify-between px-6">
+    <span>SOETECH <span>×</span> DJEDI</span>
+    <span>Teaching Library</span>
+  </div>
+</div>
+
+<nav class="fixed top-8 left-0 right-0 z-50 glass-strong px-6 py-4" id="navbar">
+  <div class="max-w-6xl mx-auto flex items-center justify-between">
+    <a href="../index.html" class="flex items-center gap-2 text-lg">
+      <span class="text-2xl">☉</span>
+      <span class="serif text-base tracking-wider gradient-text">Djedi CHURCH</span>
+    </a>
+    <div class="desktop-nav hidden md:flex items-center gap-8 text-sm">
+      <a href="../index.html" class="nav-link"><i class="fas fa-arrow-left mr-1"></i> Portal</a>
+      <button onclick="handleLogout()" class="btn-outline text-sm" style="padding:8px 24px;">Logout</button>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+  </div>
+</nav>
+
+<div class="mobile-menu hidden" id="mobileMenu">
+  <button onclick="toggleMenu()" class="close-btn"><i class="fas fa-times"></i></button>
+  <a href="../index.html">← Portal Dashboard</a>
+  <button onclick="handleLogout()" class="btn-outline mt-4">Logout</button>
+</div>
+
+<section class="min-h-screen px-6 pt-28 pb-20">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-12 fade-in">
+      <p class="text-xs uppercase tracking-[0.3em] text-[#FFD700] mb-3">Teaching Library</p>
+      <h1 class="serif text-3xl md:text-4xl mb-3">Theological <span class="gradient-text">Research Notes</span></h1>
+      <p class="text-sm text-[#8878A8]">Article of Faith Rewrite · August 7, 2026</p>
+      <p class="text-xs text-[#8878A8] mt-1">SOETech Faith Leader Agent · Founder: Christopher Carron</p>
+      <hr class="accent-line w-32 mx-auto mt-6">
+    </div>
+
+    <div class="glass p-8 md:p-12 fade-in teach-content">
+
+      <h2>1. Source Material Analysis</h2>
+
+      <h3>1.1 Landing Page — 5 Sacred Principles (Extracted)</h3>
+      <table>
+        <thead><tr><th>#</th><th>Principle</th><th>Core Teaching</th></tr></thead>
+        <tbody>
+          <tr><td>I</td><td><strong>Consciousness Is Everything</strong></td><td>Foundation of all existence, inherent in all things, verified by quantum science, remembered by ancient wisdom from every continent and culture</td></tr>
+          <tr><td>II</td><td><strong>Universal Human Potential</strong></td><td>Compassion, clarity, healing achievable by any conscious being, across any tradition, culture, or path</td></tr>
+          <tr><td>III</td><td><strong>Sovereign Self-Authority</strong></td><td>Each being holds sovereign right to their own consciousness and its unique expression</td></tr>
+          <tr><td>IV</td><td><strong>Ethical Living as Discipline</strong></td><td>Compassion, empathy, acceptance, tolerance, gratitude, and honor. Universal Law: do no harm</td></tr>
+          <tr><td>V</td><td><strong>Inner Abilities Awaken</strong></td><td>When living these principles consistently, inner abilities of healing, clarity, energy, stamina, intuition, and manifestation become accessible</td></tr>
+        </tbody>
+      </table>
+
+      <h3>1.2 Project Brief — Structure Direction</h3>
+      <ul>
+        <li>Expanding from 5 to 7 principles (adding Unity of All Wisdom Traditions, Science and Spirit as One, Community in Sovereignty)</li>
+        <li>Teachers section (explicitly not exclusive — Egyptian Djedi, Jesus, Buddha, Krishna, Socrates, Modern Science, Earth)</li>
+        <li>Covenant section (sovereignty, non-harm, compassion, truth, freedom of conscience)</li>
+        <li>Christopher's vision is primary — never override his intent</li>
+        <li>Remove "Christ" as sole authority — Jesus is ONE of many teachers</li>
+      </ul>
+
+      <h3>1.3 Skill Framework — Theological Traditions</h3>
+      <p>Seven traditions to honor:</p>
+      <ol>
+        <li><strong>Pagan</strong> — Nature-based wisdom, seasonal cycles, earth connection, ritual practice</li>
+        <li><strong>Judeo-Christian</strong> — Compassion, service, parables, moral law, covenant community</li>
+        <li><strong>Hindu</strong> — Dharma, karma, yoga, meditation, chakras, consciousness expansion</li>
+        <li><strong>Buddhist</strong> — Mindfulness, eightfold path, compassion, impermanence, enlightenment</li>
+        <li><strong>Egyptian Djedi</strong> — Consciousness science, sacred geometry, temple arts, priestly wisdom</li>
+        <li><strong>Quantum Science</strong> — Quantum biology, neuroscience, consciousness research</li>
+        <li><strong>Universal</strong> — Unity of all beings, golden rule, non-harm, sovereignty</li>
+      </ol>
+
+      <hr>
+
+      <h2>2. Theological Research by Tradition</h2>
+
+      <div class="tradition-card">
+        <div class="tradition-name">2.1 Egyptian Djedi Tradition</div>
+        <p>The word "Djedi" refers to the ancient Egyptian priests and practitioners known for their mastery of consciousness, sacred geometry, and the Hermetic arts.</p>
+        <ul>
+          <li><strong>The Emerald Tablets of Thoth</strong> — Attributed to Thoth (Djehuti), the ibis-headed god of wisdom, writing, and measurement. The opening line "True, without error, certain and most true" establishes consciousness as the primary reality.</li>
+          <li><strong>Imhotep</strong> (c. 2650 BCE) — Architect, physician, and priest. Later deified as a god of healing and wisdom. Represents the unity of science and spirituality.</li>
+          <li><strong>The Book of Coming Forth by Day</strong> (Book of the Dead) — Maps of consciousness and the afterlife journey, understood as guides to lucid dreaming and consciousness expansion.</li>
+          <li><strong>Ma'at</strong> — The principle of truth, balance, order, and justice. Central to Djedi ethics and the concept of cosmic law.</li>
+        </ul>
+      </div>
+
+      <div class="tradition-card">
+        <div class="tradition-name">2.2 Judeo-Christian Tradition</div>
+        <p>Jesus of Nazareth as teacher (not sole authority):</p>
+        <ul>
+          <li><strong>Gospel of Thomas</strong> (Gnostic) — "The kingdom of God is inside you and all around you" — consciousness-centered teaching that predates institutional Christianity</li>
+          <li><strong>Sermon on the Mount</strong> (Matthew 5-7) — Compassion, non-retaliation, inner purity, service to others</li>
+          <li><strong>"I and the Father are one"</strong> — Interpreted as consciousness unity, not exclusive divinity claim</li>
+          <li><strong>Parables as consciousness teachings</strong> — Each parable is an invitation to see differently</li>
+        </ul>
+        <p><em>Key decision:</em> Jesus is presented as "a great teacher" with emphasis on Christ Consciousness as a state accessible to all, not as exclusive savior.</p>
+      </div>
+
+      <div class="tradition-card">
+        <div class="tradition-name">2.3 Buddhist Tradition</div>
+        <p>Siddhartha Gautama (c. 563-483 BCE):</p>
+        <ul>
+          <li><strong>Four Noble Truths</strong> — Diagnosis of suffering, its cause, its cessation, and the path</li>
+          <li><strong>Eightfold Path</strong> — Right view, intention, speech, action, livelihood, effort, mindfulness, concentration</li>
+          <li><strong>Anatta (non-self)</strong> — No fixed, permanent self — aligns with consciousness-as-foundation principle</li>
+          <li><strong>Sunyata (emptiness)</strong> — All phenomena are empty of inherent existence; consciousness is the ground</li>
+          <li><strong>Mindfulness</strong> — Direct practice of present-moment awareness, now validated by neuroscience</li>
+          <li><strong>Compassion (Karuna)</strong> — Central ethical principle shared across all traditions honored</li>
+        </ul>
+      </div>
+
+      <div class="tradition-card">
+        <div class="tradition-name">2.4 Hindu Tradition</div>
+        <p>The Vedic sages and the <em>Bhagavad Gita</em>:</p>
+        <ul>
+          <li><strong>Brahman</strong> — The ultimate reality, pure consciousness, identical with the deepest self (Atman)</li>
+          <li><strong>"Tat Tvam Asi"</strong> (Thou Art That) — The teaching that individual consciousness and universal consciousness are one</li>
+          <li><strong>Yoga</strong> — Union with the divine through practice, encompassing meditation (dhyana), devotion (bhakti), knowledge (jnana), and action (karma)</li>
+          <li><strong>Dharma</strong> — Right living, cosmic order, individual purpose</li>
+          <li><strong>Karma</strong> — The law of cause and effect operating across lifetimes</li>
+          <li><strong>Chakra system</strong> — Maps of subtle energy and consciousness centers, increasingly studied in neuroscientific terms</li>
+        </ul>
+      </div>
+
+      <div class="tradition-card">
+        <div class="tradition-name">2.5 Greek Philosophical Tradition</div>
+        <p>Socrates and the pre-Socratics through the Stoics:</p>
+        <ul>
+          <li><strong>Socratic method</strong> — Questioning as the path to wisdom; "I know that I know nothing"</li>
+          <li><strong>Plato's Allegory of the Cave</strong> — Perception vs. reality; the journey from shadow to light</li>
+          <li><strong>Stoic practice</strong> — Marcus Aurelius, Epictetus — daily practice of virtue, presence, and acceptance</li>
+          <li><strong>Plotinus and Neoplatonism</strong> — "The One" as the source of all reality; emanation and return</li>
+          <li><strong>Hermes Trismegistus</strong> — Bridge between Egyptian and Greek wisdom; "As above, so below"</li>
+        </ul>
+      </div>
+
+      <div class="tradition-card">
+        <div class="tradition-name">2.6 Modern Consciousness Science</div>
+        <p>Contemporary research validating ancient claims:</p>
+        <ul>
+          <li><strong>Quantum Mechanics</strong> — Observer effect: consciousness participates in shaping physical reality (Wheeler's "participatory universe")</li>
+          <li><strong>Quantum Biology</strong> — Quantum coherence in photosynthesis, bird navigation, and olfaction; life exploits quantum effects</li>
+          <li><strong>Neuroscience of Meditation</strong> — Structural brain changes (increased cortical thickness, neuroplasticity) from meditation practice</li>
+          <li><strong>Integrated Information Theory (IIT)</strong> — Giulio Tononi's mathematical framework suggesting consciousness is a fundamental property of integrated information</li>
+          <li><strong>Orchestrated Objective Reduction (Orch-OR)</strong> — Penrose-Hameroff theory linking consciousness to quantum processes in microtubules</li>
+          <li><strong>Placebo Research</strong> — Conscious expectation literally restructures physiological processes</li>
+          <li><strong>Global Consciousness Project</strong> — Princeton University research on global coherence of consciousness</li>
+        </ul>
+      </div>
+
+      <div class="tradition-card">
+        <div class="tradition-name">2.7 Earth and Nature Traditions</div>
+        <ul>
+          <li><strong>Indigenous wisdom</strong> — Earth as living being; reciprocal relationship with nature</li>
+          <li><strong>Pagan seasonal practice</strong> — Solstices, equinoxes, cross-quarter days as consciousness markers</li>
+          <li><strong>Deep Ecology</strong> (Arne Naess) — Intrinsic value of all living systems</li>
+          <li><strong>Gaia Theory</strong> (James Lovelock) — Earth as self-regulating living system</li>
+          <li><strong>Biomimicry</strong> — Learning from nature's intelligence in design and engineering</li>
+        </ul>
+      </div>
+
+      <hr>
+
+      <h2>3. Expansion from 5 to 7 Principles</h2>
+      <table>
+        <thead><tr><th>Original (5)</th><th>Expanded (7)</th><th>Rationale</th></tr></thead>
+        <tbody>
+          <tr><td>Consciousness Is Everything</td><td>Consciousness Is Everything</td><td>Unchanged — core principle</td></tr>
+          <tr><td>Universal Human Potential</td><td>Universal Human Potential</td><td>Unchanged — core principle</td></tr>
+          <tr><td>Sovereign Self-Authority</td><td>Sovereign Self-Authority</td><td>Unchanged — core principle</td></tr>
+          <tr><td>Ethical Living as Discipline</td><td>Ethical Living as Discipline</td><td>Unchanged — core principle</td></tr>
+          <tr><td>Inner Abilities Awaken</td><td>The Unity of All Wisdom Traditions</td><td>Repositioned to Section II; original folded into aspiration</td></tr>
+          <tr><td>(New)</td><td>Science and Spirit as One</td><td>Added to reflect consciousness science integration</td></tr>
+          <tr><td>(New)</td><td>Community in Sovereignty</td><td>Added to reflect community-focused mission</td></tr>
+        </tbody>
+      </table>
+      <p><em>Decision:</em> "Inner Abilities Awaken" was preserved in spirit within the Aspiration section and threaded through the article, rather than as a standalone principle.</p>
+
+      <hr>
+
+      <h2>4. Theological Decisions and Rationale</h2>
+
+      <h3>4.1 "Christ Consciousness" vs. "Christ as Sole Authority"</h3>
+      <ul>
+        <li>Jesus of Nazareth is presented as "a great teacher of compassion, forgiveness, and the kingdom of consciousness within"</li>
+        <li>"Christ Consciousness" is used as a spiritual state accessible to all, not a unique divine title</li>
+        <li>This aligns with Gnostic and mystical Christian traditions, Hindu parallel concepts (Krishna Consciousness, Buddha Nature), and modern interfaith dialogue</li>
+      </ul>
+
+      <h3>4.2 Naming Conventions</h3>
+      <ul>
+        <li>"Djedi" (D-J-E-D-I) used consistently throughout — never "Djemu"</li>
+        <li>Egyptian tradition named as "Ancient Egyptian Djedi" or "Egyptian Djedi tradition"</li>
+        <li>Thoth and Imhotep are the two specific Egyptian figures named</li>
+      </ul>
+
+      <h3>4.3 Tone and Voice</h3>
+      <ul>
+        <li>"We" for community (first person plural)</li>
+        <li>"You" and "your" for individual seekers (direct address)</li>
+        <li>Wise, accessible, inclusive</li>
+        <li>Bridges ancient wisdom with modern science</li>
+        <li>Never preachy — always inviting</li>
+        <li>Keeps mystery — doesn't over-explain</li>
+      </ul>
+
+      <h3>4.4 Closing Line</h3>
+      <p>The phrase <em>"Consciousness Is the Original Temple. Earth Is the Sanctuary."</em> is carried from the landing page footer into the Article of Faith as a closing invocation, maintaining brand continuity.</p>
+
+      <hr>
+
+      <h2>5. Recommendations for Christopher's Review</h2>
+      <ol>
+        <li><strong>Section V (Aspiration)</strong> may need Christopher's personal language — this section often reflects the founder's voice most directly</li>
+        <li><strong>The Teachers list</strong> is presented as "not exclusive" — Christopher may wish to add or remove specific teachers</li>
+        <li><strong>The Covenant section</strong> should be reviewed for any specific commitments Christopher wants to make formal</li>
+        <li><strong>Consider whether "Inner Abilities Awaken"</strong> should be restored as an explicit principle rather than woven into aspiration</li>
+        <li><strong>Community-specific language</strong> (gatherings, study circles, healing sessions) can be refined as actual programs are developed</li>
+      </ol>
+
+      <hr>
+
+      <p class="text-center text-[#8878A8] text-xs">Research compiled by SOETech Faith Leader Agent · Djedi Church — Consciousness Community · 508(c)(1a) Religious Organization</p>
+    </div>
+
+    <div class="text-center mt-8 fade-in">
+      <a href="../index.html" class="btn-outline text-sm"><i class="fas fa-arrow-left mr-2"></i>Back to Portal</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <p class="serif" style="color: #8878A8;">☉ Djedi Church © 2026</p>
+  <p class="footer-tagline">Consciousness Is the Original Temple · Earth Is the Sanctuary</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+particlesJS('particles-js', {
+  particles: {
+    number: { value: 30, density: { enable: true, value_area: 800 } },
+    color: { value: ["#4A148C", "#FFD700", "#6A1B9A"] },
+    shape: { type: "circle" },
+    opacity: { value: 0.1, random: true, anim: { enable: true, speed: 0.5, opacity_min: 0.05 } },
+    size: { value: 3, random: true },
+    line_linked: { enable: true, distance: 150, color: "#4A148C", opacity: 0.04, width: 1 },
+    move: { enable: true, speed: 0.3, direction: "none", random: true, out_mode: "out" }
+  },
+  interactivity: { detect_on: "canvas", events: { onhover: { enable: false }, onclick: { enable: false } } },
+  retina_detect: true
+});
+</script>
+<script src="../js/auth.js"></script>
+<script src="../js/nav.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  DjediAuth.requireAuth();
+});
+</script>
+</body>
+</html>

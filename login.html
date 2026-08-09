@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Djedi Church — Member Portal Login</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="particles-js"></div>
+
+<!-- SOETECH × DJEDI Header Bar -->
+<div class="header-bar">
+  <div class="max-w-6xl mx-auto flex items-center justify-between px-6">
+    <span>SOETECH <span>×</span> DJEDI</span>
+    <span>Member Portal</span>
+  </div>
+</div>
+
+<!-- Login Container -->
+<div class="login-container">
+  <div class="glass-strong login-card pulse-glow fade-in">
+    <div class="mb-6">
+      <span class="text-4xl block mb-2">☉</span>
+      <h1 class="serif text-xl gradient-text">Djedi Church</h1>
+      <p class="text-xs text-[#8878A8] mt-1">Member Portal</p>
+    </div>
+
+    <hr class="accent-line w-16 mx-auto mb-6">
+
+    <form onsubmit="handleLogin(event)">
+      <div class="mb-4">
+        <label for="password-input" class="text-xs text-[#8878A8] mb-2 block">Enter Access Password</label>
+        <input type="password" id="password-input" placeholder="Password" autocomplete="current-password">
+      </div>
+      <p class="login-error" id="login-error"></p>
+      <button type="submit" class="btn-gold w-full" id="login-btn">Enter Portal</button>
+    </form>
+
+    <div class="mt-6">
+      <a href="index.html" class="text-xs text-[#8878A8] hover:text-[#FFD700] transition-colors">
+        <i class="fas fa-arrow-left mr-1"></i>Back to Home
+      </a>
+    </div>
+
+    <div class="mt-8 pt-4" style="border-top: 1px solid rgba(255,215,0,0.1);">
+      <p class="text-xs text-[#555]">
+        Authorized members only.<br>
+        This portal contains private documents and resources.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="site-footer" style="position: fixed; bottom: 0; left: 0; right: 0;">
+  <p class="serif" style="color: #8878A8;">☉ Djedi Church © 2026</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+particlesJS('particles-js', {
+  particles: {
+    number: { value: 30, density: { enable: true, value_area: 800 } },
+    color: { value: ["#4A148C", "#FFD700", "#6A1B9A"] },
+    shape: { type: "circle" },
+    opacity: { value: 0.1, random: true, anim: { enable: true, speed: 0.5, opacity_min: 0.05 } },
+    size: { value: 3, random: true },
+    line_linked: { enable: true, distance: 150, color: "#4A148C", opacity: 0.04, width: 1 },
+    move: { enable: true, speed: 0.3, direction: "none", random: true, out_mode: "out" }
+  },
+  interactivity: { detect_on: "canvas", events: { onhover: { enable: false }, onclick: { enable: false } } },
+  retina_detect: true
+});
+</script>
+<script src="js/auth.js"></script>
+<script>
+// Check if already logged in
+document.addEventListener('DOMContentLoaded', function() {
+  if (DjediAuth.isAuthenticated()) {
+    window.location.href = 'client-portal/index.html';
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Djedi Church — Client Portal</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="particles-js"></div>
+
+<!-- SOETECH × DJEDI Header Bar -->
+<div class="header-bar">
+  <div class="max-w-6xl mx-auto flex items-center justify-between px-6">
+    <span>SOETECH <span>×</span> DJEDI</span>
+    <span>Client Portal</span>
+  </div>
+</div>
+
+<!-- Navigation -->
+<nav class="fixed top-8 left-0 right-0 z-50 glass-strong px-6 py-4" id="navbar">
+  <div class="max-w-6xl mx-auto flex items-center justify-between">
+    <a href="../index.html" class="flex items-center gap-2 text-lg">
+      <span class="text-2xl">☉</span>
+      <span class="serif text-base tracking-wider gradient-text">Djedi CHURCH</span>
+    </a>
+    <div class="desktop-nav hidden md:flex items-center gap-8 text-sm">
+      <a href="../index.html" class="nav-link">Home</a>
+      <a href="../our-beliefs.html" class="nav-link">Beliefs</a>
+      <a href="../our-teachers.html" class="nav-link">Teachers</a>
+      <a href="../our-community.html" class="nav-link">Community</a>
+      <button onclick="handleLogout()" class="btn-outline text-sm" style="padding:8px 24px;">Logout</button>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu hidden" id="mobileMenu">
+  <button onclick="toggleMenu()" class="close-btn"><i class="fas fa-times"></i></button>
+  <a href="../index.html">Home</a>
+  <a href="../our-beliefs.html">Beliefs</a>
+  <a href="../our-teachers.html">Teachers</a>
+  <a href="../our-community.html">Community</a>
+  <button onclick="handleLogout()" class="btn-outline mt-4">Logout</button>
+</div>
+
+<!-- Dashboard -->
+<section class="min-h-screen px-6 pt-28 pb-20">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-12 fade-in">
+      <p class="text-xs uppercase tracking-[0.3em] text-[#FFD700] mb-3">Welcome</p>
+      <h1 class="serif text-3xl md:text-4xl mb-2">Client <span class="gradient-text">Portal</span></h1>
+      <p class="text-sm text-[#8878A8]">Access your private documents and resources</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Legal Library -->
+      <a href="legal/articles-of-faith.html" class="glass p-6 feature-card fade-in text-center" style="text-decoration:none;">
+        <div class="w-14 h-14 rounded-full bg-gradient-to-br from-[#4A148C] to-[#6A1B9A] flex items-center justify-center mx-auto mb-4">
+          <i class="fas fa-file-contract text-[#FFD700] text-lg"></i>
+        </div>
+        <h3 class="serif text-base mb-2">Legal Library</h3>
+        <p class="text-xs text-[#8878A8] mb-3">Articles of Faith, Legal Notes</p>
+        <span class="text-xs text-[#FFD700]">2 Documents →</span>
+      </a>
+
+      <!-- Research Library -->
+      <a href="research/competitive.html" class="glass p-6 feature-card fade-in text-center" style="text-decoration:none;">
+        <div class="w-14 h-14 rounded-full bg-gradient-to-br from-[#4A148C] to-[#6A1B9A] flex items-center justify-center mx-auto mb-4">
+          <i class="fas fa-flask text-[#FFD700] text-lg"></i>
+        </div>
+        <h3 class="serif text-base mb-2">Research Library</h3>
+        <p class="text-xs text-[#8878A8] mb-3">Competitive Research, Trademark Analysis, Business Data</p>
+        <span class="text-xs text-[#FFD700]">3 Documents →</span>
+      </a>
+
+      <!-- Consulting Reports -->
+      <a href="consulting/consulting-report.html" class="glass p-6 feature-card fade-in text-center" style="text-decoration:none;">
+        <div class="w-14 h-14 rounded-full bg-gradient-to-br from-[#4A148C] to-[#6A1B9A] flex items-center justify-center mx-auto mb-4">
+          <i class="fas fa-chart-line text-[#FFD700] text-lg"></i>
+        </div>
+        <h3 class="serif text-base mb-2">Consulting Reports</h3>
+        <p class="text-xs text-[#8878A8] mb-3">SOETech Reports, Digital Land Claim, Strategy</p>
+        <span class="text-xs text-[#FFD700]">2 Documents →</span>
+      </a>
+
+      <!-- Teaching Library -->
+      <a href="teaching/theological-research.html" class="glass p-6 feature-card fade-in text-center" style="text-decoration:none;">
+        <div class="w-14 h-14 rounded-full bg-gradient-to-br from-[#4A148C] to-[#6A1B9A] flex items-center justify-center mx-auto mb-4">
+          <i class="fas fa-book-open text-[#FFD700] text-lg"></i>
+        </div>
+        <h3 class="serif text-base mb-2">Teaching Library</h3>
+        <p class="text-xs text-[#8878A8] mb-3">Theological Research, Teaching Materials</p>
+        <span class="text-xs text-[#FFD700]">1 Document →</span>
+      </a>
+
+      <!-- Council Chat -->
+      <div class="glass p-6 feature-card fade-in text-center" style="opacity:0.5;">
+        <div class="w-14 h-14 rounded-full bg-gradient-to-br from-[#4A148C] to-[#6A1B9A] flex items-center justify-center mx-auto mb-4">
+          <i class="fas fa-comments text-[#FFD700] text-lg"></i>
+        </div>
+        <h3 class="serif text-base mb-2">Council Chat</h3>
+        <p class="text-xs text-[#8878A8] mb-3">Minister Communication Channel</p>
+        <span class="text-xs text-[#FFD700]">Coming Soon →</span>
+      </div>
+
+      <!-- Profile -->
+      <div class="glass p-6 feature-card fade-in text-center" style="opacity:0.5;">
+        <div class="w-14 h-14 rounded-full bg-gradient-to-br from-[#4A148C] to-[#6A1B9A] flex items-center justify-center mx-auto mb-4">
+          <i class="fas fa-user-circle text-[#FFD700] text-lg"></i>
+        </div>
+        <h3 class="serif text-base mb-2">Your Profile</h3>
+        <p class="text-xs text-[#8878A8] mb-3">Personal Information, Preferences</p>
+        <span class="text-xs text-[#FFD700]">Coming Soon →</span>
+      </div>
+    </div>
+
+    <div class="mt-12 text-center fade-in">
+      <p class="text-xs text-[#8878A8]">
+        <i class="fas fa-lock mr-1"></i>All documents are password-protected and confidential.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <p class="serif" style="color: #8878A8;">☉ Djedi Church © 2026</p>
+  <p class="footer-tagline">Consciousness Is the Original Temple · Earth Is the Sanctuary</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+particlesJS('particles-js', {
+  particles: {
+    number: { value: 30, density: { enable: true, value_area: 800 } },
+    color: { value: ["#4A148C", "#FFD700", "#6A1B9A"] },
+    shape: { type: "circle" },
+    opacity: { value: 0.1, random: true, anim: { enable: true, speed: 0.5, opacity_min: 0.05 } },
+    size: { value: 3, random: true },
+    line_linked: { enable: true, distance: 150, color: "#4A148C", opacity: 0.04, width: 1 },
+    move: { enable: true, speed: 0.3, direction: "none", random: true, out_mode: "out" }
+  },
+  interactivity: { detect_on: "canvas", events: { onhover: { enable: false }, onclick: { enable: false } } },
+  retina_detect: true
+});
+</script>
+<script src="../js/auth.js"></script>
+<script src="../js/nav.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  DjediAuth.requireAuth();
+});
+</script>
+</body>
+</html>

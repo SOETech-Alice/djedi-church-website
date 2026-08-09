@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Djedi Church — Competitive Research Report</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+<style>
+  .report-content h2 { font-family: 'Cinzel', serif; font-size: 1.4rem; color: var(--gold); margin-top: 2.5rem; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid rgba(255,215,0,0.2); }
+  .report-content h3 { font-family: 'Cinzel', serif; font-size: 1.05rem; color: var(--text-primary); margin-top: 1.5rem; margin-bottom: 0.75rem; }
+  .report-content p { color: var(--text-secondary); line-height: 1.8; margin-bottom: 0.75rem; font-size: 0.95rem; }
+  .report-content ul { color: var(--text-secondary); margin-left: 1.5rem; margin-bottom: 1rem; }
+  .report-content li { margin-bottom: 0.5rem; line-height: 1.7; font-size: 0.95rem; }
+  .report-content strong { color: var(--text-primary); }
+  .report-content em { color: var(--gold-dim); }
+  .report-content hr { border: none; height: 1px; background: linear-gradient(90deg, transparent, rgba(255,215,0,0.2), transparent); margin: 2rem 0; }
+  .stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin: 1.5rem 0; }
+  .stat-card { background: rgba(74,20,140,0.12); border: 1px solid rgba(255,215,0,0.15); border-radius: 12px; padding: 1.25rem; text-align: center; }
+  .stat-number { font-family: 'Cinzel', serif; font-size: 2rem; font-weight: 700; color: var(--gold); }
+  .stat-label { font-size: 0.75rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.5px; margin-top: 0.25rem; }
+  .entity-card { background: rgba(74,20,140,0.08); border: 1px solid rgba(255,215,0,0.1); border-radius: 12px; padding: 1.25rem; margin-bottom: 1rem; }
+  .entity-badge { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; background: rgba(74,222,128,0.15); color: #4ADE80; }
+  .domain-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem; margin: 1rem 0; }
+  .domain-item { background: rgba(74,222,128,0.06); border: 1px solid rgba(74,222,128,0.2); border-radius: 8px; padding: 0.75rem 1rem; }
+  .domain-name { color: var(--text-primary); font-weight: 600; font-size: 0.9rem; }
+  .domain-status { color: #4ADE80; font-size: 0.8rem; }
+  .social-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75rem; margin: 1rem 0; }
+  .social-item { background: rgba(74,20,140,0.08); border: 1px solid rgba(255,215,0,0.1); border-radius: 8px; padding: 0.75rem; text-align: center; }
+  .social-name { font-size: 0.85rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.25rem; }
+  .social-status { color: #4ADE80; font-size: 0.75rem; }
+  .rec-item { padding: 0.75rem 1rem; margin-bottom: 0.5rem; background: rgba(255,215,0,0.04); border-left: 3px solid var(--gold); border-radius: 0 8px 8px 0; display: flex; align-items: flex-start; gap: 0.75rem; }
+  .rec-icon { color: var(--gold); font-weight: bold; flex-shrink: 0; }
+  @media (max-width: 768px) { .stat-grid, .domain-grid { grid-template-columns: 1fr 1fr; } .social-grid { grid-template-columns: 1fr 1fr; } }
+</style>
+</head>
+<body>
+
+<div id="particles-js"></div>
+
+<div class="header-bar">
+  <div class="max-w-6xl mx-auto flex items-center justify-between px-6">
+    <span>SOETECH <span>×</span> DJEDI</span>
+    <span>Research Library</span>
+  </div>
+</div>
+
+<nav class="fixed top-8 left-0 right-0 z-50 glass-strong px-6 py-4" id="navbar">
+  <div class="max-w-6xl mx-auto flex items-center justify-between">
+    <a href="../index.html" class="flex items-center gap-2 text-lg">
+      <span class="text-2xl">☉</span>
+      <span class="serif text-base tracking-wider gradient-text">Djedi CHURCH</span>
+    </a>
+    <div class="desktop-nav hidden md:flex items-center gap-8 text-sm">
+      <a href="../index.html" class="nav-link"><i class="fas fa-arrow-left mr-1"></i> Portal</a>
+      <a href="trademark.html" class="nav-link">Trademark</a>
+      <a href="business-consultation.html" class="nav-link">Business</a>
+      <button onclick="handleLogout()" class="btn-outline text-sm" style="padding:8px 24px;">Logout</button>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+  </div>
+</nav>
+
+<div class="mobile-menu hidden" id="mobileMenu">
+  <button onclick="toggleMenu()" class="close-btn"><i class="fas fa-times"></i></button>
+  <a href="../index.html">← Portal Dashboard</a>
+  <a href="trademark.html">Trademark Research</a>
+  <a href="business-consultation.html">Business Consultation</a>
+  <button onclick="handleLogout()" class="btn-outline mt-4">Logout</button>
+</div>
+
+<section class="min-h-screen px-6 pt-28 pb-20">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-12 fade-in">
+      <p class="text-xs uppercase tracking-[0.3em] text-[#FFD700] mb-3">Research Library</p>
+      <h1 class="serif text-3xl md:text-4xl mb-3">Competitive <span class="gradient-text">Research Report</span></h1>
+      <p class="text-sm text-[#8878A8]">August 5, 2026 · Prepared by SOETech</p>
+      <hr class="accent-line w-32 mx-auto mt-6">
+    </div>
+
+    <div class="glass p-8 md:p-12 fade-in report-content">
+
+      <h2>Executive Summary</h2>
+      <div class="glass p-6 mb-6 text-center" style="border-color: rgba(74,222,128,0.3);">
+        <p class="text-xs uppercase tracking-[0.2em] text-[#4ADE80] mb-2">Key Finding</p>
+        <p class="serif text-xl mb-2" style="color: #4ADE80;">Name Availability Confirmed</p>
+        <p class="text-sm text-[#B8A9D4]">"Djedi Church" is unique — no exact matches found across nonprofit databases, domain registrations, or social media platforms. Ready for registration.</p>
+      </div>
+
+      <div class="stat-grid">
+        <div class="stat-card"><div class="stat-number">10</div><div class="stat-label">Search Terms</div></div>
+        <div class="stat-card"><div class="stat-number">12</div><div class="stat-label">Platforms Searched</div></div>
+        <div class="stat-card"><div class="stat-number">0</div><div class="stat-label">Exact Matches</div></div>
+        <div class="stat-card"><div class="stat-number">3</div><div class="stat-label">Related Entities</div></div>
+      </div>
+
+      <hr>
+
+      <h2>Search Variations Used</h2>
+      <ul>
+        <li>"Djedi Church"</li>
+        <li>"The Church of the Djedi"</li>
+        <li>"Church of Djedi"</li>
+        <li>"The Djedi Church"</li>
+        <li>"Djedi" + "Church"</li>
+        <li>"Djedi" + "Spiritual"</li>
+        <li>"Djedi" + "Religious"</li>
+        <li>"Djedi" + "Organization"</li>
+        <li>"Djedi" + "Group"</li>
+        <li>"Djedi" + "Community"</li>
+      </ul>
+
+      <hr>
+
+      <h2>Related Organizations</h2>
+      <p>These organizations use different spellings and are not direct competitors.</p>
+
+      <div class="entity-card">
+        <div class="flex items-center justify-between mb-2">
+          <h3 style="margin:0; color: var(--gold);">Djedi Order</h3>
+          <span class="entity-badge">Active</span>
+        </div>
+        <p class="text-xs text-[#8878A8] mb-1">EIN: 851007841 · Montana · Arts, Cultural</p>
+        <p class="text-xs text-[#8878A8]">Difference: Uses "Order" not "Church"</p>
+      </div>
+
+      <div class="entity-card">
+        <div class="flex items-center justify-between mb-2">
+          <h3 style="margin:0; color: var(--gold);">Afrikan Djeli Cultural Institute</h3>
+          <span class="entity-badge">Active</span>
+        </div>
+        <p class="text-xs text-[#8878A8] mb-1">EIN: 472676809 · Georgia · Arts, Cultural</p>
+        <p class="text-xs text-[#8878A8]">Difference: Uses "Djeli" not "Djedi"</p>
+      </div>
+
+      <div class="entity-card">
+        <div class="flex items-center justify-between mb-2">
+          <h3 style="margin:0; color: var(--gold);">House Of Djeli Inc</h3>
+          <span class="entity-badge">Active</span>
+        </div>
+        <p class="text-xs text-[#8878A8] mb-1">EIN: 862022713 · Maryland · Arts, Cultural</p>
+        <p class="text-xs text-[#8878A8]">Difference: Uses "Djeli" not "Djedi"</p>
+      </div>
+
+      <hr>
+
+      <h2>Domain Availability</h2>
+      <div class="domain-grid">
+        <div class="domain-item"><div class="domain-name">djedichurch.org</div><div class="domain-status"><i class="fas fa-check-circle mr-1"></i>Available for registration</div></div>
+        <div class="domain-item"><div class="domain-name">djedichurch.com</div><div class="domain-status"><i class="fas fa-check-circle mr-1"></i>Available for registration</div></div>
+        <div class="domain-item"><div class="domain-name">thedjedichurch.org</div><div class="domain-status"><i class="fas fa-check-circle mr-1"></i>Available for registration</div></div>
+        <div class="domain-item"><div class="domain-name">thedjedichurch.com</div><div class="domain-status"><i class="fas fa-check-circle mr-1"></i>Available for registration</div></div>
+      </div>
+
+      <hr>
+
+      <h2>Social Media Availability</h2>
+      <div class="social-grid">
+        <div class="social-item"><div class="social-name">Facebook</div><div class="social-status"><i class="fas fa-check-circle mr-1"></i>@djedichurch</div></div>
+        <div class="social-item"><div class="social-name">Instagram</div><div class="social-status"><i class="fas fa-check-circle mr-1"></i>@djedichurch</div></div>
+        <div class="social-item"><div class="social-name">Twitter/X</div><div class="social-status"><i class="fas fa-check-circle mr-1"></i>@djedichurch</div></div>
+        <div class="social-item"><div class="social-name">YouTube</div><div class="social-status"><i class="fas fa-check-circle mr-1"></i>@djedichurch</div></div>
+      </div>
+
+      <hr>
+
+      <h2>Recommendations</h2>
+      <div class="rec-item"><span class="rec-icon">→</span><span>Register domains immediately: djedichurch.org, djedichurch.com</span></div>
+      <div class="rec-item"><span class="rec-icon">→</span><span>Claim @djedichurch on all social media platforms</span></div>
+      <div class="rec-item"><span class="rec-icon">→</span><span>Conduct formal trademark search for "Djedi Church" branding</span></div>
+      <div class="rec-item"><span class="rec-icon">→</span><span>Monitor for future registrations of similar names</span></div>
+
+      <hr>
+
+      <p class="text-center text-[#8878A8] text-xs">Djedi Church | Christopher Carron · Research compiled by SOETech | August 5, 2026</p>
+    </div>
+
+    <div class="text-center mt-8 fade-in">
+      <a href="../index.html" class="btn-outline text-sm"><i class="fas fa-arrow-left mr-2"></i>Back to Portal</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <p class="serif" style="color: #8878A8;">☉ Djedi Church © 2026</p>
+  <p class="footer-tagline">Consciousness Is the Original Temple · Earth Is the Sanctuary</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+particlesJS('particles-js', {
+  particles: {
+    number: { value: 30, density: { enable: true, value_area: 800 } },
+    color: { value: ["#4A148C", "#FFD700", "#6A1B9A"] },
+    shape: { type: "circle" },
+    opacity: { value: 0.1, random: true, anim: { enable: true, speed: 0.5, opacity_min: 0.05 } },
+    size: { value: 3, random: true },
+    line_linked: { enable: true, distance: 150, color: "#4A148C", opacity: 0.04, width: 1 },
+    move: { enable: true, speed: 0.3, direction: "none", random: true, out_mode: "out" }
+  },
+  interactivity: { detect_on: "canvas", events: { onhover: { enable: false }, onclick: { enable: false } } },
+  retina_detect: true
+});
+</script>
+<script src="../js/auth.js"></script>
+<script src="../js/nav.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  DjediAuth.requireAuth();
+});
+</script>
+</body>
+</html>

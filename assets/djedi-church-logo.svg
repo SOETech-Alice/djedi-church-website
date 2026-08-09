@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <defs>
+    <!-- Gold gradient -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FFA500;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DAA520;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Glow effect -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Outer glow -->
+    <filter id="outerGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feFlood flood-color="#FFD700" flood-opacity="0.3" result="color"/>
+      <feComposite in="color" in2="blur" operator="in" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Purple glow for background -->
+    <radialGradient id="bgGlow" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" style="stop-color:#4A148C;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#0D0B1A;stop-opacity:0" />
+    </radialGradient>
+    
+    <!-- Consciousness ring gradient -->
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:0.1" />
+      <stop offset="50%" style="stop-color:#FFD700;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#FFD700;stop-opacity:0.1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="500" fill="#0D0B1A"/>
+  
+  <!-- Background glow -->
+  <ellipse cx="200" cy="220" rx="180" ry="200" fill="url(#bgGlow)"/>
+  
+  <!-- Sacred geometry - outer circle (consciousness) -->
+  <circle cx="200" cy="220" r="160" fill="none" stroke="url(#ringGrad)" stroke-width="1" opacity="0.5"/>
+  <circle cx="200" cy="220" r="140" fill="none" stroke="url(#ringGrad)" stroke-width="0.5" opacity="0.3"/>
+  
+  <!-- Sacred geometry - triangle (spirit/earth connection) -->
+  <polygon points="200,80 320,280 80,280" fill="none" stroke="#FFD700" stroke-width="1" opacity="0.2"/>
+  <polygon points="200,360 320,160 80,160" fill="none" stroke="#FFD700" stroke-width="1" opacity="0.15"/>
+  
+  <!-- The Ankh - Main Symbol -->
+  <g filter="url(#outerGlow)" transform="translate(200, 210)">
+    <!-- Ankh loop (top - representing consciousness/eternal life) -->
+    <ellipse cx="0" cy="-85" rx="45" ry="55" fill="none" stroke="url(#goldGrad)" stroke-width="12" stroke-linecap="round"/>
+    
+    <!-- Inner loop detail -->
+    <ellipse cx="0" cy="-85" rx="28" ry="38" fill="none" stroke="#FFD700" stroke-width="2" opacity="0.4"/>
+    
+    <!-- Ankh crossbar (horizontal - representing earthly plane) -->
+    <line x1="-55" y1="-30" x2="55" y2="-30" stroke="url(#goldGrad)" stroke-width="12" stroke-linecap="round"/>
+    
+    <!-- Crossbar end details -->
+    <circle cx="-55" cy="-30" r="6" fill="#FFD700" opacity="0.6"/>
+    <circle cx="55" cy="-30" r="6" fill="#FFD700" opacity="0.6"/>
+    
+    <!-- Ankh vertical shaft (representing life force descending) -->
+    <line x1="0" y1="-30" x2="0" y2="100" stroke="url(#goldGrad)" stroke-width="12" stroke-linecap="round"/>
+    
+    <!-- Shaft base detail -->
+    <circle cx="0" cy="100" r="6" fill="#FFD700" opacity="0.6"/>
+    
+    <!-- Energy lines emanating from ankh -->
+    <line x1="0" y1="-140" x2="0" y2="-170" stroke="#FFD700" stroke-width="2" opacity="0.4"/>
+    <line x1="-20" y1="-135" x2="-35" y2="-160" stroke="#FFD700" stroke-width="1.5" opacity="0.3"/>
+    <line x1="20" y1="-135" x2="35" y2="-160" stroke="#FFD700" stroke-width="1.5" opacity="0.3"/>
+    
+    <!-- Small dots around ankh (consciousness points) -->
+    <circle cx="-80" cy="-30" r="3" fill="#FFD700" opacity="0.3"/>
+    <circle cx="80" cy="-30" r="3" fill="#FFD700" opacity="0.3"/>
+    <circle cx="0" cy="-155" r="3" fill="#FFD700" opacity="0.3"/>
+    <circle cx="-60" cy="-110" r="2" fill="#FFD700" opacity="0.2"/>
+    <circle cx="60" cy="-110" r="2" fill="#FFD700" opacity="0.2"/>
+  </g>
+  
+  <!-- Text: DJEDI CHURCH -->
+  <text x="200" y="380" text-anchor="middle" font-family="'Cinzel', serif" font-size="36" font-weight="700" fill="url(#goldGrad)" letter-spacing="8">DJEDI</text>
+  <text x="200" y="415" text-anchor="middle" font-family="'Cinzel', serif" font-size="24" font-weight="400" fill="#B8A9D4" letter-spacing="12">CHURCH</text>
+  
+  <!-- Tagline -->
+  <text x="200" y="450" text-anchor="middle" font-family="'Inter', sans-serif" font-size="11" fill="#8878A8" letter-spacing="3">CONSCIOUSNESS · WISDOM · SOVEREIGNTY</text>
+  
+  <!-- Small decorative line under tagline -->
+  <line x1="140" y1="465" x2="260" y2="465" stroke="#FFD700" stroke-width="1" opacity="0.3"/>
+</svg>

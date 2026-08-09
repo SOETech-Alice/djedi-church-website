@@ -1,0 +1,549 @@
+/* ============================================================
+   DJEDI CHURCH — Shared Styles
+   Extracted from landing page, organized by section
+   ============================================================ */
+
+/* ---- VARIABLES ---- */
+:root {
+  --primary: #4A148C;
+  --primary-light: #6A1B9A;
+  --gold: #FFD700;
+  --gold-dim: #DAA520;
+  --bg-dark: #0D0B1A;
+  --text-primary: #F5F0FF;
+  --text-secondary: #B8A9D4;
+}
+
+/* ---- RESET ---- */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---- TYPOGRAPHY ---- */
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg-dark);
+  color: var(--text-primary);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, .serif {
+  font-family: 'Cinzel', serif;
+}
+
+/* ---- PARTICLES BACKGROUND ---- */
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ---- GLASS MORPHISM ---- */
+.glass {
+  background: linear-gradient(135deg, rgba(74, 20, 140, 0.12), rgba(13, 11, 26, 0.8));
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 215, 0, 0.15);
+  border-radius: 16px;
+}
+
+.glass-strong {
+  background: linear-gradient(135deg, rgba(74, 20, 140, 0.2), rgba(13, 11, 26, 0.85));
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  border-radius: 20px;
+}
+
+/* ---- GRADIENT TEXT ---- */
+.gradient-text {
+  background: linear-gradient(135deg, var(--gold), #FFA500, var(--gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ---- DIVIDERS ---- */
+.accent-line {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  border: none;
+}
+
+.section-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.2), transparent);
+  border: none;
+}
+
+/* ---- BUTTONS ---- */
+.btn-gold {
+  background: linear-gradient(135deg, var(--gold), var(--gold-dim));
+  color: #0D0B1A;
+  font-weight: 600;
+  padding: 14px 36px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(255, 215, 0, 0.4);
+}
+
+.btn-outline {
+  border: 1px solid rgba(255, 215, 0, 0.4);
+  color: var(--gold);
+  padding: 14px 36px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background: rgba(255, 215, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+/* ---- CARDS ---- */
+.feature-card {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: default;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 215, 0, 0.5);
+  box-shadow: 0 20px 60px rgba(74, 20, 140, 0.3), 0 0 30px rgba(255, 215, 0, 0.08);
+}
+
+.sacred-principle {
+  transition: all 0.4s ease;
+}
+
+.sacred-principle:hover {
+  border-color: rgba(255, 215, 0, 0.5);
+  transform: scale(1.02);
+}
+
+/* ---- NAVIGATION ---- */
+.nav-link {
+  color: var(--text-secondary);
+  transition: color 0.3s;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--gold);
+}
+
+section {
+  position: relative;
+  z-index: 1;
+}
+
+/* ---- ANIMATIONS ---- */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.pulse-glow {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 20px rgba(255, 215, 0, 0.1); }
+  50% { box-shadow: 0 0 40px rgba(255, 215, 0, 0.25); }
+}
+
+.float-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* ---- SCROLLBAR ---- */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 3px;
+}
+
+/* ---- HEADER BAR ---- */
+.header-bar {
+  background: rgba(13, 11, 26, 0.95);
+  border-bottom: 1px solid rgba(255, 215, 0, 0.1);
+  padding: 6px 0;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--text-secondary);
+  position: relative;
+  z-index: 60;
+}
+
+.header-bar span {
+  color: var(--gold);
+  font-weight: 600;
+}
+
+/* ---- PAGE TITLES ---- */
+.page-title {
+  text-align: center;
+  padding: 6rem 1.5rem 2rem;
+}
+
+.page-title h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .page-title h1 {
+    font-size: 2.5rem;
+  }
+}
+
+.page-title .subtitle {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ---- BELIEFS PAGE ---- */
+.belief-card {
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.belief-card .number {
+  font-family: 'Cinzel', serif;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.belief-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.belief-card p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+/* ---- TEACHERS PAGE ---- */
+.teacher-card {
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.4s ease;
+}
+
+.teacher-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 215, 0, 0.4);
+}
+
+.teacher-card .badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 1rem;
+}
+
+.teacher-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.teacher-card p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-size: 0.9rem;
+}
+
+/* ---- COMMUNITY PAGE ---- */
+.community-card {
+  padding: 2rem;
+}
+
+.community-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.community-card p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+/* ---- CONTACT PAGE ---- */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  background: transparent;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  border-radius: 12px;
+  padding: 14px 20px;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  transition: border-color 0.3s;
+  outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--gold);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #8878A8;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+/* ---- COVENANT / ASPIRATION ---- */
+.covenant-item {
+  padding: 1.5rem;
+  border-left: 3px solid var(--gold);
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, rgba(74, 20, 140, 0.08), rgba(13, 11, 26, 0.5));
+  border-radius: 0 12px 12px 0;
+}
+
+.covenant-item h4 {
+  font-family: 'Cinzel', serif;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: var(--gold);
+}
+
+.covenant-item p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+/* ---- LOGIN PAGE ---- */
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  padding: 3rem 2.5rem;
+  text-align: center;
+}
+
+.login-card input {
+  width: 100%;
+  background: transparent;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  border-radius: 12px;
+  padding: 14px 20px;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+  outline: none;
+  margin-bottom: 1rem;
+}
+
+.login-card input:focus {
+  border-color: var(--gold);
+}
+
+.login-card input::placeholder {
+  color: #8878A8;
+}
+
+.login-error {
+  color: #FF6B6B;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+  display: none;
+}
+
+/* ---- FOOTER ---- */
+.site-footer {
+  padding: 3rem 1.5rem;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #555;
+  border-top: 1px solid rgba(255, 215, 0, 0.05);
+  position: relative;
+  z-index: 1;
+}
+
+.site-footer .footer-tagline {
+  margin-top: 0.5rem;
+  color: #8878A8;
+}
+
+.site-footer .footer-links {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.site-footer .footer-links a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.site-footer .footer-links a:hover {
+  color: var(--gold);
+}
+
+/* ---- HAMBURGER MENU ---- */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  color: var(--gold);
+  font-size: 1.5rem;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(13, 11, 26, 0.98);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.mobile-menu.hidden {
+  display: none;
+}
+
+.mobile-menu a {
+  color: var(--text-primary);
+  text-decoration: none;
+  font-size: 1.25rem;
+  transition: color 0.3s;
+}
+
+.mobile-menu a:hover {
+  color: var(--gold);
+}
+
+.mobile-menu .close-btn {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.5rem;
+  color: var(--gold);
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .desktop-nav {
+    display: none !important;
+  }
+
+  .page-title {
+    padding: 5rem 1rem 1.5rem;
+  }
+
+  .page-title h1 {
+    font-size: 1.75rem;
+  }
+
+  .belief-card,
+  .teacher-card,
+  .community-card {
+    padding: 1.5rem;
+  }
+
+  .login-card {
+    padding: 2rem 1.5rem;
+  }
+}
+
+/* ---- UTILITY ---- */
+.content-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.section-padding {
+  padding: 4rem 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding: 5rem 1.5rem;
+  }
+}
+
+/* ---- TEACHER BADGE COLORS ---- */
+.badge-ancient { background: rgba(255, 215, 0, 0.15); color: var(--gold); }
+.badge-christian { background: rgba(100, 149, 237, 0.15); color: #6495ED; }
+.badge-buddhist { background: rgba(255, 165, 0, 0.15); color: #FFA500; }
+.badge-vedic { background: rgba(255, 99, 71, 0.15); color: #FF6347; }
+.badge-greek { background: rgba(144, 238, 144, 0.15); color: #90EE90; }
+.badge-science { background: rgba(0, 191, 255, 0.15); color: #00BFFF; }
+.badge-nature { background: rgba(50, 205, 50, 0.15); color: #32CD32; }

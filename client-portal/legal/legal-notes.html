@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Djedi Church — Legal Notes</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+<style>
+  .legal-content h2 { font-family: 'Cinzel', serif; font-size: 1.4rem; color: var(--gold); margin-top: 2.5rem; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid rgba(255,215,0,0.2); }
+  .legal-content h3 { font-family: 'Cinzel', serif; font-size: 1.05rem; color: var(--text-primary); margin-top: 1.5rem; margin-bottom: 0.75rem; }
+  .legal-content p { color: var(--text-secondary); line-height: 1.8; margin-bottom: 0.75rem; font-size: 0.95rem; }
+  .legal-content ul, .legal-content ol { color: var(--text-secondary); margin-left: 1.5rem; margin-bottom: 1rem; }
+  .legal-content li { margin-bottom: 0.5rem; line-height: 1.7; font-size: 0.95rem; }
+  .legal-content strong { color: var(--text-primary); }
+  .legal-content em { color: var(--gold-dim); }
+  .legal-content hr { border: none; height: 1px; background: linear-gradient(90deg, transparent, rgba(255,215,0,0.2), transparent); margin: 2rem 0; }
+  .legal-content table { width: 100%; border-collapse: collapse; margin: 1rem 0 1.5rem; }
+  .legal-content th { background: rgba(74,20,140,0.3); color: var(--gold); padding: 10px 14px; text-align: left; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 2px solid rgba(255,215,0,0.3); }
+  .legal-content td { padding: 10px 14px; border-bottom: 1px solid rgba(255,215,0,0.1); color: var(--text-secondary); font-size: 0.9rem; }
+  .legal-content tr:hover td { background: rgba(74,20,140,0.08); }
+  .disclaimer-box { background: rgba(255,107,107,0.08); border: 1px solid rgba(255,107,107,0.3); border-radius: 12px; padding: 1.25rem; margin: 1.5rem 0; }
+  .disclaimer-box p { color: #FF9999; font-size: 0.85rem; margin: 0; }
+</style>
+</head>
+<body>
+
+<div id="particles-js"></div>
+
+<div class="header-bar">
+  <div class="max-w-6xl mx-auto flex items-center justify-between px-6">
+    <span>SOETECH <span>×</span> DJEDI</span>
+    <span>Legal Library</span>
+  </div>
+</div>
+
+<nav class="fixed top-8 left-0 right-0 z-50 glass-strong px-6 py-4" id="navbar">
+  <div class="max-w-6xl mx-auto flex items-center justify-between">
+    <a href="../index.html" class="flex items-center gap-2 text-lg">
+      <span class="text-2xl">☉</span>
+      <span class="serif text-base tracking-wider gradient-text">Djedi CHURCH</span>
+    </a>
+    <div class="desktop-nav hidden md:flex items-center gap-8 text-sm">
+      <a href="index.html" class="nav-link"><i class="fas fa-arrow-left mr-1"></i> Portal</a>
+      <a href="articles-of-faith.html" class="nav-link">Articles of Faith</a>
+      <button onclick="handleLogout()" class="btn-outline text-sm" style="padding:8px 24px;">Logout</button>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+  </div>
+</nav>
+
+<div class="mobile-menu hidden" id="mobileMenu">
+  <button onclick="toggleMenu()" class="close-btn"><i class="fas fa-times"></i></button>
+  <a href="index.html">← Portal Dashboard</a>
+  <a href="articles-of-faith.html">Articles of Faith</a>
+  <button onclick="handleLogout()" class="btn-outline mt-4">Logout</button>
+</div>
+
+<section class="min-h-screen px-6 pt-28 pb-20">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-12 fade-in">
+      <p class="text-xs uppercase tracking-[0.3em] text-[#FFD700] mb-3">Legal Library</p>
+      <h1 class="serif text-3xl md:text-4xl mb-3">Legal <span class="gradient-text">Notes</span></h1>
+      <p class="text-sm text-[#8878A8]">Articles of Faith — Section-by-Section Legal Analysis</p>
+      <p class="text-xs text-[#8878A8] mt-1">Prepared August 7, 2026</p>
+      <hr class="accent-line w-32 mx-auto mt-6">
+    </div>
+
+    <div class="glass p-8 md:p-12 fade-in legal-content">
+
+      <div class="disclaimer-box">
+        <p><strong>DISCLAIMER:</strong> These legal notes are for informational purposes only and do not constitute legal advice. Djedi Church should retain a licensed attorney specializing in nonprofit/religious organization law before filing these documents with any state or federal agency.</p>
+      </div>
+
+      <h2>OVERVIEW: IRS 508(c)(1)(A) REQUIREMENTS</h2>
+      <p>Under IRS Publication 1828 and Treasury Regulation §1.501(a)-1, a church must demonstrate the following characteristics to qualify for automatic tax-exempt status under 508(c)(1)(A):</p>
+      <table>
+        <thead><tr><th>IRS Requirement</th><th>How the Articles Address It</th></tr></thead>
+        <tbody>
+          <tr><td>1. Distinct religious history</td><td>Preamble, Article II (Egyptian Djedi roots)</td></tr>
+          <tr><td>2. Recognized creed and form of worship</td><td>Article II (7 Core Principles), Article III</td></tr>
+          <tr><td>3. Definite and distinct ecclesiastical government</td><td>Article IV (Board of Elders)</td></tr>
+          <tr><td>4. Formal code of doctrine and discipline</td><td>Article V (Doctrine and Discipline)</td></tr>
+          <tr><td>5. Distinct religious literature</td><td>Preamble, Article II (creed), teaching library</td></tr>
+          <tr><td>6. Established places of worship</td><td>Article III, Section 3.1 (regular services)</td></tr>
+          <tr><td>7. Regular congregations</td><td>Article VII (Membership), Article III</td></tr>
+          <tr><td>8. Regular religious services</td><td>Article III, Section 3.1 (weekly minimum)</td></tr>
+          <tr><td>9. Ordained ministers/ministers of the gospel</td><td>Article VI (Clergy and Ministers)</td></tr>
+          <tr><td>10. Schools for preparing ministers</td><td>Article VI, Section 6.2 (ordination program)</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Key advantage of 508(c)(1)(A):</strong> Automatic tax-exempt status without filing Form 1023 or 1023-EZ. No annual Form 990 filing required. Special audit protection under IRC §7611.</p>
+
+      <hr>
+
+      <h2>SECTION-BY-SECTION LEGAL NOTES</h2>
+
+      <h3>PREAMBLE</h3>
+      <p><strong>Legal purpose:</strong> Establishes the religious identity and historical/cultural roots of the organization. The IRS looks for a "distinct religious history" — the Preamble connects Djedi Church to the ancient Egyptian Djedi priesthood and positions it within a broader multi-tradition framework.</p>
+      <p><strong>Key elements:</strong></p>
+      <ul>
+        <li>Identifies the organization as a "religious organization" (required language for 508(c)(1)(A))</li>
+        <li>Establishes the multi-tradition, multi-cultural nature of the faith</li>
+        <li>Asserts 508(c)(1)(A) rights and First Amendment protections</li>
+      </ul>
+      <p><strong>Risk considerations:</strong></p>
+      <ul>
+        <li>The multi-tradition nature is a strength (shows breadth of religious belief) but should be backed by consistent practice</li>
+        <li>The First Amendment assertion is standard for religious organizations and reinforces the Church's right to self-governance</li>
+      </ul>
+
+      <hr>
+
+      <h3>ARTICLE I — NAME AND PURPOSE</h3>
+      <p><strong>Legal purpose:</strong> Establishes the legal identity, organizational purpose, and tax-exempt designation.</p>
+      <p><strong>Key elements:</strong></p>
+      <ul>
+        <li><strong>Section 1.3 (508(c)(1)(A) Designation):</strong> This is the critical tax-exempt designation statement. It explicitly states the Church's intent to operate under 508(c)(1)(A) and asserts automatic exemption from federal income taxation.</li>
+        <li><strong>Section 1.4-1.5:</strong> Placeholder fields for principal address and registered agent (to be completed upon state incorporation).</li>
+      </ul>
+      <p><strong>Filing requirements:</strong></p>
+      <ul>
+        <li>State incorporation (religious corporation or nonprofit corporation filing)</li>
+        <li>State tax-exempt status application (varies by state)</li>
+        <li>IRS Employer Identification Number (EIN) — required even for churches</li>
+        <li>Local business license or permit (if required by jurisdiction)</li>
+      </ul>
+
+      <hr>
+
+      <h3>ARTICLE II — CREED AND STATEMENT OF FAITH</h3>
+      <p><strong>Legal purpose:</strong> Satisfies the IRS requirement for a "recognized creed and form of worship." This is one of the most important articles for establishing church status.</p>
+      <p><strong>Key elements:</strong></p>
+      <ul>
+        <li><strong>7 Core Principles:</strong> Directly from the existing spiritual draft, adapted for legal language. These constitute the Church's creed.</li>
+        <li><strong>Honored Teachers (Section 2.2):</strong> Establishes the multi-tradition nature of the faith. Including Jesus, Buddha, Krishna, Thoth/Imhotep, Socrates, and modern science demonstrates breadth.</li>
+        <li><strong>Multi-Cultural Theological Foundation (Section 2.3):</strong> Explicitly lists the seven traditions honored, providing a clear framework for the IRS to evaluate the religious nature of the organization.</li>
+      </ul>
+      <p><strong>Legal considerations:</strong></p>
+      <ul>
+        <li>The creed must be genuinely held and consistently practiced</li>
+        <li>Including multiple traditions strengthens the claim that this is a religious organization (not a secular educational institution)</li>
+        <li>The language about "no single path" is theologically appropriate but should be balanced with a clear statement of what the Church <em>does</em> believe (the 7 Principles)</li>
+      </ul>
+
+      <hr>
+
+      <h3>ARTICLE III — FORM OF WORSHIP</h3>
+      <p><strong>Legal purpose:</strong> Satisfies IRS requirements for "form of worship," "established places of worship," "regular congregations," and "regular religious services."</p>
+      <p><strong>Key elements:</strong></p>
+      <ul>
+        <li><strong>Section 3.1:</strong> Mandates weekly services (minimum). This is critical for 508(c)(1)(A) compliance — the IRS expects regular, ongoing religious services.</li>
+        <li><strong>Section 3.2:</strong> Meditation and contemplation practices draw from multiple traditions, establishing the Church's distinctive worship style.</li>
+        <li><strong>Section 3.3:</strong> Seasonal celebrations (solstices, equinoxes) establish the Church's pagan/earth-based worship tradition.</li>
+        <li><strong>Section 3.4:</strong> Life cycle ceremonies establish the Church's role in the spiritual life of its community.</li>
+      </ul>
+      <p><strong>Practical note:</strong> The Church should maintain records of all services (dates, attendance, content) to demonstrate regular worship if ever questioned by the IRS.</p>
+
+      <hr>
+
+      <h3>ARTICLE IV — ECCLESIASTICAL GOVERNMENT</h3>
+      <p><strong>Legal purpose:</strong> Satisfies the IRS requirement for "a definite and distinct ecclesiastical government."</p>
+      <p><strong>Key elements:</strong></p>
+      <ul>
+        <li><strong>Section 4.1:</strong> Board of Elders (3-7 members) — meets IRS expectations for organized governance.</li>
+        <li><strong>Section 4.2:</strong> Christopher Carron as Founding Elder — establishes the Church's founding and initial governance.</li>
+        <li><strong>Section 4.4:</strong> Officers (President, Secretary, Treasurer) — standard nonprofit governance structure.</li>
+        <li><strong>Section 4.5:</strong> Term limits and staggered terms — demonstrates ongoing governance (not a one-person organization).</li>
+        <li><strong>Section 4.7:</strong> Succession planning — critical for long-term viability.</li>
+        <li><strong>Section 4.8:</strong> Ecclesiastical authority assertion — reinforces the Church's right to self-governance under the First Amendment.</li>
+      </ul>
+      <p><strong>Legal considerations:</strong></p>
+      <ul>
+        <li>The <em>Hosanna-Tabor</em> and <em>Our Lady of Guadalupe</em> decisions protect the Church's right to select and remove its own ministers</li>
+        <li>The Board should meet regularly (quarterly minimum) and maintain minutes</li>
+        <li>The Church should adopt bylaws as a companion document to these Articles</li>
+      </ul>
+
+      <hr>
+
+      <h3>ARTICLE V — DOCTRINE AND DISCIPLINE</h3>
+      <p><strong>Legal purpose:</strong> Satisfies the IRS requirement for "a formal code of doctrine and discipline."</p>
+      <p><strong>Key elements:</strong></p>
+      <ul>
+        <li><strong>Section 5.1:</strong> Code of conduct for members (covenant from existing draft, adapted for legal use).</li>
+        <li><strong>Section 5.2:</strong> Code of conduct for clergy/elders — establishes higher standards for Church leadership.</li>
+        <li><strong>Section 5.3:</strong> Conflict resolution process — demonstrates orderly governance and internal dispute resolution.</li>
+        <li><strong>Section 5.4:</strong> Discipline procedures — provides due process protections, which strengthen the Church's legal position.</li>
+        <li><strong>Section 5.5:</strong> Appeals process — further demonstrates procedural fairness.</li>
+      </ul>
+      <p><strong>Legal considerations:</strong></p>
+      <ul>
+        <li>Due process protections (notice, opportunity to respond, hearing) protect the Church from claims of arbitrary action</li>
+        <li>The discipline process should be applied consistently</li>
+        <li>All disciplinary proceedings should be documented in writing</li>
+      </ul>
+
+      <hr>
+
+      <h3>ARTICLE VI — CLERGY AND MINISTERS</h3>
+      <p><strong>Legal purpose:</strong> Satisfies the IRS requirement for "ordained ministers/ministers of the gospel" and establishes the Church's ministerial authority.</p>
+      <p><strong>Key elements:</strong></p>
+      <ul>
+        <li><strong>Section 6.1:</strong> Clear definition of minister/clergy.</li>
+        <li><strong>Section 6.2:</strong> Ordination requirements — establishes a structured process, satisfying the IRS requirement for "schools for preparing ministers."</li>
+        <li><strong>Section 6.3:</strong> Authority and responsibilities — defines the ministerial role.</li>
+        <li><strong>Section 6.4:</strong> Ministers of the gospel designation — critical for tax benefits (parsonage allowance under IRC §107, ministerial exception for employment law).</li>
+        <li><strong>Section 6.5:</strong> Removal process — demonstrates the Church's authority over its clergy.</li>
+      </ul>
+      <p><strong>Legal considerations:</strong></p>
+      <ul>
+        <li>The "minister of the gospel" designation triggers specific tax benefits and legal protections</li>
+        <li>Ministers are treated as employees for Social Security/Medicare purposes (FICA)</li>
+        <li>The Church should understand the ministerial exception (church is exempt from most employment discrimination laws for ministerial positions)</li>
+        <li>Ministers may be eligible for the parsonage allowance (nontaxable housing benefit)</li>
+      </ul>
+
+      <hr>
+
+      <h3>ARTICLE VII — MEMBERSHIP</h3>
+      <p><strong>Legal purpose:</strong> Establishes the Church's membership structure, demonstrating it has a "regular congregation."</p>
+      <p><strong>Key elements:</strong></p>
+      <ul>
+        <li><strong>Section 7.1:</strong> Three classes of membership (Active, Associate, Honorary) — provides flexibility.</li>
+        <li><strong>Section 7.2:</strong> Requirements for Active Membership — demonstrates the Church has criteria for membership.</li>
+        <li><strong>Section 7.3-7.4:</strong> Rights and responsibilities — establishes the mutual obligations of membership.</li>
+        <li><strong>Section 7.5:</strong> Withdrawal and removal — provides for orderly membership management.</li>
+      </ul>
+      <p><strong>Practical note:</strong> The Church should maintain a membership roster. The IRS may ask for evidence of a regular congregation.</p>
+
+      <hr>
+
+      <h3>ARTICLE VIII — PROPERTY AND ASSETS</h3>
+      <p><strong>Legal purpose:</strong> Establishes financial governance and ensures compliance with the "organizational test" (operating exclusively for exempt purposes).</p>
+      <p><strong>Key elements:</strong></p>
+      <ul>
+        <li><strong>Section 8.1:</strong> All property owned by the Church entity — prevents personal ownership claims.</li>
+        <li><strong>Section 8.2:</strong> Assets used exclusively for exempt purposes — satisfies the "operational test."</li>
+        <li><strong>Section 8.3:</strong> Financial governance controls — dual signatures, budget approval, expenditure limits.</li>
+        <li><strong>Section 8.4:</strong> Annual reporting — voluntary, since churches are exempt from Form 990.</li>
+        <li><strong>Section 8.5:</strong> Tax-exempt status compliance — demonstrates the Church understands and will maintain its exempt status.</li>
+      </ul>
+      <p><strong>Key legal principle:</strong> Under 508(c)(1)(A), the Church is exempt from Form 990 filing. However, maintaining good financial records protects the Church in case of an IRS inquiry.</p>
+
+      <hr>
+
+      <h3>ARTICLE IX — AMENDMENTS</h3>
+      <p><strong>Legal purpose:</strong> Establishes how the Articles may be modified, ensuring orderly governance.</p>
+      <ul>
+        <li><strong>Section 9.1:</strong> Two-thirds supermajority required — prevents hasty amendments.</li>
+        <li><strong>Section 9.2:</strong> 30-day notice requirement — ensures all Elders are informed.</li>
+        <li><strong>Section 9.3:</strong> Limitations on amendments — prevents amendments that would jeopardize tax-exempt status.</li>
+        <li><strong>Section 9.4:</strong> Record-keeping requirement — ensures amendments are properly documented.</li>
+      </ul>
+
+      <hr>
+
+      <h3>ARTICLE X — DISSOLUTION</h3>
+      <p><strong>Legal purpose:</strong> Establishes the process for dissolving the Church and distributing assets, satisfying the "dissolution clause" requirement for 501(c)(3)/508(c)(1)(A) organizations.</p>
+      <ul>
+        <li><strong>Section 10.1:</strong> Requires both Board unanimity AND congregational supermajority.</li>
+        <li><strong>Section 10.2:</strong> Assets must go to another qualifying 501(c)(3)/508(c)(1)(A) organization — this is the critical "distribution clause" required by the IRS.</li>
+        <li><strong>Section 10.3:</strong> Filing requirements — ensures proper dissolution filings.</li>
+      </ul>
+
+      <hr>
+
+      <h3>ARTICLE XI — NON-DISCRIMINATION AND SOVEREIGNTY</h3>
+      <p><strong>Legal purpose:</strong> Establishes the Church's commitment to non-discrimination and its assertion of First Amendment rights.</p>
+      <ul>
+        <li><strong>Section 11.1:</strong> Non-discrimination policy — required for public trust and legal protection.</li>
+        <li><strong>Section 11.2:</strong> Sovereignty principle — central to the Church's theology.</li>
+        <li><strong>Section 11.3:</strong> First Amendment assertion — reinforces the Church's constitutional protections.</li>
+        <li><strong>Section 11.4:</strong> Religious autonomy / ministerial exception — cites recent Supreme Court precedents (<em>Hosanna-Tabor</em>, <em>Our Lady of Guadalupe</em>) that strongly protect church autonomy.</li>
+      </ul>
+
+      <hr>
+
+      <h3>ARTICLE XII — SEAL AND EXECUTION</h3>
+      <p><strong>Legal purpose:</strong> Formal execution of the document with signatures and seal.</p>
+      <p><strong>Practical notes:</strong></p>
+      <ul>
+        <li>The Church should adopt a corporate seal (many states require this for corporations)</li>
+        <li>The Founding Elder's signature is the most critical — Christopher Carron's name and signature are required</li>
+        <li>Additional Elders should sign as they are appointed</li>
+        <li>The state of incorporation should be filled in once the state is determined</li>
+      </ul>
+
+      <hr>
+
+      <h2>ADDITIONAL FILING REQUIREMENTS</h2>
+
+      <h3>State-Level Filings</h3>
+      <table>
+        <thead><tr><th>Filing</th><th>Purpose</th><th>Estimated Cost</th></tr></thead>
+        <tbody>
+          <tr><td>Articles of Incorporation (Religious Corporation)</td><td>Creates the legal entity</td><td>$50-500 (varies by state)</td></tr>
+          <tr><td>State Tax-Exempt Status</td><td>State income tax exemption</td><td>$0-100</td></tr>
+          <tr><td>Property Tax Exemption</td><td>Exemption from property taxes</td><td>$0-50</td></tr>
+          <tr><td>Business License/Permit</td><td>Local operating authority</td><td>$25-200</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Federal Filings</h3>
+      <table>
+        <thead><tr><th>Filing</th><th>Purpose</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td>EIN (Form SS-4)</td><td>Employer Identification Number</td><td>Required even for churches; free</td></tr>
+          <tr><td>Form 990</td><td>Annual information return</td><td>NOT required for churches under 508(c)(1)(A)</td></tr>
+          <tr><td>Form 1023</td><td>Application for tax-exempt status</td><td>NOT required under 508(c)(1)(A)</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Ongoing Compliance</h3>
+      <ul>
+        <li>Maintain regular meeting minutes</li>
+        <li>Maintain financial records</li>
+        <li>Maintain membership records</li>
+        <li>File any required state annual reports</li>
+        <li>Maintain the Church's physical presence (regular services, places of worship)</li>
+        <li>Retain records for at least 7 years</li>
+      </ul>
+
+      <hr>
+
+      <h2>RECOMMENDED NEXT STEPS</h2>
+      <ol>
+        <li><strong>Engage a nonprofit attorney</strong> — Have these Articles reviewed by a licensed attorney before filing</li>
+        <li><strong>Choose state of incorporation</strong> — Consider state-specific requirements, tax benefits, and privacy protections</li>
+        <li><strong>File Articles of Incorporation</strong> — With the chosen state's Secretary of State</li>
+        <li><strong>Obtain EIN</strong> — From the IRS (Form SS-4, can be done online)</li>
+        <li><strong>Apply for state tax-exempt status</strong> — If required by the state</li>
+        <li><strong>Open bank account</strong> — Under the Church's EIN</li>
+        <li><strong>Elect Board of Elders</strong> — Initial Board members beyond the Founding Elder</li>
+        <li><strong>Adopt bylaws</strong> — As a companion document to these Articles</li>
+        <li><strong>Begin holding regular services</strong> — Document everything</li>
+        <li><strong>Consult with a CPA</strong> — For tax compliance and financial best practices</li>
+      </ol>
+
+      <hr>
+
+      <h2>KEY LEGAL AUTHORITIES</h2>
+      <ul>
+        <li>IRC §501(a) — General exemption from income tax</li>
+        <li>IRC §508(c)(1)(A) — Automatic exemption for churches</li>
+        <li>IRC §7611 — Special church audit procedures</li>
+        <li>IRC §107 — Ministerial exception / parsonage allowance</li>
+        <li>IRC §170(c)(2)(B) — Definition of charitable organization</li>
+        <li>Treasury Regulation §1.501(a)-1 — Organizations organized and operated for religious purposes</li>
+        <li>IRS Publication 1828 — Tax Guide for Churches and Religious Organizations</li>
+        <li><em>Hosanna-Tabor Evangelical Lutheran Church and School v. EEOC</em>, 565 U.S. 171 (2012)</li>
+        <li><em>Our Lady of Guadalupe School v. Morrissey-Berru</em>, 591 U.S. ___ (2020)</li>
+        <li>First Amendment to the U.S. Constitution — Free Exercise Clause, Establishment Clause</li>
+      </ul>
+
+      <hr>
+
+      <div class="disclaimer-box">
+        <p><strong>DISCLAIMER:</strong> These legal notes are for informational purposes only and do not constitute legal advice. The information provided is based on publicly available sources and general legal principles. Laws vary by jurisdiction and change over time. Djedi Church should retain qualified legal counsel before filing any documents with government agencies.</p>
+      </div>
+
+      <p class="text-center text-[#8878A8] text-xs mt-6">Prepared for Djedi Church (D-J-E-D-I) · Founded by Christopher Carron · August 7, 2026</p>
+
+    </div>
+
+    <div class="text-center mt-8 fade-in">
+      <a href="index.html" class="btn-outline text-sm"><i class="fas fa-arrow-left mr-2"></i>Back to Portal</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <p class="serif" style="color: #8878A8;">☉ Djedi Church © 2026</p>
+  <p class="footer-tagline">Consciousness Is the Original Temple · Earth Is the Sanctuary</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+particlesJS('particles-js', {
+  particles: {
+    number: { value: 30, density: { enable: true, value_area: 800 } },
+    color: { value: ["#4A148C", "#FFD700", "#6A1B9A"] },
+    shape: { type: "circle" },
+    opacity: { value: 0.1, random: true, anim: { enable: true, speed: 0.5, opacity_min: 0.05 } },
+    size: { value: 3, random: true },
+    line_linked: { enable: true, distance: 150, color: "#4A148C", opacity: 0.04, width: 1 },
+    move: { enable: true, speed: 0.3, direction: "none", random: true, out_mode: "out" }
+  },
+  interactivity: { detect_on: "canvas", events: { onhover: { enable: false }, onclick: { enable: false } } },
+  retina_detect: true
+});
+</script>
+<script src="../js/auth.js"></script>
+<script src="../js/nav.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  DjediAuth.requireAuth();
+});
+</script>
+</body>
+</html>

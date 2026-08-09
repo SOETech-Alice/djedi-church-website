@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Djedi Church — Our Community</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="particles-js"></div>
+
+<!-- SOETECH × DJEDI Header Bar -->
+<div class="header-bar">
+  <div class="max-w-6xl mx-auto flex items-center justify-between px-6">
+    <span>SOETECH <span>×</span> DJEDI</span>
+    <span>Our Community</span>
+  </div>
+</div>
+
+<!-- Navigation -->
+<nav class="fixed top-8 left-0 right-0 z-50 glass-strong px-6 py-4" id="navbar">
+  <div class="max-w-6xl mx-auto flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-2 text-lg">
+      <span class="text-2xl">☉</span>
+      <span class="serif text-base tracking-wider gradient-text">Djedi CHURCH</span>
+    </a>
+    <div class="desktop-nav hidden md:flex items-center gap-8 text-sm">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="our-beliefs.html" class="nav-link">Our Beliefs</a>
+      <a href="our-teachers.html" class="nav-link">Teachers</a>
+      <a href="our-community.html" class="nav-link active">Community</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="login.html" class="btn-gold text-sm" style="padding:8px 24px;">Member Portal</a>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu hidden" id="mobileMenu">
+  <button onclick="toggleMenu()" class="close-btn"><i class="fas fa-times"></i></button>
+  <a href="index.html">Home</a>
+  <a href="our-beliefs.html">Our Beliefs</a>
+  <a href="our-teachers.html">Teachers</a>
+  <a href="our-community.html">Community</a>
+  <a href="contact.html">Contact</a>
+  <a href="login.html" class="btn-gold mt-4">Member Portal</a>
+</div>
+
+<!-- Page Title -->
+<div class="page-title">
+  <p class="text-xs uppercase tracking-[0.3em] text-[#FFD700] mb-3 fade-in">Section III — Article of Faith</p>
+  <h1 class="fade-in">Our <span class="gradient-text">Community</span></h1>
+  <p class="subtitle fade-in">We gather not because we must, but because we choose to. Sovereign beings in voluntary community — this is the highest social form.</p>
+</div>
+
+<!-- How We Live -->
+<section class="section-padding">
+  <div class="max-w-4xl mx-auto">
+    <p class="text-xs uppercase tracking-[0.3em] text-[#FFD700] mb-3 text-center fade-in">How We Live</p>
+    <h2 class="serif text-2xl md:text-3xl text-center mb-12 fade-in">Our Way of <span class="gradient-text">Being</span></h2>
+
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="glass-strong community-card fade-in" style="border-left: 3px solid var(--gold);">
+        <h3><i class="fas fa-users text-[#FFD700] mr-2"></i>Weekly Gatherings</h3>
+        <p>We gather weekly to study, to meditate, and to remember together. These gatherings are open to all seekers and structured around exploration, not orthodoxy. We share teachings from many traditions and sit in silence together, letting consciousness speak for itself.</p>
+      </div>
+
+      <div class="glass-strong community-card fade-in" style="border-left: 3px solid var(--gold);">
+        <h3><i class="fas fa-book-open text-[#FFD700] mr-2"></i>Study and Meditation</h3>
+        <p>Our teaching library spans philosophy, science, sacred texts, and contemplative practice — from Gnostic scrolls to quantum field theory, from Sufi poetry to neuroscience. We read widely and discuss honestly. Meditation, contemplation, breathwork, and energy practices form the heartbeat of our spiritual life.</p>
+      </div>
+
+      <div class="glass-strong community-card fade-in" style="border-left: 3px solid var(--gold);">
+        <h3><i class="fas fa-hand-holding-heart text-[#FFD700] mr-2"></i>Service</h3>
+        <p>Consciousness without compassion is incomplete. We direct our awareness toward the relief of suffering, the support of our community, and the well-being of the Earth. Service is not obligation; it is the natural expression of awakened awareness. We look for where we are needed, and we respond.</p>
+      </div>
+
+      <div class="glass-strong community-card fade-in" style="border-left: 3px solid var(--gold);">
+        <h3><i class="fas fa-sun text-[#FFD700] mr-2"></i>Seasonal Celebrations</h3>
+        <p>Solstices, equinoxes, and the turning of the great wheel mark our shared rhythm with the Earth. These celebrations honor both the pagan tradition of seasonal reverence and the universal truth that life moves in cycles of death and renewal.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- Community Events -->
+<section class="section-padding">
+  <div class="max-w-4xl mx-auto">
+    <p class="text-xs uppercase tracking-[0.3em] text-[#FFD700] mb-3 text-center fade-in">Gather</p>
+    <h2 class="serif text-2xl md:text-3xl text-center mb-12 fade-in">Upcoming <span class="gradient-text">Events</span></h2>
+
+    <div class="space-y-4">
+      <div class="glass p-6 feature-card fade-in flex flex-col md:flex-row items-start md:items-center gap-4">
+        <div class="text-center md:text-left md:w-28 flex-shrink-0">
+          <div class="serif text-2xl gradient-text">Coming Soon</div>
+          <div class="text-xs text-[#8878A8]">TBA</div>
+        </div>
+        <div class="flex-1">
+          <h3 class="serif text-base mb-1">Ministry Council Gathering</h3>
+          <p class="text-xs text-[#B8A9D4]">Council of Ministers meet with the Founder to determine the path of operations and deepen collective understanding.</p>
+        </div>
+        <button class="btn-gold text-sm px-6 py-2 flex-shrink-0">RSVP Coming Soon</button>
+      </div>
+
+      <div class="glass p-6 feature-card fade-in flex flex-col md:flex-row items-start md:items-center gap-4">
+        <div class="text-center md:text-left md:w-28 flex-shrink-0">
+          <div class="serif text-2xl gradient-text">Coming Soon</div>
+          <div class="text-xs text-[#8878A8]">TBA</div>
+        </div>
+        <div class="flex-1">
+          <h3 class="serif text-base mb-1">Online Study Circle</h3>
+          <p class="text-xs text-[#B8A9D4]">Open session for all members to explore sacred texts, discuss emerging insights, and practice presence together.</p>
+        </div>
+        <button class="btn-gold text-sm px-6 py-2 flex-shrink-0">Notify Me</button>
+      </div>
+
+      <div class="glass p-6 feature-card fade-in flex flex-col md:flex-row items-start md:items-center gap-4">
+        <div class="text-center md:text-left md:w-28 flex-shrink-0">
+          <div class="serif text-2xl gradient-text">Coming Soon</div>
+          <div class="text-xs text-[#8878A8]">TBA</div>
+        </div>
+        <div class="flex-1">
+          <h3 class="serif text-base mb-1">Community Healing Session</h3>
+          <p class="text-xs text-[#B8A9D4]">Group meditation and energy alignment open to all who seek awakened awareness and communal resonance.</p>
+        </div>
+        <button class="btn-gold text-sm px-6 py-2 flex-shrink-0">Notify Me</button>
+      </div>
+
+      <div class="glass p-6 feature-card fade-in flex flex-col md:flex-row items-start md:items-center gap-4">
+        <div class="text-center md:text-left md:w-28 flex-shrink-0">
+          <div class="serif text-2xl gradient-text">Coming Soon</div>
+          <div class="text-xs text-[#8878A8]">TBA</div>
+        </div>
+        <div class="flex-1">
+          <h3 class="serif text-base mb-1">Seasonal Celebration</h3>
+          <p class="text-xs text-[#B8A9D4]">Honoring the turning of the great wheel — solstices, equinoxes, and the rhythms of the Earth.</p>
+        </div>
+        <button class="btn-gold text-sm px-6 py-2 flex-shrink-0">Notify Me</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- CTA Section -->
+<section class="section-padding">
+  <div class="max-w-3xl mx-auto text-center">
+    <h2 class="serif text-2xl md:text-3xl mb-4 fade-in">Join Our <span class="gradient-text">Community</span></h2>
+    <p class="text-sm text-[#8878A8] mb-8 fade-in">Every conscious being is welcome at this table. Every tradition that points toward liberation has something to teach us.</p>
+    
+    <div class="flex flex-col sm:flex-row gap-4 justify-center fade-in">
+      <a href="our-beliefs.html" class="btn-gold">Read Our Beliefs</a>
+      <a href="contact.html" class="btn-outline">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <p class="serif" style="color: #8878A8;">☉ Djedi Church © 2026</p>
+  <p class="footer-tagline">Consciousness Is the Original Temple · Earth Is the Sanctuary</p>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="our-beliefs.html">Beliefs</a>
+    <a href="our-teachers.html">Teachers</a>
+    <a href="our-community.html">Community</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html">Portal</a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+particlesJS('particles-js', {
+  particles: {
+    number: { value: 50, density: { enable: true, value_area: 800 } },
+    color: { value: ["#4A148C", "#FFD700", "#6A1B9A"] },
+    shape: { type: "circle" },
+    opacity: { value: 0.15, random: true, anim: { enable: true, speed: 0.5, opacity_min: 0.05 } },
+    size: { value: 3, random: true },
+    line_linked: { enable: true, distance: 150, color: "#4A148C", opacity: 0.06, width: 1 },
+    move: { enable: true, speed: 0.5, direction: "none", random: true, out_mode: "out" }
+  },
+  interactivity: { detect_on: "canvas", events: { onhover: { enable: false }, onclick: { enable: false } } },
+  retina_detect: true
+});
+</script>
+<script src="js/nav.js"></script>
+</body>
+</html>

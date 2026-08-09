@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Djedi Church — Digital Land Claim & Vision Security Brief</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+<style>
+  .claim-content h2 { font-family: 'Cinzel', serif; font-size: 1.4rem; color: var(--gold); margin-top: 2.5rem; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid rgba(255,215,0,0.2); }
+  .claim-content h3 { font-family: 'Cinzel', serif; font-size: 1.05rem; color: var(--text-primary); margin-top: 1.5rem; margin-bottom: 0.75rem; }
+  .claim-content p { color: var(--text-secondary); line-height: 1.8; margin-bottom: 0.75rem; font-size: 0.95rem; }
+  .claim-content ul { color: var(--text-secondary); margin-left: 1.5rem; margin-bottom: 1rem; }
+  .claim-content li { margin-bottom: 0.5rem; line-height: 1.7; font-size: 0.95rem; }
+  .claim-content strong { color: var(--text-primary); }
+  .claim-content em { color: var(--gold-dim); }
+  .claim-content hr { border: none; height: 1px; background: linear-gradient(90deg, transparent, rgba(255,215,0,0.2), transparent); margin: 2rem 0; }
+  .claim-content table { width: 100%; border-collapse: collapse; margin: 1rem 0 1.5rem; }
+  .claim-content th { background: rgba(74,20,140,0.3); color: var(--gold); padding: 10px 14px; text-align: left; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 2px solid rgba(255,215,0,0.3); }
+  .claim-content td { padding: 10px 14px; border-bottom: 1px solid rgba(255,215,0,0.1); color: var(--text-secondary); font-size: 0.9rem; }
+  .claim-content tr:hover td { background: rgba(74,20,140,0.08); }
+  .badge-available { display: inline-block; background: rgba(74,222,128,0.15); color: #4ADE80; padding: 2px 10px; border-radius: 12px; font-size: 0.75rem; font-weight: 600; }
+  .badge-none { display: inline-block; background: rgba(255,215,0,0.1); color: var(--gold); padding: 2px 10px; border-radius: 12px; font-size: 0.75rem; font-weight: 600; }
+  .status-banner { background: linear-gradient(135deg, rgba(74,20,140,0.3), rgba(106,27,154,0.3)); border: 1px solid rgba(255,215,0,0.2); padding: 1.5rem; border-radius: 12px; margin-bottom: 2rem; }
+  .status-banner ul { list-style: none; padding: 0; margin: 0; }
+  .status-banner li { padding: 6px 0; font-size: 0.9rem; color: var(--text-secondary); }
+  .status-banner li::before { content: '✓'; margin-right: 10px; font-weight: 700; color: var(--gold); }
+  .action-box { background: rgba(74,20,140,0.08); border: 1px solid rgba(255,215,0,0.1); border-left: 3px solid var(--gold); border-radius: 0 8px 8px 0; padding: 1.25rem; margin: 1rem 0; }
+  .callout { background: rgba(255,215,0,0.04); border: 1px solid rgba(255,215,0,0.2); border-radius: 12px; padding: 1.25rem; margin: 1.5rem 0; display: flex; gap: 1rem; align-items: flex-start; }
+  .callout-icon { font-size: 1.5rem; flex-shrink: 0; }
+  .step-list { counter-reset: step; list-style: none; padding: 0; }
+  .step-list li { counter-increment: step; position: relative; padding-left: 3rem; margin-bottom: 1.5rem; }
+  .step-list li::before { content: counter(step); position: absolute; left: 0; top: 0; width: 32px; height: 32px; background: linear-gradient(135deg, var(--gold), var(--gold-dim)); color: #0D0B1A; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 700; }
+  .meta-block { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; background: rgba(74,20,140,0.08); border-left: 3px solid var(--gold); padding: 1.25rem; margin-bottom: 2rem; border-radius: 0 8px 8px 0; }
+  .meta-item label { display: block; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 1.5px; color: #8878A8; margin-bottom: 0.25rem; }
+  .meta-item span { font-size: 0.9rem; font-weight: 600; color: var(--text-primary); }
+</style>
+</head>
+<body>
+
+<div id="particles-js"></div>
+
+<div class="header-bar">
+  <div class="max-w-6xl mx-auto flex items-center justify-between px-6">
+    <span>SOETECH <span>×</span> DJEDI</span>
+    <span>Consulting Reports</span>
+  </div>
+</div>
+
+<nav class="fixed top-8 left-0 right-0 z-50 glass-strong px-6 py-4" id="navbar">
+  <div class="max-w-6xl mx-auto flex items-center justify-between">
+    <a href="../index.html" class="flex items-center gap-2 text-lg">
+      <span class="text-2xl">☉</span>
+      <span class="serif text-base tracking-wider gradient-text">Djedi CHURCH</span>
+    </a>
+    <div class="desktop-nav hidden md:flex items-center gap-8 text-sm">
+      <a href="../index.html" class="nav-link"><i class="fas fa-arrow-left mr-1"></i> Portal</a>
+      <a href="consulting-report.html" class="nav-link">Consulting Report</a>
+      <button onclick="handleLogout()" class="btn-outline text-sm" style="padding:8px 24px;">Logout</button>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+  </div>
+</nav>
+
+<div class="mobile-menu hidden" id="mobileMenu">
+  <button onclick="toggleMenu()" class="close-btn"><i class="fas fa-times"></i></button>
+  <a href="../index.html">← Portal Dashboard</a>
+  <a href="consulting-report.html">Consulting Report</a>
+  <button onclick="handleLogout()" class="btn-outline mt-4">Logout</button>
+</div>
+
+<section class="min-h-screen px-6 pt-28 pb-20">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-12 fade-in">
+      <p class="text-xs uppercase tracking-[0.3em] text-[#FFD700] mb-3">Consulting Reports</p>
+      <h1 class="serif text-3xl md:text-4xl mb-3">Digital Land Claim <span class="gradient-text">& Vision Security Brief</span></h1>
+      <p class="text-sm text-[#8878A8]">Securing Exclusive Rights to the Djedi Brand · July 25, 2026</p>
+      <hr class="accent-line w-32 mx-auto mt-6">
+    </div>
+
+    <div class="glass p-8 md:p-12 fade-in claim-content">
+
+      <div class="meta-block">
+        <div class="meta-item"><label>Prepared For</label><span>Christopher Carron</span></div>
+        <div class="meta-item"><label>Organization</label><span>Djedi Church</span></div>
+        <div class="meta-item"><label>Date</label><span>July 25, 2026</span></div>
+        <div class="meta-item"><label>Classification</label><span>Confidential</span></div>
+      </div>
+
+      <div class="status-banner">
+        <h3 style="color: var(--gold); margin-top:0;">Executive Summary</h3>
+        <ul>
+          <li><strong>Zero existing entities</strong> hold active trademarks or corporate registrations under "Djedi Church" or related spiritual/religious variations.</li>
+          <li><strong>All primary digital domains remain unregistered</strong> and available for immediate acquisition.</li>
+          <li><strong>Total naming exclusivity is available right now</strong> — representing a rare first-mover opportunity in the consciousness/spiritual space.</li>
+        </ul>
+      </div>
+
+      <h2>1. Market Landscape & Risk Assessment</h2>
+      <p>We completed a comprehensive global prior-art search across federal business registries, international trademark databases, domain registrars, and web presence metrics.</p>
+      <table>
+        <thead><tr><th>Search Term / Asset</th><th>Status</th><th>Implication</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Djedichurch.com</strong></td><td><span class="badge-available">Available</span></td><td>Primary web address — secure immediately</td></tr>
+          <tr><td><strong>theDjedi.org</strong></td><td><span class="badge-available">Available</span></td><td>Official landing page</td></tr>
+          <tr><td><strong>churchofDjedi.com</strong></td><td><span class="badge-available">Available</span></td><td>Defensive registration — typo protection</td></tr>
+          <tr><td><strong>Federal Trademarks (USPTO)</strong></td><td><span class="badge-none">None Found</span></td><td>Clear path to federal trademark registration</td></tr>
+          <tr><td><strong>State Business Registries (US)</strong></td><td><span class="badge-none">None Found</span></td><td>Safe to incorporate under this name</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Adjacent Entities — Low Risk</h3>
+      <div class="action-box">
+        <h3 style="margin-top:0;">1. "The Djedi Path" — Tyler Tolman</h3>
+        <p><strong>Website:</strong> tylertolman.com</p>
+        <p><strong>What they do:</strong> Personal coaching platform focused on ancient Egyptian wisdom traditions, warrior training programs, and events.</p>
+        <p><strong>Assessment:</strong> Not a legal threat. Positions us to define <em>Djedi Church</em> as the established institutional religious authority vs. his individual coaching service.</p>
+      </div>
+      <div class="action-box">
+        <h3 style="margin-top:0;">2. "Djedi Mind Trips"</h3>
+        <p><strong>Website:</strong> Djedimindtrip.com</p>
+        <p><strong>What they do:</strong> E-commerce retailer selling mushroom-based supplements.</p>
+        <p><strong>Assessment:</strong> Negligible overlap. Different industry, different audience. No brand confusion risk whatsoever.</p>
+      </div>
+
+      <hr>
+
+      <h2>2. Immediate Actions Required (Next 48 Hours)</h2>
+      <ol class="step-list">
+        <li>
+          <strong>Secure the Digital Address</strong>
+          <p>Register these domains through Namecheap, Cloudflare, or Porkbun:</p>
+          <ul>
+            <li><strong>Djedichurch.com</strong> <em>(Priority #1)</em></li>
+            <li><strong>theDjedi.org</strong> <em>(Priority #2)</em></li>
+            <li><strong>churchofDjedi.com</strong> <em>(Priority #3)</em></li>
+          </ul>
+        </li>
+        <li>
+          <strong>Claim Social Territories</strong>
+          <p>Establish official presence across all major platforms before competitors or squatters acquire these handles.</p>
+        </li>
+        <li>
+          <strong>Establish Legal Standing</strong>
+          <p>Submit Articles of Incorporation within the week to cement your legal right to operate under this name.</p>
+        </li>
+      </ol>
+
+      <div class="callout">
+        <div class="callout-icon">⚠️</div>
+        <div>
+          <h3 style="margin-top:0;">Why Act Within 48 Hours?</h3>
+          <p>The moment this website launches publicly, opportunistic domain registrars and social media squatters will begin scanning for unique brand opportunities. Domain names cost ~$15/year to register but thousands to recover later.</p>
+        </div>
+      </div>
+
+      <hr>
+
+      <h2>3. Strategic Recommendations</h2>
+
+      <div class="action-box">
+        <h3 style="margin-top:0;">A. Register Everything Now</h3>
+        <p>Domain registration costs approximately $15 per year per extension. This is not an expense — it is insurance.</p>
+      </div>
+      <div class="action-box">
+        <h3 style="margin-top:0;">B. File for Trademark Protection</h3>
+        <p>Once domains are secured, engage a trademark attorney to file a Federal Registration with the USPTO under Class 41 (Religious/Educational Services).</p>
+        <p><strong>Estimated cost:</strong> $250–$500 per class filing. <strong>Timeline:</strong> 8–12 months for approval.</p>
+      </div>
+      <div class="action-box">
+        <h3 style="margin-top:0;">C. Position as the Institutional Authority</h3>
+        <p>Because the name is open, <em>you</em> control the narrative. Clean, authoritative positioning prevents market fragmentation and establishes long-term credibility.</p>
+      </div>
+
+      <hr>
+
+      <h2>4. Ready to Execute</h2>
+      <p>The SOETech team stands ready to assist with every step of this process:</p>
+      <table>
+        <thead><tr><th>Service</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>Domain acquisition & DNS configuration</td><td><span class="badge-available">Ready to deploy</span></td></tr>
+          <tr><td>Social media account creation & verification</td><td><span class="badge-available">Ready to deploy</span></td></tr>
+          <tr><td>Website deployment & hosting setup</td><td><span class="badge-available">Complete (see live site)</span></td></tr>
+          <tr><td>Trademark filing coordination</td><td><span class="badge-none">Pending your approval</span></td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout">
+        <div class="callout-icon">🚀</div>
+        <div>
+          <h3 style="margin-top:0;">Approval Request</h3>
+          <p>Your vision is already unique. Let's secure the foundation so the message can expand without interference.</p>
+          <p><strong>Please confirm readiness to proceed with Step 1 (domain purchase) so we can execute immediately.</strong></p>
+        </div>
+      </div>
+
+      <hr>
+
+      <p class="text-center text-[#8878A8] text-xs">Alice(AI) & The SOETech Team · SOETech LLC · Confidential Client Document · July 25, 2026</p>
+    </div>
+
+    <div class="text-center mt-8 fade-in">
+      <a href="../index.html" class="btn-outline text-sm"><i class="fas fa-arrow-left mr-2"></i>Back to Portal</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <p class="serif" style="color: #8878A8;">☉ Djedi Church © 2026</p>
+  <p class="footer-tagline">Consciousness Is the Original Temple · Earth Is the Sanctuary</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+particlesJS('particles-js', {
+  particles: {
+    number: { value: 30, density: { enable: true, value_area: 800 } },
+    color: { value: ["#4A148C", "#FFD700", "#6A1B9A"] },
+    shape: { type: "circle" },
+    opacity: { value: 0.1, random: true, anim: { enable: true, speed: 0.5, opacity_min: 0.05 } },
+    size: { value: 3, random: true },
+    line_linked: { enable: true, distance: 150, color: "#4A148C", opacity: 0.04, width: 1 },
+    move: { enable: true, speed: 0.3, direction: "none", random: true, out_mode: "out" }
+  },
+  interactivity: { detect_on: "canvas", events: { onhover: { enable: false }, onclick: { enable: false } } },
+  retina_detect: true
+});
+</script>
+<script src="../js/auth.js"></script>
+<script src="../js/nav.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  DjediAuth.requireAuth();
+});
+</script>
+</body>
+</html>

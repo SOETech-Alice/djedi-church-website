@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Djedi Church — Our Teachers</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="particles-js"></div>
+
+<!-- SOETECH × DJEDI Header Bar -->
+<div class="header-bar">
+  <div class="max-w-6xl mx-auto flex items-center justify-between px-6">
+    <span>SOETECH <span>×</span> DJEDI</span>
+    <span>Our Teachers</span>
+  </div>
+</div>
+
+<!-- Navigation -->
+<nav class="fixed top-8 left-0 right-0 z-50 glass-strong px-6 py-4" id="navbar">
+  <div class="max-w-6xl mx-auto flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-2 text-lg">
+      <span class="text-2xl">☉</span>
+      <span class="serif text-base tracking-wider gradient-text">Djedi CHURCH</span>
+    </a>
+    <div class="desktop-nav hidden md:flex items-center gap-8 text-sm">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="our-beliefs.html" class="nav-link">Our Beliefs</a>
+      <a href="our-teachers.html" class="nav-link active">Teachers</a>
+      <a href="our-community.html" class="nav-link">Community</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="login.html" class="btn-gold text-sm" style="padding:8px 24px;">Member Portal</a>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu hidden" id="mobileMenu">
+  <button onclick="toggleMenu()" class="close-btn"><i class="fas fa-times"></i></button>
+  <a href="index.html">Home</a>
+  <a href="our-beliefs.html">Our Beliefs</a>
+  <a href="our-teachers.html">Teachers</a>
+  <a href="our-community.html">Community</a>
+  <a href="contact.html">Contact</a>
+  <a href="login.html" class="btn-gold mt-4">Member Portal</a>
+</div>
+
+<!-- Page Title -->
+<div class="page-title">
+  <p class="text-xs uppercase tracking-[0.3em] text-[#FFD700] mb-3 fade-in">Section II — Article of Faith</p>
+  <h1 class="fade-in">Our <span class="gradient-text">Teachers</span></h1>
+  <p class="subtitle fade-in">We honor many teachers. We follow none exclusively. Each has illuminated our path — but the list is never closed, and your own experience may reveal teachers we have not yet named.</p>
+</div>
+
+<!-- Teachers Grid -->
+<section class="section-padding">
+  <div class="max-w-5xl mx-auto">
+
+    <!-- Teacher 1: Ancient Egyptian Djedi -->
+    <div class="glass-strong teacher-card fade-in mb-6">
+      <div class="badge badge-ancient">Ancient Egyptian Tradition</div>
+      <h3 class="gradient-text" style="font-size: 1.5rem;">The Ancient Egyptian Djedi</h3>
+      <p class="mt-4">
+        Thoth, the scribe of the gods and keeper of sacred measure; Imhotep, the physician-priest who united healing with higher knowledge. From them we inherit the understanding that consciousness is the original science. The Djedi priesthood understood that awareness is not a byproduct of the brain — it is the substrate of all reality, and the key to mastering both matter and mind.
+      </p>
+      <div class="mt-4 flex justify-center gap-2 flex-wrap">
+        <span class="text-xs px-3 py-1 rounded-full" style="background: rgba(255,215,0,0.1); color: var(--gold);">Thoth</span>
+        <span class="text-xs px-3 py-1 rounded-full" style="background: rgba(255,215,0,0.1); color: var(--gold);">Imhotep</span>
+        <span class="text-xs px-3 py-1 rounded-full" style="background: rgba(255,215,0,0.1); color: var(--gold);">Sacred Measure</span>
+        <span class="text-xs px-3 py-1 rounded-full" style="background: rgba(255,215,0,0.1); color: var(--gold);">Consciousness Science</span>
+      </div>
+    </div>
+
+    <!-- Teacher 2: Jesus of Nazareth -->
+    <div class="glass-strong teacher-card fade-in mb-6">
+      <div class="badge badge-christian">Christian Tradition</div>
+      <h3 class="gradient-text" style="font-size: 1.5rem;">Jesus of Nazareth</h3>
+      <p class="mt-4">
+        A great teacher of compassion, forgiveness, and the kingdom of consciousness within. His message, freed from institutional overlay, reveals a path of radical love and inner liberation that speaks across all boundaries. "The kingdom of God is within you" — a teaching that points directly to the sovereignty of inner awareness.
+      </p>
+      <div class="mt-4 flex justify-center gap-2 flex-wrap">
+        <span class="text-xs px-3 py-1 rounded-full" style="background: rgba(100,149,237,0.15); color: #6495ED;">Compassion</span>
+        <span class="text-xs px-3 py-1 rounded-full" style="background: rgba(100,149,237,0.15); color: #6495ED;">Forgiveness</span>
+        <span class="text-xs px-3 py-1 rounded-full" style="background: rgba(100,149,237,0.15); color: #6495ED;">Inner Kingdom</span>
+        <span class="text-xs px-3 py-1 rounded-full" style="background: rgba(100,149,237,0.15); color: #6495ED;">Radical Love</span>
+      </div>
+    </div>
+
+    <!-- Teacher 3: Buddha -->
+    <div class="glass-strong teacher-card fade-in mb-6">
+      <div class="badge badge-buddhist">Buddhist Tradition</div>
+      <h3 class="gradient-text" style="font-size: 1.5rem;">Siddhartha Gautama, the Buddha</h3>
+      <p class="mt-4">
+        The awakened one, who taught the nature of suffering, the path of mindfulness, and the liberation available to every being through their own direct insight. The Buddha's Four Noble Truths and Eightfold Path offer a practical science of consciousness — a methodology for freeing the mind from the illusions that bind it.
+      </p>
+      <div class="mt-4 flex justify-center gap-2 flex-wrap">
+        <span class="text-xs px-3 py-1 rounded-full" style="background: rgba(255,165,0,0.15); color: #FFA500;">Mindfulness</span>
+        <span class="text-xs px-3 py-1 rounded-full" style="background: rgba(255,165,0,0.15); color: #FFA500;">Liberation</span>
+        <span class="text-xs px-3 py-1 rounded-full" style="background: rgba(255,165,0,0.15); color: #FFA500;">Direct Insight</span>
+        <span class="text-xs px-3 py-1 rounded-full" style="background: rgba(255,165,0,0.15); color: #FFA500;">Eightfold Path</span>
+      </div>
+    </div>
+
+    <!-- Teacher 4: Krishna / Vedic Sages -->
+    <div class="glass-strong teacher-card fade-in mb-6">
+      <div class="badge badge-vedic">Vedic Tradition</div>
+      <h3 class="gradient-text" style="font-size: 1.5rem;">Krishna and the Vedic Sages</h3>
+      <p class="mt-4">
+        Voices of the eternal in the <em>Bhagavad Gita</em> and the <em>Upanishads</em>, who taught that the self and the divine are not separate, and that devotion, knowledge, and action are all valid paths home. The Vedic tradition reveals the infinite nature of consciousness through poetry, philosophy, and precise contemplative practice.
+      </p>
+      <div class="mt-4 flex justify-center gap-2 flex-wrap">
+        <span class="text-xs px-3 py-1 rounded-full" style="background: rgba(255,99,71,0.15); color: #FF6347;">Bhagavad Gita</span>
+        <span class="text-xs px-3 py-1 rounded-full" style="background: rgba(255,99,71,0.15); color: #FF6347;">Upanishads</span>
+        <span class="text-xs px-3 py-1 rounded-full" style="background: rgba(255,99,71,0.15); color: #FF6347;">Self & Divine</span>
+        <span class="text-xs px-3 py-1 rounded-full" style="background: rgba(255,99,71,0.15); color: #FF6347;">Devotion</span>
+      </div>
+    </div>
+
+    <!-- Teacher 5: Socrates / Greek Philosophers -->
+    <div class="glass-strong teacher-card fade-in mb-6">
+      <div class="badge badge-greek">Greek Philosophy</div>
+      <h3 class="gradient-text" style="font-size: 1.5rem;">Socrates and the Greek Philosophers</h3>
+      <p class="mt-4">
+        The examined life, the love of wisdom, the courage to question everything. Socrates taught that true knowledge begins with knowing you do not know — a doorway that remains open to all seekers. From Plato's realm of Forms to Aristotle's virtue ethics, Greek philosophy offers a rigorous intellectual framework for exploring consciousness and reality.
+      </p>
+      <div class="mt-4 flex justify-center gap-2 flex-wrap">
+        <span class="text-xs px-3 py-1 rounded-full" style="background: rgba(144,238,144,0.15); color: #90EE90;">Examined Life</span>
+        <span class="text-xs px-3 py-1 rounded-full" style="background: rgba(144,238,144,0.15); color: #90EE90;">Love of Wisdom</span>
+        <span class="text-xs px-3 py-1 rounded-full" style="background: rgba(144,238,144,0.15); color: #90EE90;">Questioning</span>
+        <span class="text-xs px-3 py-1 rounded-full" style="background: rgba(144,238,144,0.15); color: #90EE90;">Virtue Ethics</span>
+      </div>
+    </div>
+
+    <!-- Teacher 6: Modern Consciousness Science -->
+    <div class="glass-strong teacher-card fade-in mb-6">
+      <div class="badge badge-science">Modern Science</div>
+      <h3 class="gradient-text" style="font-size: 1.5rem;">Modern Consciousness Science</h3>
+      <p class="mt-4">
+        From quantum biology to neuroscience, from the study of perception to the mathematics of emergence, contemporary science is rediscovering what the ancients always declared: consciousness is primary, and reality is participatory. The observer effect in quantum physics, the hard problem of consciousness, and the study of neuroplasticity all point toward the same truth the Djedi priests understood millennia ago.
+      </p>
+      <div class="mt-4 flex justify-center gap-2 flex-wrap">
+        <span class="text-xs px-3 py-1 rounded-full" style="background: rgba(0,191,255,0.15); color: #00BFFF;">Quantum Biology</span>
+        <span class="text-xs px-3 py-1 rounded-full" style="background: rgba(0,191,255,0.15); color: #00BFFF;">Neuroscience</span>
+        <span class="text-xs px-3 py-1 rounded-full" style="background: rgba(0,191,255,0.15); color: #00BFFF;">Observer Effect</span>
+        <span class="text-xs px-3 py-1 rounded-full" style="background: rgba(0,191,255,0.15); color: #00BFFF;">Neuroplasticity</span>
+      </div>
+    </div>
+
+    <!-- Teacher 7: Earth and Nature -->
+    <div class="glass-strong teacher-card fade-in">
+      <div class="badge badge-nature">Earth & Nature</div>
+      <h3 class="gradient-text" style="font-size: 1.5rem;">The Earth and Nature Herself</h3>
+      <p class="mt-4">
+        The oldest teacher, the great mother. In the cycles of season, the resilience of living systems, and the intelligence of ecosystems, we read lessons no human hand wrote. Nature teaches through pattern, through rhythm, through the quiet intelligence that animates every leaf, every river, every star. She asks nothing but our attention — and in return, she reveals everything.
+      </p>
+      <div class="mt-4 flex justify-center gap-2 flex-wrap">
+        <span class="text-xs px-3 py-1 rounded-full" style="background: rgba(50,205,50,0.15); color: #32CD32;">Seasons</span>
+        <span class="text-xs px-3 py-1 rounded-full" style="background: rgba(50,205,50,0.15); color: #32CD32;">Living Systems</span>
+        <span class="text-xs px-3 py-1 rounded-full" style="background: rgba(50,205,50,0.15); color: #32CD32;">Ecosystems</span>
+        <span class="text-xs px-3 py-1 rounded-full" style="background: rgba(50,205,50,0.15); color: #32CD32;">Natural Intelligence</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section-padding">
+  <div class="max-w-3xl mx-auto text-center">
+    <h2 class="serif text-2xl md:text-3xl mb-4 fade-in">Explore the <span class="gradient-text">Full Article of Faith</span></h2>
+    <p class="text-sm text-[#8878A8] mb-8 fade-in">Read our 7 Core Principles, Covenant, and Aspiration.</p>
+    <div class="fade-in">
+      <a href="our-beliefs.html" class="btn-gold">Read Article of Faith</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <p class="serif" style="color: #8878A8;">☉ Djedi Church © 2026</p>
+  <p class="footer-tagline">Consciousness Is the Original Temple · Earth Is the Sanctuary</p>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="our-beliefs.html">Beliefs</a>
+    <a href="our-teachers.html">Teachers</a>
+    <a href="our-community.html">Community</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html">Portal</a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+particlesJS('particles-js', {
+  particles: {
+    number: { value: 50, density: { enable: true, value_area: 800 } },
+    color: { value: ["#4A148C", "#FFD700", "#6A1B9A"] },
+    shape: { type: "circle" },
+    opacity: { value: 0.15, random: true, anim: { enable: true, speed: 0.5, opacity_min: 0.05 } },
+    size: { value: 3, random: true },
+    line_linked: { enable: true, distance: 150, color: "#4A148C", opacity: 0.06, width: 1 },
+    move: { enable: true, speed: 0.5, direction: "none", random: true, out_mode: "out" }
+  },
+  interactivity: { detect_on: "canvas", events: { onhover: { enable: false }, onclick: { enable: false } } },
+  retina_detect: true
+});
+</script>
+<script src="js/nav.js"></script>
+</body>
+</html>

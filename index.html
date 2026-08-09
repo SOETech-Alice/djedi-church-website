@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Djedi Church — Consciousness Community</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="particles-js"></div>
+
+<!-- SOETECH × DJEDI Header Bar -->
+<div class="header-bar">
+  <div class="max-w-6xl mx-auto flex items-center justify-between px-6">
+    <span>SOETECH <span>×</span> DJEDI</span>
+    <span>Consciousness Community</span>
+  </div>
+</div>
+
+<!-- Navigation -->
+<nav class="fixed top-8 left-0 right-0 z-50 glass-strong px-6 py-4" id="navbar">
+  <div class="max-w-6xl mx-auto flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-2 text-lg">
+      <span class="text-2xl">☉</span>
+      <span class="serif text-base tracking-wider gradient-text">Djedi CHURCH</span>
+    </a>
+    <div class="desktop-nav hidden md:flex items-center gap-8 text-sm">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#principles" class="nav-link">Sacred Principles</a>
+      <a href="our-beliefs.html" class="nav-link">Our Beliefs</a>
+      <a href="our-teachers.html" class="nav-link">Teachers</a>
+      <a href="our-community.html" class="nav-link">Community</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="login.html" class="btn-gold text-sm" style="padding:8px 24px;">Member Portal</a>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu hidden" id="mobileMenu">
+  <button onclick="toggleMenu()" class="close-btn"><i class="fas fa-times"></i></button>
+  <a href="#about" onclick="toggleMenu()">About</a>
+  <a href="#principles" onclick="toggleMenu()">Principles</a>
+  <a href="our-beliefs.html">Our Beliefs</a>
+  <a href="our-teachers.html">Teachers</a>
+  <a href="our-community.html">Community</a>
+  <a href="contact.html">Contact</a>
+  <a href="login.html" class="btn-gold mt-4">Member Portal</a>
+</div>
+
+<!-- Hero Section -->
+<section id="hero" class="min-h-screen flex items-center justify-center px-6 pt-20">
+  <div class="max-w-4xl mx-auto text-center">
+    <div class="mb-6 float-animation">
+      <span class="text-6xl mb-4 block">☉</span>
+    </div>
+    <p class="text-xs uppercase tracking-[0.3em] text-[#FFD700] mb-3 fade-in">Djedi Church</p>
+    <h1 class="serif text-4xl md:text-6xl lg:text-7xl leading-tight mb-6 fade-in">
+      Ancient Wisdom<br><span class="gradient-text">× Modern Science</span>
+    </h1>
+    <hr class="accent-line w-32 mx-auto mb-6">
+    <p class="text-lg md:text-xl text-[#B8A9D4] max-w-2xl mx-auto mb-8 fade-in">
+      A path rooted in Egypt, Ethiopia, Tibet, and Islam — where timeless teachings meet quantum biology, neuroscience, and the science of consciousness.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center fade-in">
+      <a href="our-beliefs.html" class="btn-gold">Read Our Beliefs</a>
+      <a href="login.html" class="btn-outline">Client Login</a>
+    </div>
+    <div class="mt-12 flex justify-center gap-8 md:gap-16 fade-in">
+      <div class="text-center">
+        <div class="serif text-3xl gradient-text">∞</div>
+        <div class="text-xs text-[#8878A8] mt-1">Pathways to Consciousness</div>
+      </div>
+      <div class="text-center">
+        <div class="serif text-3xl gradient-text">5</div>
+        <div class="text-xs text-[#8878A8] mt-1">Sacred Principles</div>
+      </div>
+      <div class="text-center">
+        <div class="serif text-3xl gradient-text">1</div>
+        <div class="text-xs text-[#8878A8] mt-1">Community</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- About Section -->
+<section id="about" class="py-20 px-6">
+  <div class="max-w-5xl mx-auto">
+    <p class="text-xs uppercase tracking-[0.3em] text-[#FFD700] mb-3 text-center fade-in">Who We Are</p>
+    <h2 class="serif text-3xl md:text-4xl text-center mb-16 fade-in">
+      Consciously Rooted Across <span class="gradient-text">Ancient Traditions</span>
+    </h2>
+    
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="glass p-8 feature-card fade-in">
+        <i class="fas fa-spa text-2xl text-[#FFD700] mb-4"></i>
+        <h3 class="serif text-lg mb-3">Our Mission</h3>
+        <p class="text-sm text-[#B8A9D4] leading-relaxed">
+          The Djedi Church cultivates and promotes consciousness-based spirituality through relation to philosophy, religion, and science. We allow expanded awareness more room to freely express across all belief structures — building bridges between traditions without claiming ownership of any single one.
+        </p>
+      </div>
+      <div class="glass p-8 feature-card fade-in">
+        <i class="fas fa-globe-africa text-2xl text-[#FFD700] mb-4"></i>
+        <h3 class="serif text-lg mb-3">Roots Without Boundaries</h3>
+        <p class="text-sm text-[#B8A9D4] leading-relaxed">
+          Named after the ancient Egyptian priesthood accredited with practicing consciousness-based spirituality, we draw attention to a broader truth found across many traditions: the Djedi wisdom echoes through Ethiopian Orthodox contemplation, Islamic Sufi mysticism, Tibetan Buddhist insight, and countless other paths — each pointing to the same universal reality beneath all forms.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- Sacred Principles -->
+<section id="principles" class="py-20 px-6">
+  <div class="max-w-5xl mx-auto">
+    <p class="text-xs uppercase tracking-[0.3em] text-[#FFD700] mb-3 text-center fade-in">Our Foundation</p>
+    <h2 class="serif text-3xl md:text-4xl text-center mb-16 fade-in">The <span class="gradient-text">5 Sacred Principles</span></h2>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="glass-strong p-6 sacred-principle fade-in border-l-4 border-[#FFD700]">
+        <div class="text-3xl gradient-text serif mb-2">I</div>
+        <h3 class="serif text-sm mb-3">Consciousness Is Everything</h3>
+        <p class="text-xs text-[#B8A9D4] leading-relaxed">
+          Consciousness is the foundation of all existence. It is inherent in all things, connecting all beings. Verified by quantum science, remembered by ancient wisdom from every continent and culture.
+        </p>
+      </div>
+      
+      <div class="glass-strong p-6 sacred-principle fade-in border-l-4 border-[#FFD700]">
+        <div class="text-3xl gradient-text serif mb-2">II</div>
+        <h3 class="serif text-sm mb-3">Universal Human Potential</h3>
+        <p class="text-xs text-[#B8A9D4] leading-relaxed">
+          The living and learning of awakened qualities — compassion, clarity, healing — can be achieved through any conscious being, across any tradition, culture, or path. This potential belongs to everyone.
+        </p>
+      </div>
+      
+      <div class="glass-strong p-6 sacred-principle fade-in border-l-4 border-[#FFD700]">
+        <div class="text-3xl gradient-text serif mb-2">III</div>
+        <h3 class="serif text-sm mb-3">Sovereign Self-Authority</h3>
+        <p class="text-xs text-[#B8A9D4] leading-relaxed">
+          Each being holds sovereign right to their own consciousness and its unique expression. No external entity may govern inner truth, nor interfere with any life path aligned with compassion and non-harm.
+        </p>
+      </div>
+      
+      <div class="glass-strong p-6 sacred-principle fade-in border-l-4 border-[#FFD700]">
+        <div class="text-3xl gradient-text serif mb-2">IV</div>
+        <h3 class="serif text-sm mb-3">Ethical Living as Discipline</h3>
+        <p class="text-xs text-[#B8A9D4] leading-relaxed">
+          Compassion, empathy, acceptance, tolerance, gratitude, and honor. The Universal Law: do no harm, do not infringe on another's free will or life path. To violate consciousness through force or servitude is a sacred offense.
+        </p>
+      </div>
+      
+      <div class="glass-strong p-6 sacred-principle fade-in border-l-4 border-[#FFD700]">
+        <div class="text-3xl gradient-text serif mb-2">V</div>
+        <h3 class="serif text-sm mb-3">Inner Abilities Awaken</h3>
+        <p class="text-xs text-[#B8A9D4] leading-relaxed">
+          When living these principles consistently, inner abilities of healing, clarity, energy, stamina, intuition, and manifestation become accessible. Cultivation of this state is the ultimate goal for every seeker.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- CTA Section -->
+<section class="py-20 px-6">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="serif text-3xl md:text-4xl mb-4 fade-in">Begin Your <span class="gradient-text">Journey</span></h2>
+    <p class="text-[#8878A8] mb-12 fade-in">Explore our beliefs, meet our teachers, or join our community.</p>
+    
+    <div class="flex flex-col sm:flex-row gap-4 justify-center fade-in">
+      <a href="our-beliefs.html" class="btn-gold">Read Our Beliefs</a>
+      <a href="our-teachers.html" class="btn-outline">Meet Our Teachers</a>
+      <a href="our-community.html" class="btn-outline">Join Community</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <p class="serif" style="color: #8878A8;">☉ Djedi Church © 2026</p>
+  <p class="footer-tagline">Consciousness Is the Original Temple · Earth Is the Sanctuary</p>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="our-beliefs.html">Beliefs</a>
+    <a href="our-teachers.html">Teachers</a>
+    <a href="our-community.html">Community</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html">Portal</a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+particlesJS('particles-js', {
+  particles: {
+    number: { value: 50, density: { enable: true, value_area: 800 } },
+    color: { value: ["#4A148C", "#FFD700", "#6A1B9A"] },
+    shape: { type: "circle" },
+    opacity: { value: 0.15, random: true, anim: { enable: true, speed: 0.5, opacity_min: 0.05 } },
+    size: { value: 3, random: true },
+    line_linked: { enable: true, distance: 150, color: "#4A148C", opacity: 0.06, width: 1 },
+    move: { enable: true, speed: 0.5, direction: "none", random: true, out_mode: "out" }
+  },
+  interactivity: { detect_on: "canvas", events: { onhover: { enable: false }, onclick: { enable: false } } },
+  retina_detect: true
+});
+</script>
+<script src="js/nav.js"></script>
+</body>
+</html>
