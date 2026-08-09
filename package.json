@@ -1,0 +1,12 @@
+{
+  "name": "djedi-church-website",
+  "version": "1.0.0",
+  "description": "Djedi Church — Consciousness Community Website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
