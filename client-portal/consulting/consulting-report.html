@@ -313,5 +313,11 @@ document.addEventListener('DOMContentLoaded', function() {
   DjediAuth.requireAuth();
 });
 </script>
+<script>
+// Make fade-in content visible immediately
+if(typeof IntersectionObserver === "undefined") {
+  document.querySelectorAll(".fade-in").forEach(function(el) { el.classList.add("visible"); });
+}
+</script>
 </body>
 </html>
