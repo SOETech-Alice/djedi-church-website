@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Djedi Church — Missouri § 355 Research Report</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+<style>
+  .report-content h2 { font-family: 'Cinzel', serif; font-size: 1.4rem; color: var(--gold); margin-top: 2.5rem; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid rgba(255,215,0,0.2); }
+  .report-content h3 { font-family: 'Cinzel', serif; font-size: 1.05rem; color: var(--text-primary); margin-top: 1.5rem; margin-bottom: 0.75rem; }
+  .report-content h4 { font-family: 'Cinzel', serif; font-size: 0.95rem; color: var(--gold-dim); margin-top: 1.25rem; margin-bottom: 0.5rem; }
+  .report-content p { color: var(--text-secondary); line-height: 1.8; margin-bottom: 0.75rem; font-size: 0.95rem; }
+  .report-content ul, .report-content ol { color: var(--text-secondary); margin-left: 1.5rem; margin-bottom: 1rem; }
+  .report-content li { margin-bottom: 0.5rem; line-height: 1.7; font-size: 0.95rem; }
+  .report-content strong { color: var(--text-primary); }
+  .report-content em { color: var(--gold-dim); }
+  .report-content hr { border: none; height: 1px; background: linear-gradient(90deg, transparent, rgba(255,215,0,0.2), transparent); margin: 2rem 0; }
+  .report-content table { width: 100%; border-collapse: collapse; margin: 1rem 0 1.5rem; }
+  .report-content th { background: rgba(74,20,140,0.3); color: var(--gold); padding: 10px 14px; text-align: left; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 2px solid rgba(255,215,0,0.3); }
+  .report-content td { padding: 10px 14px; border-bottom: 1px solid rgba(255,215,0,0.1); color: var(--text-secondary); font-size: 0.9rem; }
+  .report-content tr:hover td { background: rgba(74,20,140,0.08); }
+  .report-content blockquote { border-left: 3px solid var(--gold); padding: 0.75rem 1rem; margin: 1rem 0; background: rgba(74,20,140,0.08); border-radius: 0 8px 8px 0; font-style: italic; }
+  .report-content blockquote p { margin-bottom: 0; }
+  .stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin: 1.5rem 0; }
+  .stat-card { background: rgba(74,20,140,0.12); border: 1px solid rgba(255,215,0,0.15); border-radius: 12px; padding: 1.25rem; text-align: center; }
+  .stat-number { font-family: 'Cinzel', serif; font-size: 2rem; font-weight: 700; color: var(--gold); }
+  .stat-label { font-size: 0.75rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.5px; margin-top: 0.25rem; }
+  .advantage-card { background: rgba(74,222,128,0.06); border: 1px solid rgba(74,222,128,0.2); border-radius: 8px; padding: 0.75rem 1rem; margin-bottom: 0.5rem; }
+  .advantage-title { color: #4ADE80; font-weight: 600; font-size: 0.9rem; margin-bottom: 0.25rem; }
+  .advantage-detail { color: var(--text-secondary); font-size: 0.85rem; }
+  .rec-item { padding: 0.75rem 1rem; margin-bottom: 0.5rem; background: rgba(255,215,0,0.04); border-left: 3px solid var(--gold); border-radius: 0 8px 8px 0; display: flex; align-items: flex-start; gap: 0.75rem; }
+  .rec-icon { color: var(--gold); font-weight: bold; flex-shrink: 0; }
+  @media (max-width: 768px) { .stat-grid { grid-template-columns: 1fr 1fr; } }
+</style>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+</head>
+<body>
+
+<div id="particles-js"></div>
+
+<div class="header-bar">
+  <div class="max-w-6xl mx-auto flex items-center justify-between px-6">
+    <span>SOETECH <span>&</span> DJEDI</span>
+    <span>Research Library</span>
+  </div>
+</div>
+
+<nav class="fixed top-8 left-0 right-0 z-50 glass-strong px-6 py-4" id="navbar">
+  <div class="max-w-6xl mx-auto flex items-center justify-between">
+    <a href="../index.html" class="flex items-center gap-2 text-lg">
+      
+      <span class="serif text-base tracking-wider gradient-text">Djedi CHURCH</span>
+    </a>
+    <div class="desktop-nav hidden md:flex items-center gap-8 text-sm">
+      <a href="../index.html" class="nav-link"><i class="fas fa-arrow-left mr-1"></i> Portal</a>
+      <a href="competitive.html" class="nav-link">Competitive</a>
+      <a href="trademark.html" class="nav-link">Trademark</a>
+      <a href="business-consultation.html" class="nav-link">Business</a>
+      <button onclick="handleLogout()" class="btn-outline text-sm" style="padding:8px 24px;">Logout</button>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+  </div>
+</nav>
+
+<div class="mobile-menu hidden" id="mobileMenu">
+  <button onclick="toggleMenu()" class="close-btn"><i class="fas fa-times"></i></button>
+  <a href="../index.html">← Portal Dashboard</a>
+  <a href="competitive.html">Competitive Research</a>
+  <a href="trademark.html">Trademark Research</a>
+  <a href="business-consultation.html">Business Consultation</a>
+  <button onclick="handleLogout()" class="btn-outline mt-4">Logout</button>
+</div>
+
+<section class="min-h-screen px-6 pt-28 pb-20">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-12 fade-in">
+      <p class="text-xs uppercase tracking-[0.3em] text-[#FFD700] mb-3">Research Library</p>
+      <h1 class="serif text-3xl md:text-4xl mb-3">Missouri § 355 <span class="gradient-text">Research Report</span></h1>
+      <p class="text-sm text-[#8878A8]">August 9, 2026 · Prepared by Justice Legal — SOETech</p>
+      <hr class="accent-line w-32 mx-auto mt-6">
+    </div>
+
+    <div class="glass p-8 md:p-12 fade-in report-content">
+
+      <h2>Executive Summary</h2>
+      <div class="glass p-6 mb-6 text-center" style="border-color: rgba(74,222,128,0.3);">
+        <p class="text-xs uppercase tracking-[0.2em] text-[#4ADE80] mb-2">Key Finding</p>
+        <p class="serif text-xl mb-2" style="color: #4ADE80;">Missouri § 355 — Nonprofit Corporation Act</p>
+        <p class="text-sm text-[#B8A9D4]">Missouri's Nonprofit Corporation Act (Chapter 355) provides the statutory framework for organizing Djedi Church as a nonprofit religious corporation with corporate protection, limited liability, and tax-exempt eligibility.</p>
+      </div>
+
+      <div class="stat-grid">
+        <div class="stat-card"><div class="stat-number">§ 355</div><div class="stat-label">Missouri Statute</div></div>
+        <div class="stat-card"><div class="stat-number">$25</div><div class="stat-label">Filing Fee</div></div>
+        <div class="stat-card"><div class="stat-number">$0</div><div class="stat-label">Annual Report Fee</div></div>
+        <div class="stat-card"><div class="stat-number">508(c)(1)(A)</div><div class="stat-label">Auto Exemption</div></div>
+      </div>
+
+      <hr>
+
+      <h2>1. Missouri § 355 — Nonprofit Corporation Act</h2>
+      <p><strong>Legal Authority:</strong> Missouri Revised Statutes, Chapter 355 (Missouri Nonprofit Corporation Act)</p>
+      <p>Missouri § 355 governs the formation, operation, and governance of nonprofit corporations in Missouri. For Djedi Church, this statute provides the legal framework for organizing as a nonprofit religious corporation with corporate protection and limited liability.</p>
+
+      <table>
+        <thead><tr><th>Feature</th><th>Missouri Law</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Statute</strong></td><td>Mo. Rev. Stat. § 355.010 et seq.</td></tr>
+          <tr><td><strong>Type</strong></td><td>Nonprofit religious corporation</td></tr>
+          <tr><td><strong>Filing</strong></td><td>Articles of Incorporation with Missouri Secretary of State</td></tr>
+          <tr><td><strong>Filing Fee</strong></td><td>$25 (as of 2026)</td></tr>
+          <tr><td><strong>Annual Report</strong></td><td>Required (filed with Missouri Secretary of State)</td></tr>
+          <tr><td><strong>Registered Agent</strong></td><td>Required — must have a registered agent in Missouri</td></tr>
+          <tr><td><strong>Board of Directors</strong></td><td>Minimum 1 director required</td></tr>
+        </tbody>
+      </table>
+
+      <h3>1.1 Articles of Incorporation Requirements</h3>
+      <ul>
+        <li><strong>Must include religious purposes language</strong> — clearly state the organization is organized for religious purposes</li>
+        <li><strong>Must designate a registered agent</strong> — a Missouri resident or registered agent service</li>
+        <li><strong>Must list initial directors</strong> — minimum of one director</li>
+        <li><strong>Must include dissolution provisions</strong> — specify how assets will be distributed upon dissolution (must be for religious/charitable purposes)</li>
+      </ul>
+
+      <h3>1.2 Corporate Governance Requirements</h3>
+      <table>
+        <thead><tr><th>Requirement</th><th>Details</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Bylaws</strong></td><td>Required — internal governance document</td></tr>
+          <tr><td><strong>Annual Meeting</strong></td><td>Required (board or membership meeting)</td></tr>
+          <tr><td><strong>Minutes</strong></td><td>Must keep minutes of all meetings</td></tr>
+          <tr><td><strong>Financial Records</strong></td><td>Must maintain accurate financial records</td></tr>
+          <tr><td><strong>Annual Report</strong></td><td>Filed with Missouri Secretary of State</td></tr>
+        </tbody>
+      </table>
+
+      <hr>
+
+      <h2>2. Missouri Tax Exemptions for Religious Organizations</h2>
+
+      <h3>2.1 Property Tax Exemption</h3>
+      <p><strong>Legal Authority:</strong> Mo. Rev. Stat. § 137.110</p>
+      <ul>
+        <li>Religious organizations can apply for property tax exemption in Missouri</li>
+        <li>Must apply to the county assessor</li>
+        <li>Must use the property exclusively for religious purposes</li>
+        <li><strong>Separate application required</strong> — this is NOT automatic</li>
+      </ul>
+
+      <h3>2.2 Sales Tax Exemption</h3>
+      <p><strong>Legal Authority:</strong> Mo. Rev. Stat. § 144.030</p>
+      <ul>
+        <li>Religious organizations can purchase items tax-free in Missouri</li>
+        <li>Must provide a Missouri Sales Tax Exemption Certificate (Form 1746)</li>
+        <li>Must use the purchases for religious purposes</li>
+        <li><strong>Documentation required</strong> for each purchase</li>
+      </ul>
+
+      <h3>2.3 State Income Tax</h3>
+      <ul>
+        <li>Missouri has a state income tax (4.225% for individuals)</li>
+        <li>Religious organizations that qualify as 501(c)(3) are exempt from Missouri state income tax</li>
+        <li>Must file Missouri Form 990 (state version) if gross receipts exceed $25,000</li>
+      </ul>
+
+      <h3>2.4 Missouri Form 990 Requirements</h3>
+      <table>
+        <thead><tr><th>Gross Receipts</th><th>Form Required</th><th>Due Date</th></tr></thead>
+        <tbody>
+          <tr><td>Under $25,000</td><td>No Form 990 required</td><td>N/A</td></tr>
+          <tr><td>$25,000 – $200,000</td><td>Form 990-N (e-Postcard)</td><td>November 15</td></tr>
+          <tr><td>Over $200,000</td><td>Form 990 or 990-EZ</td><td>November 15</td></tr>
+        </tbody>
+      </table>
+
+      <blockquote>
+        <p><strong>Note:</strong> Churches are <strong>NOT required</strong> to file Form 990 with the IRS (due to automatic exemption under 508(c)(1)(A)). However, Missouri may have separate state filing requirements.</p>
+      </blockquote>
+
+      <hr>
+
+      <h2>3. Missouri Charitable Registration</h2>
+      <p><strong>Legal Authority:</strong> Mo. Rev. Stat. § 407.450 et seq.</p>
+      <ul>
+        <li>Charitable organizations soliciting donations in Missouri must register with the Missouri Attorney General</li>
+        <li>Churches are generally <strong>exempt</strong> from charitable registration requirements</li>
+        <li>However, if Djedi Church engages in significant charitable activities (food banks, shelters, etc.), registration may be required</li>
+      </ul>
+
+      <hr>
+
+      <h2>4. Federal Tax-Exempt Status — 508(c)(1)(A)</h2>
+      <p>Under IRC § 508(c)(1)(A), churches are <strong>automatically exempt</strong> from the requirement to apply for 501(c)(3) recognition. This means:</p>
+      <ul>
+        <li><strong>No Form 1023 filing required</strong> — exemption is automatic upon organizing as a church</li>
+        <li><strong>Automatic 501(c)(3) status</strong> — the organization is treated as tax-exempt from inception</li>
+        <li><strong>Limited IRS audit authority</strong> — the IRS must follow strict procedures under IRC § 7611</li>
+        <li><strong>First Amendment protections</strong> — religious autonomy doctrine protects church governance decisions</li>
+      </ul>
+
+      <h3>4.1 Why Churches May Still Apply for 501(c)(3) Recognition</h3>
+      <table>
+        <thead><tr><th>Reason</th><th>Explanation</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Donor Confidence</strong></td><td>Donors want assurance their donations are tax-deductible</td></tr>
+          <tr><td><strong>Bank Requirements</strong></td><td>Many banks require an IRS determination letter to open accounts</td></tr>
+          <tr><td><strong>Grant Eligibility</strong></td><td>Many foundations require proof of 501(c)(3) status</td></tr>
+          <tr><td><strong>Legal Clarity</strong></td><td>A determination letter provides clear evidence of tax-exempt status</td></tr>
+          <tr><td><strong>State Requirements</strong></td><td>Some states require IRS recognition for state tax exemptions</td></tr>
+          <tr><td><strong>Professional Credibility</strong></td><td>Shows the organization is legitimate and compliant</td></tr>
+        </tbody>
+      </table>
+
+      <hr>
+
+      <h2>5. Missouri-Specific Advantages</h2>
+      <div class="advantage-card">
+        <div class="advantage-title"><i class="fas fa-check-circle mr-2"></i>Moderate Filing Fees</div>
+        <div class="advantage-detail">$25 for articles of incorporation — one of the lowest in the nation</div>
+      </div>
+      <div class="advantage-card">
+        <div class="advantage-title"><i class="fas fa-check-circle mr-2"></i>No Annual Report Fee</div>
+        <div class="advantage-detail">Missouri does not charge for annual reports — ongoing compliance is cost-effective</div>
+      </div>
+      <div class="advantage-card">
+        <div class="advantage-title"><i class="fas fa-check-circle mr-2"></i>Religious Corporation Statute</div>
+        <div class="advantage-detail">Specific statutory framework (Chapter 352) for religious organizations</div>
+      </div>
+      <div class="advantage-card">
+        <div class="advantage-title"><i class="fas fa-check-circle mr-2"></i>Property Tax Exemption</div>
+        <div class="advantage-detail">Available for religious organizations (separate application required)</div>
+      </div>
+      <div class="advantage-card">
+        <div class="advantage-title"><i class="fas fa-check-circle mr-2"></i>Sales Tax Exemption</div>
+        <div class="advantage-detail">Available for religious organizations (Form 1746 required)</div>
+      </div>
+      <div class="advantage-card">
+        <div class="advantage-title"><i class="fas fa-check-circle mr-2"></i>Business-Friendly Environment</div>
+        <div class="advantage-detail">Moderate regulatory environment with streamlined filing processes</div>
+      </div>
+
+      <hr>
+
+      <h2>6. Implementation Steps for Djedi Church</h2>
+      <div class="rec-item"><span class="rec-icon">→</span><span><strong>Step 1:</strong> File Articles of Incorporation with Missouri Secretary of State ($25 filing fee)</span></div>
+      <div class="rec-item"><span class="rec-icon">→</span><span><strong>Step 2:</strong> Adopt bylaws governing church operations and leadership</span></div>
+      <div class="rec-item"><span class="rec-icon">→</span><span><strong>Step 3:</strong> Apply for property tax exemption with the county assessor</span></div>
+      <div class="rec-item"><span class="rec-icon">→</span><span><strong>Step 4:</strong> Obtain Missouri Sales Tax Exemption Certificate (Form 1746)</span></div>
+      <div class="rec-item"><span class="rec-icon">→</span><span><strong>Step 5:</strong> File annual reports with the Missouri Secretary of State</span></div>
+      <div class="rec-item"><span class="rec-icon">→</span><span><strong>Step 6:</strong> Maintain corporate formalities (meetings, minutes, records)</span></div>
+      <div class="rec-item"><span class="rec-icon">→</span><span><strong>Step 7:</strong> Consider voluntary Form 1023 filing for donor confidence and bank requirements</span></div>
+
+      <hr>
+
+      <h2>7. Risk Assessment</h2>
+      <table>
+        <thead><tr><th>Risk</th><th>Likelihood</th><th>Mitigation</th></tr></thead>
+        <tbody>
+          <tr><td>IRS Audit</td><td>Low (churches have § 7611 protections)</td><td>Maintain proper records, follow § 508(c)(1)(A) requirements</td></tr>
+          <tr><td>State Compliance Failure</td><td>Low-Medium</td><td>File annual reports on time, maintain registered agent</td></tr>
+          <tr><td>Property Tax Exemption Denial</td><td>Low</td><td>Ensure property is used exclusively for religious purposes</td></tr>
+          <tr><td>Donor Confidence Issues</td><td>Medium (without 501(c)(3) letter)</td><td>Consider voluntary Form 1023 filing</td></tr>
+        </tbody>
+      </table>
+
+      <hr>
+
+      <h2>8. Sources Cited</h2>
+      <ul>
+        <li>Missouri Revised Statutes, Chapter 355 — Missouri Nonprofit Corporation Act (Mo. Rev. Stat. § 355.010 et seq.)</li>
+        <li>Missouri Revised Statutes, Chapter 352 — Religious Corporations (Mo. Rev. Stat. § 352.010 et seq.)</li>
+        <li>Mo. Rev. Stat. § 137.110 — Property Tax Exemption for Religious Organizations</li>
+        <li>Mo. Rev. Stat. § 144.030 — Sales Tax Exemption for Religious Organizations</li>
+        <li>Mo. Rev. Stat. § 407.450 et seq. — Charitable Registration Requirements</li>
+        <li>IRC § 508(c)(1)(A) — Automatic Church Tax Exemption</li>
+        <li>IRC § 501(c)(3) — Tax-Exempt Status for Religious Organizations</li>
+        <li>IRC § 7611 — Limitations on IRS Audit of Churches</li>
+        <li>IRC § 170(c)(2) — Charitable Contribution Deductions</li>
+      </ul>
+
+      <hr>
+
+      <p class="text-center text-[#8878A8] text-xs">Djedi Church | Christopher Carron · Research compiled by Justice Legal — SOETech | August 9, 2026</p>
+    </div>
+    <div class="text-center mt-8 fade-in">
+      <a href="../index.html" class="btn-outline text-sm"><i class="fas fa-arrow-left mr-2"></i>Back to Portal</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <img src="../assets/djedi-church-logo.svg" alt="Djedi Church" class="h-6 opacity-50 mb-2">
+  <p class="serif" style="color: #8878A8;">Djedi Church © 2026</p>
+  <p class="footer-tagline">Consciousness Is the Original Temple · Earth Is the Sanctuary</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+particlesJS('particles-js', {
+  particles: {
+    number: { value: 30, density: { enable: true, value_area: 800 } },
+    color: { value: ["#4A148C", "#FFD700", "#6A1B9A"] },
+    shape: { type: "circle" },
+    opacity: { value: 0.1, random: true, anim: { enable: true, speed: 0.5, opacity_min: 0.05 } },
+    size: { value: 3, random: true },
+    line_linked: { enable: true, distance: 150, color: "#4A148C", opacity: 0.04, width: 1 },
+    move: { enable: true, speed: 0.3, direction: "none", random: true, out_mode: "out" }
+  },
+  interactivity: { detect_on: "canvas", events: { onhover: { enable: false }, onclick: { enable: false } } },
+  retina_detect: true
+});
+</script>
+<script src="../js/auth.js"></script>
+<script src="../js/nav.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  DjediAuth.requireAuth();
+});
+</script>
+</body>
+</html>
